@@ -4,7 +4,6 @@ Site vitrine du restaurant Chef Eyad Tunisia (Berges du Lac 2, Tunis).
 Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 
 > Statut : **phase de cadrage**. Aucun code définitif avant validation des bases ci-dessous.
-> `index.html` actuel = maquette provisoire en français, à remplacer.
 
 ## Décisions
 
@@ -34,6 +33,17 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 6. **Contact et accès** — adresse, téléphone, horaires, plan Google Maps ; FAQ courte *à confirmer*
 
 Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles.
+
+## Fabriquer le site
+
+```bash
+python3 build.py      # lit i18n.json + templates/, écrit docs/{fr,ar,en}/*.html
+```
+
+- Textes : `i18n.json` · mise en page : `templates/*.html` et `style.css` · **ne jamais éditer `docs/` à la main** (écrasé à chaque génération).
+- La réservation ouvre WhatsApp avec la demande pré-remplie (pas de serveur).
+- Test local : `cd docs && python3 -m http.server 8000` puis http://localhost:8000
+- Publication : GitHub Pages, branche `main`, dossier `/docs`.
 
 ## Phases
 

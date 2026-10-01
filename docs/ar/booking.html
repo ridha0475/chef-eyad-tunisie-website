@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>احجز طاولة — الشيف إياد تونس</title>
+<meta name="description" content="لحم مدخّن ببطء على طريقة الشيف إياد">
+<link rel="icon" href="../logo.jpeg">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="fr" href="../fr/booking.html">
+<link rel="alternate" hreflang="ar" href="../ar/booking.html">
+<link rel="alternate" hreflang="en" href="../en/booking.html">
+</head>
+<body>
+<header class="nav"><div class="w">
+  <a class="brand" href="index.html"><img src="../logo.jpeg" alt="الشيف إياد تونس"><span>الشيف إياد تونس</span></a>
+  <nav><a href="about.html">من نحن</a><span class="dd"><a href="menu.html">القائمة</a><div><a href="menu.html#smoked">اللحوم المدخّنة</a><a href="menu.html#sides">المقبلات والأطباق الجانبية</a><a href="menu.html#sauces">الصلصات</a><a href="menu.html#drinks">المشروبات والحلويات</a></div></span><a href="events.html">المناسبات</a><a href="contact.html">اتصل بنا</a></nav>
+  <span class="langs"><a href="../fr/booking.html" hreflang="fr">Français</a> <b>العربية</b> <a href="../en/booking.html" hreflang="en">English</a></span>
+  <a class="btn" href="booking.html">احجز الآن</a>
+</div></header>
+<main>
+<section><div class="w narrow">
+  <h1>احجز طاولة</h1>
+  <form id="f">
+    <label>الاسم<input name="name" required></label>
+    <label>الهاتف<input name="phone" type="tel" required></label>
+    <label>التاريخ<input name="date" type="date" required></label>
+    <label>الوقت<input name="time" type="time" required></label>
+    <label>عدد الأشخاص<input name="guests" type="number" min="1" max="100" required></label>
+    <label>ملاحظات (اختياري)<textarea name="notes" rows="3"></textarea></label>
+    <button class="btn" type="submit">إرسال الطلب</button>
+  </form>
+</div></section>
+<script>
+// Pas de serveur : la demande s'ouvre dans WhatsApp, prête à envoyer.
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var d=new FormData(e.target),t=["مرحبًا، أودّ الحجز عند الشيف إياد."];
+  ['name','phone','date','time','guests','notes'].forEach(function(k){if(d.get(k))t.push(k+': '+d.get(k))});
+  location.href='https://wa.me/21629909375?text='+encodeURIComponent(t.join('\n'));
+});
+</script>
+
+</main>
+<footer><div class="w">© 2026 الشيف إياد تونس · جميع الحقوق محفوظة.</div></footer>
+</body>
+</html>
