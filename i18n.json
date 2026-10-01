@@ -1,0 +1,166 @@
+{
+  "_langs": {
+    "fr": { "label": "Français", "dir": "ltr", "default": true },
+    "ar": { "label": "العربية", "dir": "rtl" },
+    "en": { "label": "English", "dir": "ltr" }
+  },
+
+  "site": {
+    "name": {
+      "fr": "Chef Eyad Tunisie",
+      "ar": "الشيف إياد تونس",
+      "en": "Chef Eyad Tunisia"
+    },
+    "tagline": {
+      "fr": "Viande fumée lentement, à la manière du Chef Eyad",
+      "ar": "لحم مدخّن ببطء على طريقة الشيف إياد",
+      "en": "Slow-smoked meat, the Chef Eyad way"
+    }
+  },
+
+  "nav": {
+    "home":    { "fr": "Accueil", "ar": "الرئيسية", "en": "Home" },
+    "about":   { "fr": "À propos", "ar": "من نحن", "en": "About" },
+    "menu":    { "fr": "Menu", "ar": "القائمة", "en": "Menu" },
+    "events":  { "fr": "Événements", "ar": "المناسبات", "en": "Events" },
+    "booking": { "fr": "Réservation", "ar": "الحجز", "en": "Booking" },
+    "contact": { "fr": "Contact", "ar": "اتصل بنا", "en": "Contact" },
+    "menu_smoked": { "fr": "Viandes fumées", "ar": "اللحوم المدخّنة", "en": "Smoked meats" },
+    "menu_sides":  { "fr": "Accompagnements", "ar": "المقبلات والأطباق الجانبية", "en": "Sides" },
+    "menu_sauces": { "fr": "Sauces", "ar": "الصلصات", "en": "Sauces" },
+    "menu_drinks": { "fr": "Boissons et desserts", "ar": "المشروبات والحلويات", "en": "Drinks and desserts" }
+  },
+
+  "common": {
+    "book_now":  { "fr": "Réserver", "ar": "احجز الآن", "en": "Book now" },
+    "call":      { "fr": "Appeler", "ar": "اتصل بنا", "en": "Call us" },
+    "see_menu":  { "fr": "Voir le menu", "ar": "شاهد القائمة", "en": "See the menu" },
+    "find_us":   { "fr": "Nous trouver", "ar": "موقعنا", "en": "Find us" },
+    "tbc":       { "fr": "À confirmer", "ar": "سيتم التأكيد لاحقًا", "en": "To be confirmed" },
+    "price_soon":{ "fr": "Prix à venir", "ar": "السعر قريبًا", "en": "Price coming soon" },
+    "included":  { "fr": "Inclus", "ar": "مشمول", "en": "Included" }
+  },
+
+  "home": {
+    "title": {
+      "fr": "La viande fumée, à la manière du Chef Eyad",
+      "ar": "اللحم المدخّن على طريقة الشيف إياد",
+      "en": "Smoked meat, the Chef Eyad way"
+    },
+    "intro": {
+      "fr": "Agneau et bœuf fumés lentement pendant des heures, servis au poids avec des accompagnements à volonté. Berges du Lac 2, Tunis.",
+      "ar": "لحم الضأن والبقر المدخّن ببطء لساعات، يُقدَّم بالوزن مع أطباق جانبية مفتوحة. ضفاف البحيرة 2، تونس.",
+      "en": "Lamb and beef smoked slowly for hours, sold by weight and served with generous sides. Berges du Lac 2, Tunis."
+    },
+    "point1_title": { "fr": "8 à 16 h de fumage", "ar": "من 8 إلى 16 ساعة من التدخين", "en": "8 to 16 hours of smoking" },
+    "point1_text":  { "fr": "Cuisson à basse température pour une viande qui fond.", "ar": "طهي على حرارة منخفضة للحصول على لحم يذوب في الفم.", "en": "Low-temperature cooking for meat that melts." },
+    "point2_title": { "fr": "Vendue au poids", "ar": "تُباع بالوزن", "en": "Sold by weight" },
+    "point2_text":  { "fr": "Vous choisissez vos morceaux, tranchés à la sortie du four.", "ar": "تختار قطعك وتُقطَّع أمامك عند خروجها من الفرن.", "en": "You choose your cuts, sliced fresh from the oven." },
+    "point3_title": { "fr": "Accompagnements inclus", "ar": "أطباق جانبية مشمولة", "en": "Sides included" },
+    "point3_text":  { "fr": "Cinq salades et riz avec la viande choisie.", "ar": "خمس سلطات وأرز مع اللحم الذي تختاره.", "en": "Five salads and rice with your choice of meat." },
+    "point4_title": { "fr": "Plus de 15 sauces", "ar": "أكثر من 15 صلصة", "en": "15+ sauces" },
+    "point4_text":  { "fr": "Pour relever chaque morceau à votre goût.", "ar": "لإضفاء النكهة التي تفضّلها على كل قطعة.", "en": "To season every bite your way." }
+  },
+
+  "about": {
+    "title": { "fr": "À propos", "ar": "من نحن", "en": "About us" },
+    "text": {
+      "fr": "Chef Eyad est une marque de restaurants spécialisée dans la viande fumée lentement, fours exposés en salle. Le restaurant de Tunis, aux Berges du Lac 2, a ouvert ses portes le 7 juin 2024.",
+      "ar": "الشيف إياد علامة مطاعم متخصصة في اللحم المدخّن ببطء، مع أفران ظاهرة داخل القاعة. افتُتح مطعم تونس في ضفاف البحيرة 2 بتاريخ 7 جوان 2024.",
+      "en": "Chef Eyad is a restaurant brand specialising in slow-smoked meat, with ovens on display in the dining room. The Tunis restaurant, in Berges du Lac 2, opened on 7 June 2024."
+    }
+  },
+
+  "menu": {
+    "title": { "fr": "Notre menu", "ar": "قائمتنا", "en": "Our menu" },
+    "smoked_title": { "fr": "Viandes fumées", "ar": "اللحوم المدخّنة", "en": "Smoked meats" },
+    "smoked_note": {
+      "fr": "Vendues au poids : 1 kg, ½ kg, ¼ kg.",
+      "ar": "تُباع بالوزن: 1 كغ، ½ كغ، ¼ كغ.",
+      "en": "Sold by weight: 1 kg, ½ kg, ¼ kg."
+    },
+    "lamb_shoulder": { "fr": "Épaule d'agneau", "ar": "كتف الضأن", "en": "Lamb shoulder" },
+    "lamb_shank":    { "fr": "Jarret d'agneau", "ar": "سيقان الضأن", "en": "Lamb shank" },
+    "beef_ribs":     { "fr": "Côtes de bœuf", "ar": "ضلوع البقر", "en": "Beef ribs" },
+    "sides_title": { "fr": "Accompagnements", "ar": "الأطباق الجانبية", "en": "Sides" },
+    "sides_text": {
+      "fr": "Cinq salades et riz, inclus avec chaque viande.",
+      "ar": "خمس سلطات وأرز مع كل لحم.",
+      "en": "Five salads and rice, included with every meat."
+    },
+    "sauces_title": { "fr": "Sauces", "ar": "الصلصات", "en": "Sauces" },
+    "sauces_text": {
+      "fr": "Plus de 15 sauces maison.",
+      "ar": "أكثر من 15 صلصة من صنع المطعم.",
+      "en": "Over 15 house-made sauces."
+    },
+    "drinks_title": { "fr": "Boissons et desserts", "ar": "المشروبات والحلويات", "en": "Drinks and desserts" },
+    "drinks_text": {
+      "fr": "Carte en cours de confirmation.",
+      "ar": "القائمة قيد التأكيد.",
+      "en": "Menu being confirmed."
+    }
+  },
+
+  "events": {
+    "title": { "fr": "Événements et salons privés", "ar": "المناسبات والقاعات الخاصة", "en": "Events and private dining" },
+    "intro": {
+      "fr": "Repas de famille, déjeuners d'affaires, anniversaires.",
+      "ar": "وجبات عائلية، غداء عمل، أعياد ميلاد.",
+      "en": "Family meals, business lunches, birthdays."
+    },
+    "vip_title": { "fr": "Salon VIP", "ar": "القاعة الخاصة", "en": "VIP room" },
+    "vip_text": {
+      "fr": "Privatisez un espace pour votre table, en famille ou entre collègues.",
+      "ar": "احجز مساحة خاصة لطاولتك مع العائلة أو الزملاء.",
+      "en": "Reserve a private space for your table, with family or colleagues."
+    },
+    "catering_title": { "fr": "Traiteur", "ar": "خدمة التموين", "en": "Catering" },
+    "catering_text": {
+      "fr": "Notre viande fumée chez vous ou dans votre entreprise.",
+      "ar": "لحمنا المدخّن في منزلك أو في شركتك.",
+      "en": "Our smoked meat at your home or workplace."
+    },
+    "cta": { "fr": "Demander un devis sur WhatsApp", "ar": "اطلب عرض سعر عبر واتساب", "en": "Request a quote on WhatsApp" }
+  },
+
+  "booking": {
+    "title": { "fr": "Réserver une table", "ar": "احجز طاولة", "en": "Book a table" },
+    "name":   { "fr": "Nom", "ar": "الاسم", "en": "Name" },
+    "phone":  { "fr": "Téléphone", "ar": "الهاتف", "en": "Phone" },
+    "date":   { "fr": "Date", "ar": "التاريخ", "en": "Date" },
+    "time":   { "fr": "Heure", "ar": "الوقت", "en": "Time" },
+    "guests": { "fr": "Nombre de convives", "ar": "عدد الأشخاص", "en": "Number of guests" },
+    "notes":  { "fr": "Précisions (facultatif)", "ar": "ملاحظات (اختياري)", "en": "Notes (optional)" },
+    "submit": { "fr": "Envoyer la demande", "ar": "إرسال الطلب", "en": "Send request" },
+    "whatsapp_msg": {
+      "fr": "Bonjour, je souhaite réserver chez Chef Eyad.",
+      "ar": "مرحبًا، أودّ الحجز عند الشيف إياد.",
+      "en": "Hello, I would like to book a table at Chef Eyad."
+    }
+  },
+
+  "contact": {
+    "title":   { "fr": "Contact et accès", "ar": "اتصل بنا وكيفية الوصول", "en": "Contact and directions" },
+    "address_label": { "fr": "Adresse", "ar": "العنوان", "en": "Address" },
+    "address": {
+      "fr": "Regency 3, Cité Les Pins, Les Berges du Lac 2, Tunis (derrière l'hôtel Novotel, côté lac)",
+      "ar": "ريجنسي 3، حي الصنوبر، ضفاف البحيرة 2، تونس (خلف نزل نوفوتيل، جهة البحيرة)",
+      "en": "Regency 3, Cité Les Pins, Les Berges du Lac 2, Tunis (behind the Novotel hotel, lake side)"
+    },
+    "phone_label": { "fr": "Téléphone", "ar": "الهاتف", "en": "Phone" },
+    "hours_label": { "fr": "Horaires", "ar": "ساعات العمل", "en": "Opening hours" },
+    "map_label":   { "fr": "Ouvrir dans Google Maps", "ar": "افتح في خرائط جوجل", "en": "Open in Google Maps" }
+  },
+
+  "footer": {
+    "rights": { "fr": "Tous droits réservés.", "ar": "جميع الحقوق محفوظة.", "en": "All rights reserved." }
+  },
+
+  "_data": {
+    "phone": "+216 29 909 375",
+    "whatsapp": "21629909375",
+    "hours": null,
+    "_note": "Données non traduites. hours = null tant que les horaires officiels ne sont pas fournis (afficher common.tbc)."
+  }
+}

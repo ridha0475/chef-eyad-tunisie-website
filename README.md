@@ -14,7 +14,7 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 | URL | `/fr/`, `/ar/`, `/en/` — une adresse par langue |
 | Arabe | Arabe standard simple, mise en page RTL (`dir="rtl"`) |
 | Traductions | Rédigées à partir du français, **relues et validées par le client** avant publication |
-| Contenu | Un fichier de textes par langue (`fr.json`, `ar.json`, `en.json`), séparé de la mise en page |
+| Contenu | Un seul fichier `i18n.json` : chaque texte porte ses 3 langues côte à côte (relecture client facilitée), séparé de la mise en page |
 | Technique | Site statique, sans framework ; un petit script génère les 3 versions depuis un modèle |
 | Hébergement | GitHub Pages |
 
