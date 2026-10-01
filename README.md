@@ -52,6 +52,13 @@ Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles
 - [ ] Compte Instagram officiel (handle)
 - [ ] État du domaine `chefeyad.com.tn` (erreur 526 constatée le 28/07/2026) et nom de domaine à utiliser
 
+## Photos
+
+- Sources autorisées : photos des comptes Facebook/Instagram du restaurant (propriété du client), originaux fournis par le client, séance photo.
+- Exclues : Google Images, photos d'autres branches, photos de tiers repostées (clients, influenceurs, franchiseur) sans accord écrit.
+- Idéal : originaux haute définition plutôt que des téléchargements des réseaux sociaux.
+- Dépôt des sources : `photos-source/` ; les versions optimisées du site iront dans `images/`.
+
 ## Règle de contenu
 
 Aucune information (prix, horaires, chiffres) n'est publiée sans source ou validation du client.
