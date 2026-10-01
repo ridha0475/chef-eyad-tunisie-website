@@ -6,10 +6,13 @@
 <title>{{title}}</title>
 <meta name="description" content="{{site.tagline}}">
 <link rel="icon" href="../logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{fonts}}">
 <link rel="stylesheet" href="../style.css">
 {{hreflang}}
 </head>
-<body>
+<body class="page-{{page}}">
 <header class="nav"><div class="w">
   <a class="brand" href="index.html"><img src="../logo.jpeg" alt="{{site.name}}"><span>{{site.name}}</span></a>
   <nav>{{nav}}</nav>

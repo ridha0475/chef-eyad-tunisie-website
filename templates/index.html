@@ -1,13 +1,66 @@
-<section class="hero"><div class="w">
-  <img src="../logo.jpeg" alt="{{site.name}}">
-  <h1>{{home.title}}</h1>
-  <p>{{home.intro}}</p>
-  <a class="btn" href="booking.html">{{common.book_now}}</a>
-  <a class="btn o" href="menu.html">{{common.see_menu}}</a>
+<div class="progress" aria-hidden="true"></div>
+
+<section class="hero">
+  <img class="hero-img" src="../images/short-ribs.webp" alt="{{home.hero_alt}}" width="1380" height="1016" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w hero-txt">
+    <p class="eyebrow">{{home.eyebrow}}</p>
+    <h1>{{home.title}}</h1>
+    <p class="lead">{{home.intro}}</p>
+    <div class="actions">
+      <a class="btn" href="booking.html">{{common.book_now}}</a>
+      <a class="btn o" href="menu.html">{{common.see_menu}}</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#story">{{home.scroll}}</a>
+</section>
+
+<section id="story" class="story">
+  <div class="w"><p class="eyebrow reveal">{{home.story_kicker}}</p></div>
+  <article class="ch ch1 reveal"><div class="w ch-in">
+    <span class="num" aria-hidden="true">01</span>
+    <div><h2>{{home.point1_title}}</h2><p>{{home.point1_text}}</p></div>
+  </div></article>
+  <article class="ch ch2 reveal"><div class="w ch-in">
+    <span class="num" aria-hidden="true">02</span>
+    <div><h2>{{home.point2_title}}</h2><p>{{home.point2_text}}</p><a class="link" href="menu.html#smoked">{{common.see_menu}} →</a></div>
+    <img class="ch-img" src="../images/short-ribs.webp" alt="" loading="lazy" width="1380" height="1016">
+  </div></article>
+  <article class="ch ch3 reveal"><div class="w ch-in">
+    <span class="num" aria-hidden="true">03</span>
+    <div><h2>{{home.point3_title}}</h2><p>{{home.point3_text}}</p></div>
+  </div></article>
+  <article class="ch ch4 reveal"><div class="w ch-in">
+    <span class="num" aria-hidden="true">04</span>
+    <div><h2>{{home.point4_title}}</h2><p>{{home.point4_text}}</p></div>
+  </div></article>
+</section>
+
+<section class="climax">
+  <div class="w reveal">
+    <h2>{{home.cta_title}}</h2>
+    <p>{{home.cta_text}}</p>
+    <div class="actions">
+      <a class="btn light" href="booking.html">{{common.book_now}}</a>
+      <a class="btn o" href="tel:{{phone_raw}}"><span dir="ltr">{{phone}}</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="visit"><div class="w visit-in">
+  <div><h3>{{contact.address_label}}</h3><p>{{contact.address}}</p></div>
+  <div><h3>{{contact.hours_label}}</h3><p>{{hours}}</p></div>
+  <div><h3>{{common.find_us}}</h3><p><a href="contact.html">{{contact.map_label}} →</a></p></div>
 </div></section>
-<section><div class="w"><div class="g">
-  <div class="c"><h3>{{home.point1_title}}</h3><p>{{home.point1_text}}</p></div>
-  <div class="c"><h3>{{home.point2_title}}</h3><p>{{home.point2_text}}</p></div>
-  <div class="c"><h3>{{home.point3_title}}</h3><p>{{home.point3_text}}</p></div>
-  <div class="c"><h3>{{home.point4_title}}</h3><p>{{home.point4_text}}</p></div>
-</div></div></section>
+
+<script>
+// Révélation au défilement. Sans JS ou avec « réduire les animations », tout reste visible.
+(function(){
+  var h=document.querySelector('header.nav');
+  addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>40)},{passive:true});
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>

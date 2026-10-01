@@ -14,6 +14,10 @@ DATA = I18N["_data"]
 PAGES = ["index", "about", "menu", "events", "booking", "contact"]
 NAV = {"index": "home", "about": "about", "menu": "menu", "events": "events", "booking": "booking", "contact": "contact"}
 SUB = [("smoked", "menu_smoked"), ("sides", "menu_sides"), ("sauces", "menu_sauces"), ("drinks", "menu_drinks")]
+FONTS = {
+    "latin": "https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap",
+    "ar": "https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap",
+}
 PAGE_TITLE = {"index": "site.tagline", "about": "about.title", "menu": "menu.title",
               "events": "events.title", "booking": "booking.title", "contact": "contact.title"}
 
@@ -51,6 +55,7 @@ def main():
     OUT.mkdir()
     shutil.copy(ROOT / "logo.jpeg", OUT / "logo.jpeg")
     shutil.copy(ROOT / "style.css", OUT / "style.css")
+    shutil.copytree(ROOT / "images", OUT / "images")
     (OUT / ".nojekyll").write_text("")
     layout = (ROOT / "templates/layout.html").read_text()
 
@@ -70,7 +75,8 @@ def main():
                 for l, m in I18N["_langs"].items())
             hreflang = "\n".join(f'<link rel="alternate" hreflang="{l}" href="../{l}/{page}.html">' for l in LANGS)
             extra = {
-                "lang": lang, "dir": meta["dir"], "year": str(date.today().year),
+                "lang": lang, "dir": meta["dir"], "page": page,
+                "fonts": FONTS["ar" if lang == "ar" else "latin"].replace("&", "&amp;"), "year": str(date.today().year),
                 "phone": DATA["phone"], "phone_raw": DATA["phone"].replace(" ", ""), "wa": DATA["whatsapp"],
                 "hours": DATA["hours"] or t("common.tbc", lang),
                 "nav": nav, "langswitch": langswitch, "hreflang": hreflang,
