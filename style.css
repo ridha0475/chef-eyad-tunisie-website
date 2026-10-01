@@ -93,8 +93,11 @@ h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
 .ch h2{font-size:clamp(2rem,4.5vw,3.4rem);margin:0 0 12px;color:var(--txt)}
 .ch p{color:var(--mute);font-size:1.1rem;max-width:46ch}
 .ch2{background:radial-gradient(ellipse at 85% 50%,#3a160866,#0000 60%)}
-.ch2 .ch-in{grid-template-columns:minmax(120px,240px) 1fr 1fr}
-.ch-img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:78% 50%;border-radius:var(--r);box-shadow:0 30px 80px #0009}
+.has-img .ch-in{grid-template-columns:minmax(120px,200px) 1fr 1.1fr}
+.flip .ch-in{grid-template-columns:1.1fr minmax(120px,200px) 1fr}
+.flip .ch-img{order:-1}
+.ch-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 80px #0009}
+.ch-img.wide{aspect-ratio:4/3}
 .ch3{background:radial-gradient(ellipse at 15% 50%,#4a1c0c66,#0000 60%)}
 .ch4{background:radial-gradient(ellipse at 50% 100%,#6b260c88,#0000 70%)}
 .ch4 .num{-webkit-text-stroke-color:#ff7a35aa}
@@ -133,7 +136,9 @@ footer{text-align:center;color:var(--mute);font-size:.85rem;padding:28px 0;borde
   .dd>div,.dd:hover>div,.dd:focus-within>div{display:none}
   .hero{padding:170px 0 100px}
   .ch{padding:52px 0}
-  .ch-in,.ch2 .ch-in{grid-template-columns:1fr;gap:8px}
+  .ch-in,.has-img .ch-in,.flip .ch-in{grid-template-columns:1fr;gap:8px}
+  .flip .ch-img{order:0}
+  .ch-img{aspect-ratio:4/3;margin-top:20px}
   .num{font-size:5rem}
 }
 @media(prefers-reduced-motion:reduce){
