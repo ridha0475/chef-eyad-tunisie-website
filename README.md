@@ -27,9 +27,11 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
    - Accompagnements — 5 salades et riz, inclus avec la viande
    - Sauces — plus de 15 sauces maison
    - Boissons et desserts — *à confirmer avec le client (existent-ils ?)*
+   - *À confirmer avec le client (rubriques présentes sur le site saoudien, absentes des sources tunisiennes) :* Salades et entrées détaillées, Burgers, Poulet, Desserts, Boissons chaudes
+   - *Phase 2, à confirmer :* Offres (formules déjeuner, offres 2 ou 4 personnes)
 4. **Événements et salons privés** — salon VIP, traiteur / catering
 5. **Réservation** — formulaire (date, heure, convives) + lien WhatsApp
-6. **Contact et accès** — adresse, téléphone, horaires, plan Google Maps
+6. **Contact et accès** — adresse, téléphone, horaires, plan Google Maps ; FAQ courte *à confirmer*
 
 Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles.
 
