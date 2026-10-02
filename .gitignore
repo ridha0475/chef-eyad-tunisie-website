@@ -1,2 +1,3 @@
 photos-client/*
 !photos-client/INDEX.csv
+!photos-client/INDEX-VIDEOS.csv

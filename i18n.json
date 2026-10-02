@@ -157,14 +157,14 @@
       "en": "Five salads and rice with your choice of meat."
     },
     "point4_title": {
-      "fr": "Plus de 15 sauces",
-      "ar": "أكثر من 15 صلصة",
-      "en": "15+ sauces"
+      "fr": "Trois sauces maison",
+      "ar": "ثلاث صلصات من صنع البيت",
+      "en": "Three house-made sauces"
     },
     "point4_text": {
-      "fr": "Pour relever chaque morceau à votre goût.",
-      "ar": "لإضفاء النكهة التي تفضّلها على كل قطعة.",
-      "en": "To season every bite your way."
+      "fr": "Préparées chez nous, elles changent au fil des saisons.",
+      "ar": "نحضّرها في مطبخنا، وتتغيّر مع الفصول.",
+      "en": "Made in our kitchen, they change with the seasons."
     },
     "eyebrow": {
       "fr": "Berges du Lac 2 · Tunis",
@@ -309,9 +309,9 @@
       "en": "To the table"
     },
     "st4_text": {
-      "fr": "Riz basmati et cinq salades à volonté accompagnent chaque viande fumée, avec plus de 15 sauces pour relever chaque bouchée.",
-      "ar": "أرز بسمتي وخمس سلطات بلا حدود مع كل لحم مدخّن، وأكثر من 15 صلصة لتتبيل كل لقمة.",
-      "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus more than 15 sauces to season every bite."
+      "fr": "Riz basmati et cinq salades à volonté accompagnent chaque viande fumée, avec trois sauces maison qui changent au fil des saisons.",
+      "ar": "أرز بسمتي وخمس سلطات بلا حدود مع كل لحم مدخّن، وثلاث صلصات من صنع البيت تتغيّر مع الفصول.",
+      "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus three house-made sauces that change with the seasons."
     }
   },
   "menu": {
@@ -481,9 +481,9 @@
       "en": "House sauce, cheese sauce and bacon"
     },
     "sauces_text": {
-      "fr": "Plus de 15 sauces maison.",
-      "ar": "أكثر من 15 صلصة من صنع المطعم.",
-      "en": "Over 15 house-made sauces."
+      "fr": "Trois sauces maison, qui changent au fil des saisons.",
+      "ar": "ثلاث صلصات من صنع البيت، تتغيّر مع الفصول.",
+      "en": "Three house-made sauces, changing with the seasons."
     }
   },
   "events": {
