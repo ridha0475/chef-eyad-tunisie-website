@@ -68,6 +68,7 @@ python3 build.py      # lit i18n.json + templates/, écrit docs/{fr,ar,en}/*.htm
 - Exclues : Google Images, photos d'autres branches, photos de tiers repostées (clients, influenceurs, franchiseur) sans accord écrit.
 - Idéal : originaux haute définition plutôt que des téléchargements des réseaux sociaux.
 - Dépôt des sources : `photos-source/` ; les versions optimisées du site iront dans `images/`.
+- **Exception provisoire** : `images/fumoir.webp`, `images/vente-au-poids.webp`, `images/accompagnements.webp` et `images/sauces.webp` (chapitres 01 à 04) sont des images générées par IA, en attendant de vraies photos. À faire valider par le client ou à remplacer avant publication.
 
 ## Règle de contenu
 
