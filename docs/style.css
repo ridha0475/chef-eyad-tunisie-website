@@ -39,7 +39,7 @@ h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
 .page-index .nav.scrolled{background:#0e0a08ee;border-color:var(--line);backdrop-filter:blur(10px)}
 
 /* Boutons */
-.btn{display:inline-flex;align-items:center;min-height:44px;background:var(--fire);color:#fff;padding:12px 26px;border-radius:99px;font:600 .95rem var(--f-body);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s var(--ease)}
+.btn{display:inline-flex;align-items:center;min-height:44px;background:var(--fire);color:var(--bg);padding:12px 26px;border-radius:99px;font:600 .95rem var(--f-body);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s var(--ease)}
 .btn:hover{background:var(--fire2);transform:translateY(-1px)}
 .btn.o{background:#0000;border:1px solid #fff6;color:var(--txt)}
 .btn.o:hover{border-color:var(--txt);background:#ffffff14}
