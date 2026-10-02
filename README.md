@@ -15,7 +15,7 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 | Traductions | Rédigées à partir du français, **relues et validées par le client** avant publication |
 | Contenu | Un seul fichier `i18n.json` : chaque texte porte ses 3 langues côte à côte (relecture client facilitée), séparé de la mise en page |
 | Technique | Site statique, sans framework ; un petit script génère les 3 versions depuis un modèle |
-| Hébergement | GitHub Pages |
+| Hébergement | GitHub Pages, actif depuis le 02/10/2026 : https://ridha0475.github.io/chef-eyad-tunisie-website/ |
 
 ## Plan des pages
 
