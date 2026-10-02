@@ -1,16 +1,86 @@
-<section><div class="w">
+<header class="mhead"><div class="w">
+  <img class="emblem" src="../logo.jpeg" alt="" width="447" height="447">
   <h1>{{menu.title}}</h1>
-  <h2 id="smoked">{{menu.smoked_title}}</h2>
-  <p class="mute">{{menu.smoked_note}}</p>
-  <div class="g">
-    <div class="c"><h3>{{menu.lamb_shoulder}}</h3><span class="tag">{{common.price_soon}}</span></div>
-    <div class="c"><h3>{{menu.lamb_shank}}</h3><span class="tag">{{common.price_soon}}</span></div>
-    <div class="c"><h3>{{menu.beef_ribs}}</h3><span class="tag">{{common.price_soon}}</span></div>
+  <p class="lead">{{site.tagline}}</p>
+</div></header>
+
+<nav class="mnav" aria-label="{{menu.title}}"><div class="w">{{menu_chips}}</div></nav>
+
+<section class="mc" id="smoked"><div class="w mc-in">
+  <header><span class="num" aria-hidden="true">01</span><h2>{{nav.menu_smoked}}</h2><p>{{menu.smoked_note}}</p></header>
+  <div>
+    <ul class="ml">
+      <li><span>{{menu.lamb_shank}}</span><i></i><b>79 {{menu.dt}}</b></li>
+      <li><span>{{menu.lamb_chops}}</span><i></i><b>59 {{menu.dt}}</b></li>
+      <li><span>{{menu.lamb_neck}}</span><i></i><b>49 {{menu.dt}}</b></li>
+      <li><span>{{menu.lamb_shoulder}}</span><i></i><b>119 {{menu.dt}}</b><small>{{menu.for_two}}</small></li>
+      <li><span>{{menu.lamb_head}}</span><i></i><b>49 {{menu.dt}}</b></li>
+      <li><span>{{menu.short_ribs}}</span><i></i><b>79 {{menu.dt}}</b></li>
+      <li><span>{{menu.chuck}}</span><i></i><b>49 {{menu.dt}}</b><small>{{menu.g200}}</small></li>
+      <li><span>{{menu.chicken}}</span><i></i><b>39 {{menu.dt}}</b></li>
+    </ul>
+    <p class="incl">{{menu.included}}</p>
   </div>
-  <h2 id="sides">{{menu.sides_title}}</h2>
-  <p>{{menu.sides_text}} <span class="tag">{{common.included}}</span></p>
-  <h2 id="sauces">{{menu.sauces_title}}</h2>
-  <p>{{menu.sauces_text}}</p>
-  <h2 id="drinks">{{menu.drinks_title}}</h2>
-  <p>{{menu.drinks_text}}</p>
 </div></section>
+
+<section class="mc" id="weight"><div class="w mc-in">
+  <header><span class="num" aria-hidden="true">02</span><h2>{{nav.menu_weight}}</h2><p>{{menu.weight_note}}</p></header>
+  <ul class="ml">
+    <li><span>{{menu.veal}}</span><i></i><b>{{menu.per100}}</b></li>
+    <li><span>{{menu.lamb}}</span><i></i><b>{{menu.per100}}</b></li>
+  </ul>
+</div></section>
+
+<section class="mc" id="pasta"><div class="w mc-in">
+  <header><span class="num" aria-hidden="true">03</span><h2>{{nav.menu_pasta}}</h2></header>
+  <ul class="ml">
+    <li><span>{{menu.spaghetti}}</span><i></i><b>32 {{menu.dt}}</b><small>{{menu.d_red}}</small></li>
+    <li><span>{{menu.penne}}</span><i></i><b>29 {{menu.dt}}</b><small>{{menu.d_white}}</small></li>
+  </ul>
+</div></section>
+
+<section class="mc" id="poutine"><div class="w mc-in">
+  <header><span class="num" aria-hidden="true">04</span><h2>{{nav.menu_poutine}}</h2></header>
+  <ul class="ml">
+    <li><span>{{menu.poutine_beef}}</span><i></i><b>26 {{menu.dt}}</b><small>{{menu.d_glace_onion}}</small></li>
+    <li><span>{{menu.poutine_chicken}}</span><i></i><b>22 {{menu.dt}}</b><small>{{menu.d_glace_bacon}}</small></li>
+    <li><span>{{menu.poutine_plain}}</span><i></i><b>14 {{menu.dt}}</b><small>{{menu.d_glace_onion}}</small></li>
+    <li><span>{{menu.fries_spiced}}</span><i></i><b>12 {{menu.dt}}</b></li>
+    <li><span>{{menu.fries_plain}}</span><i></i><b>9 {{menu.dt}}</b></li>
+  </ul>
+</div></section>
+
+<section class="mc" id="smoky"><div class="w mc-in">
+  <header><span class="num" aria-hidden="true">05</span><h2>{{nav.menu_smoky}}</h2></header>
+  <ul class="ml">
+    <li><span>{{menu.rice_beef}}</span><i></i><b>26 {{menu.dt}}</b><small>{{menu.d_house_onion}}</small></li>
+    <li><span>{{menu.rice_chicken}}</span><i></i><b>22 {{menu.dt}}</b><small>{{menu.d_house_bacon}}</small></li>
+  </ul>
+</div></section>
+
+<section class="mc" id="sauces"><div class="w mc-in">
+  <header><span class="num" aria-hidden="true">06</span><h2>{{nav.menu_sauces}}</h2></header>
+  <p class="mc-txt">{{menu.sauces_text}}</p>
+</div></section>
+
+<script>
+(function(){
+  // Hauteur réelle de l'en-tête (elle varie sur mobile) pour coller la barre juste dessous
+  var root=document.documentElement, head=document.querySelector('.nav');
+  function setH(){root.style.setProperty('--navh',head.offsetHeight+'px')}
+  setH(); addEventListener('resize',setH);
+  // Catégorie en cours mise en surbrillance et ramenée au centre de la barre
+  var bar=document.querySelector('.mnav .w'), links=[].slice.call(bar.querySelectorAll('a')),
+      secs=links.map(function(a){return document.querySelector(a.hash)}), cur=-1;
+  function spy(){
+    var y=bar.getBoundingClientRect().bottom+8, i=0;
+    secs.forEach(function(s,k){if(s.getBoundingClientRect().top<=y)i=k});
+    if(innerHeight+scrollY>=root.scrollHeight-4)i=secs.length-1;
+    if(i===cur)return; cur=i;
+    links.forEach(function(a,k){k===i?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')});
+    var a=links[i].getBoundingClientRect(), b=bar.getBoundingClientRect();
+    bar.scrollBy({left:a.left+a.width/2-b.left-b.width/2});
+  }
+  addEventListener('scroll',function(){requestAnimationFrame(spy)},{passive:true}); spy();
+})();
+</script>

@@ -62,20 +62,30 @@
       "ar": "اللحوم المدخّنة",
       "en": "Smoked meats"
     },
-    "menu_sides": {
-      "fr": "Accompagnements",
-      "ar": "المقبلات والأطباق الجانبية",
-      "en": "Sides"
+    "menu_weight": {
+      "fr": "Au poids",
+      "ar": "بالوزن",
+      "en": "By weight"
+    },
+    "menu_pasta": {
+      "fr": "Pâtes Chef Eyad",
+      "ar": "معكرونة الشيف إياد",
+      "en": "Chef Eyad pasta"
+    },
+    "menu_poutine": {
+      "fr": "Poutines & frites",
+      "ar": "بوتين وبطاطس مقلية",
+      "en": "Poutines & fries"
+    },
+    "menu_smoky": {
+      "fr": "Tasty Smoky",
+      "ar": "تيستي سموكي",
+      "en": "Tasty Smoky"
     },
     "menu_sauces": {
       "fr": "Sauces",
       "ar": "الصلصات",
       "en": "Sauces"
-    },
-    "menu_drinks": {
-      "fr": "Boissons et desserts",
-      "ar": "المشروبات والحلويات",
-      "en": "Drinks and desserts"
     }
   },
   "common": {
@@ -103,16 +113,6 @@
       "fr": "À confirmer",
       "ar": "سيتم التأكيد لاحقًا",
       "en": "To be confirmed"
-    },
-    "price_soon": {
-      "fr": "Prix à venir",
-      "ar": "السعر قريبًا",
-      "en": "Price coming soon"
-    },
-    "included": {
-      "fr": "Inclus",
-      "ar": "مشمول",
-      "en": "Included"
     }
   },
   "home": {
@@ -215,60 +215,170 @@
       "ar": "قائمتنا",
       "en": "Our menu"
     },
-    "smoked_title": {
-      "fr": "Viandes fumées",
-      "ar": "اللحوم المدخّنة",
-      "en": "Smoked meats"
+    "dt": {
+      "fr": "DT",
+      "ar": "د.ت",
+      "en": "TND"
     },
     "smoked_note": {
-      "fr": "Vendues au poids : 1 kg, ½ kg, ¼ kg.",
-      "ar": "تُباع بالوزن: 1 كغ، ½ كغ، ¼ كغ.",
-      "en": "Sold by weight: 1 kg, ½ kg, ¼ kg."
+      "fr": "Fumées 10 à 12 heures au feu de bois naturel.",
+      "ar": "تُدخَّن من 10 إلى 12 ساعة على نار الحطب الطبيعي.",
+      "en": "Smoked for 10 to 12 hours over a natural wood fire."
     },
-    "lamb_shoulder": {
-      "fr": "Épaule d'agneau",
-      "ar": "كتف الضأن",
-      "en": "Lamb shoulder"
+    "included": {
+      "fr": "Tous nos plats sont servis avec riz basmati et 5 salades, à volonté.",
+      "ar": "تُقدَّم جميع أطباقنا مع أرز بسمتي و5 سلطات، بلا حدود.",
+      "en": "All our dishes come with basmati rice and 5 salads, as much as you like."
     },
     "lamb_shank": {
-      "fr": "Jarret d'agneau",
-      "ar": "سيقان الضأن",
+      "fr": "Souris d'agneau",
+      "ar": "موزة الضأن",
       "en": "Lamb shank"
     },
-    "beef_ribs": {
-      "fr": "Côtes de bœuf",
-      "ar": "ضلوع البقر",
-      "en": "Beef ribs"
+    "lamb_chops": {
+      "fr": "Côtelettes d'agneau",
+      "ar": "ريش الضأن",
+      "en": "Lamb chops"
     },
-    "sides_title": {
-      "fr": "Accompagnements",
-      "ar": "الأطباق الجانبية",
-      "en": "Sides"
+    "lamb_neck": {
+      "fr": "Collier d'agneau",
+      "ar": "رقبة الضأن",
+      "en": "Lamb neck"
     },
-    "sides_text": {
-      "fr": "Cinq salades et riz, inclus avec chaque viande.",
-      "ar": "خمس سلطات وأرز مع كل لحم.",
-      "en": "Five salads and rice, included with every meat."
+    "lamb_shoulder": {
+      "fr": "Demi-épaule d'agneau",
+      "ar": "نصف كتف الضأن",
+      "en": "Half lamb shoulder"
     },
-    "sauces_title": {
-      "fr": "Sauces",
-      "ar": "الصلصات",
-      "en": "Sauces"
+    "for_two": {
+      "fr": "Pour 2 personnes",
+      "ar": "لشخصين",
+      "en": "Serves 2"
+    },
+    "lamb_head": {
+      "fr": "Demi-tête d'agneau",
+      "ar": "نصف رأس الضأن",
+      "en": "Half lamb's head"
+    },
+    "short_ribs": {
+      "fr": "Short ribs de bœuf",
+      "ar": "ضلوع البقر القصيرة",
+      "en": "Beef short ribs"
+    },
+    "chuck": {
+      "fr": "Basse côte désossée",
+      "ar": "لحم الضلع البقري منزوع العظم",
+      "en": "Boneless beef chuck"
+    },
+    "g200": {
+      "fr": "200 g",
+      "ar": "200 غ",
+      "en": "200 g"
+    },
+    "chicken": {
+      "fr": "Demi-poulet fermier",
+      "ar": "نصف دجاجة بلدي",
+      "en": "Half free-range chicken"
+    },
+    "weight_note": {
+      "fr": "Veau et agneau, au même prix.",
+      "ar": "العجل والضأن بنفس السعر.",
+      "en": "Veal and lamb, same price."
+    },
+    "veal": {
+      "fr": "Veau",
+      "ar": "لحم العجل",
+      "en": "Veal"
+    },
+    "lamb": {
+      "fr": "Agneau",
+      "ar": "لحم الضأن",
+      "en": "Lamb"
+    },
+    "per100": {
+      "fr": "27,900 DT / 100 g",
+      "ar": "27,900 د.ت / 100 غ",
+      "en": "27.900 TND / 100 g"
+    },
+    "spaghetti": {
+      "fr": "Spaghetti à la viande fumée",
+      "ar": "سباغيتي باللحم المدخّن",
+      "en": "Smoked meat spaghetti"
+    },
+    "d_red": {
+      "fr": "Sauce rouge maison",
+      "ar": "صلصة حمراء من صنع المطعم",
+      "en": "House red sauce"
+    },
+    "penne": {
+      "fr": "Penne au poulet fumé",
+      "ar": "بيني بالدجاج المدخّن",
+      "en": "Smoked chicken penne"
+    },
+    "d_white": {
+      "fr": "Sauce blanche crémeuse",
+      "ar": "صلصة بيضاء كريمية",
+      "en": "Creamy white sauce"
+    },
+    "poutine_beef": {
+      "fr": "Poutine au bœuf fumé",
+      "ar": "بوتين باللحم البقري المدخّن",
+      "en": "Smoked beef poutine"
+    },
+    "poutine_chicken": {
+      "fr": "Poutine au poulet fumé",
+      "ar": "بوتين بالدجاج المدخّن",
+      "en": "Smoked chicken poutine"
+    },
+    "poutine_plain": {
+      "fr": "Poutine nature",
+      "ar": "بوتين كلاسيكي",
+      "en": "Plain poutine"
+    },
+    "d_glace_onion": {
+      "fr": "Sauce demi-glace maison, sauce fromagère et oignons caramélisés",
+      "ar": "صلصة ديمي غلاس من صنع المطعم، صلصة الجبن وبصل مكرمل",
+      "en": "House demi-glace, cheese sauce and caramelised onions"
+    },
+    "d_glace_bacon": {
+      "fr": "Sauce demi-glace maison, sauce fromagère et bacon",
+      "ar": "صلصة ديمي غلاس من صنع المطعم، صلصة الجبن وبيكن",
+      "en": "House demi-glace, cheese sauce and bacon"
+    },
+    "fries_spiced": {
+      "fr": "Frites aux épices Chef Eyad",
+      "ar": "بطاطس مقلية بتوابل الشيف إياد",
+      "en": "Chef Eyad spiced fries"
+    },
+    "fries_plain": {
+      "fr": "Frites nature",
+      "ar": "بطاطس مقلية",
+      "en": "Plain fries"
+    },
+    "rice_beef": {
+      "fr": "Riz basmati parfumé au bœuf fumé",
+      "ar": "أرز بسمتي معطّر باللحم البقري المدخّن",
+      "en": "Fragrant basmati rice with smoked beef"
+    },
+    "rice_chicken": {
+      "fr": "Riz basmati parfumé au poulet fumé",
+      "ar": "أرز بسمتي معطّر بالدجاج المدخّن",
+      "en": "Fragrant basmati rice with smoked chicken"
+    },
+    "d_house_onion": {
+      "fr": "Sauce maison, sauce fromagère et oignons caramélisés",
+      "ar": "صلصة من صنع المطعم، صلصة الجبن وبصل مكرمل",
+      "en": "House sauce, cheese sauce and caramelised onions"
+    },
+    "d_house_bacon": {
+      "fr": "Sauce maison, sauce fromagère et bacon",
+      "ar": "صلصة من صنع المطعم، صلصة الجبن وبيكن",
+      "en": "House sauce, cheese sauce and bacon"
     },
     "sauces_text": {
       "fr": "Plus de 15 sauces maison.",
       "ar": "أكثر من 15 صلصة من صنع المطعم.",
       "en": "Over 15 house-made sauces."
-    },
-    "drinks_title": {
-      "fr": "Boissons et desserts",
-      "ar": "المشروبات والحلويات",
-      "en": "Drinks and desserts"
-    },
-    "drinks_text": {
-      "fr": "Carte en cours de confirmation.",
-      "ar": "القائمة قيد التأكيد.",
-      "en": "Menu being confirmed."
     }
   },
   "events": {

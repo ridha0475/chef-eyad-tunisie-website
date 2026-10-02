@@ -82,6 +82,8 @@ Règles :
 | Chapitre | `.ch` + `.num` | Numéro géant en contour, titre, texte ; variantes `.has-img` (photo) et `.flip` (photo à gauche). |
 | Carte | `.c` | Pour les autres pages ; à remplacer progressivement par des mises en page moins « grille de cartes ». |
 | Étiquette | `.tag` | Contour or, ex. « à confirmer ». |
+| Carte à prix | `.mc` + `.ml` | Section du menu : titre collant à gauche, liste nom · pointillés · prix (or). Description en dessous, en gris. |
+| Barre de catégories | `.mnav` | Collée sous l'en-tête, une seule ligne qui défile au doigt ; catégorie en cours en or plein (`aria-current`). Liens d'ancre, fonctionne sans JS. |
 | Infos pratiques | `.visit` | Bandeau adresse / horaires / contact. |
 
 ## 6. Photos

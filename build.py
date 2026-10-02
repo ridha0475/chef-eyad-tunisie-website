@@ -13,7 +13,8 @@ DEFAULT = next(l for l, m in I18N["_langs"].items() if m.get("default"))
 DATA = I18N["_data"]
 PAGES = ["index", "about", "menu", "events", "booking", "contact"]
 NAV = {"index": "home", "about": "about", "menu": "menu", "events": "events", "booking": "booking", "contact": "contact"}
-SUB = [("smoked", "menu_smoked"), ("sides", "menu_sides"), ("sauces", "menu_sauces"), ("drinks", "menu_drinks")]
+SUB = [("smoked", "menu_smoked"), ("weight", "menu_weight"), ("pasta", "menu_pasta"),
+       ("poutine", "menu_poutine"), ("smoky", "menu_smoky"), ("sauces", "menu_sauces")]
 FONTS = {
     "latin": "https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap",
     "ar": "https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap",
@@ -80,6 +81,7 @@ def main():
                 "phone": DATA["phone"], "phone_raw": DATA["phone"].replace(" ", ""), "wa": DATA["whatsapp"],
                 "hours": DATA["hours"] or t("common.tbc", lang),
                 "nav": nav, "langswitch": langswitch, "hreflang": hreflang,
+                "menu_chips": "".join(f'<a href="#{a}">{t("nav." + k, lang)}</a>' for a, k in SUB),
             }
             body = render((ROOT / f"templates/{page}.html").read_text(), lang, extra)
             name = t("site.name", lang)
