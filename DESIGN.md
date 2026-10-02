@@ -97,7 +97,7 @@ Règles :
 - Ratio : 4/5 (portrait) dans les chapitres, 4/3 (`.wide`) ou en mobile ; hero en plein écran.
 - Format WebP, ombre portée profonde (`0 30px 80px #0009`), dégradé sombre par-dessus le hero pour la lisibilité du texte.
 - Tons chauds, fumée, braise, viande cuite ; jamais de porc, d'alcool ou de charcuterie ambiguë.
-- Origine : voir la règle du README (photos du client uniquement).
+- Origine : photothèque du client (`photos-client/`), voir le README. Plus aucune image IA ni de banque d'images.
 
 ## 7. Mouvement
 

@@ -51,11 +51,24 @@ python3 build.py      # lit i18n.json + templates/, écrit docs/{fr,ar,en}/*.htm
 | 2. Réservation et galerie | Réservation en ligne, galerie photos, actualités/offres |
 | 3. Commande et livraison | Panier, paiement tunisien, livraison — **à cadrer séparément avec le client avant chiffrage** |
 
+## Backend (à faire plus tard — décidé le 02/10/2026)
+
+Besoins retenus : réservations et devis enregistrés, contenu modifiable par le client, notifications, commande en ligne. Hébergement : **notre propre serveur** (VPS).
+
+Architecture proposée : **Django** (admin intégré = tableau de bord + édition du contenu en fr/ar/en), SQLite puis PostgreSQL, Nginx, HTTPS Let's Encrypt. Le site public reprend les mêmes modèles et le même design ; GitHub Pages devient préproduction ou est coupé.
+
+1. Socle Django + reprise des 6 pages + réservations et devis enregistrés, tableau de bord (confirmer / refuser / planning du jour). WhatsApp reste en option.
+2. Contenu modifiable : carte, prix, horaires, photos, textes.
+3. Notifications : e-mail au restaurant, confirmation e-mail ou SMS au client ; WhatsApp Business API (Meta) plus tard.
+4. Commande en ligne : panier, paiement tunisien (Konnect, Paymee, Flouci ou ClicToPay), livraison — **cadrage client d'abord**.
+
+À obtenir avant de démarrer : serveur (fournisseur), nom de domaine (chefeyad.com.tn en erreur 526, qui y a accès ?), adresse e-mail de réception des demandes ; pour la commande : livraison ou retrait, zone et frais, prestataire de paiement, plats commandables (viande au poids).
+
 ## Données manquantes (à obtenir du client)
 
 - [x] Horaires d'ouverture : tous les jours, 12 h – minuit (client, 02/10/2026) ; pas de taille maximale de groupe
 - [x] Carte avec prix en TND (carte imprimée, 02/10/2026)
-- [ ] Photos des plats et du restaurant
+- [x] Photos des plats et du restaurant (photothèque Drive, 02/10/2026)
 - [ ] Boissons et desserts : absents de la carte imprimée, proposés ou non ?
 - [ ] Compte Instagram officiel (handle)
 - [ ] État du domaine `chefeyad.com.tn` (erreur 526 constatée le 28/07/2026) et nom de domaine à utiliser
@@ -64,10 +77,11 @@ python3 build.py      # lit i18n.json + templates/, écrit docs/{fr,ar,en}/*.htm
 
 - Sources autorisées : photos des comptes Facebook/Instagram du restaurant (propriété du client), originaux fournis par le client, séance photo.
 - Exclues : Google Images, photos d'autres branches, photos de tiers repostées (clients, influenceurs, franchiseur) sans accord écrit.
-- Idéal : originaux haute définition plutôt que des téléchargements des réseaux sociaux.
-- Dépôt des sources : `photos-source/` ; les versions optimisées du site iront dans `images/`.
-- `images/menu-feu.webp` (en-tête de la page Menu) est découpée dans la carte imprimée du client (827 px de large, un peu juste en grand écran : demander l'original HD).
-- **Exception provisoire** : `images/fumoir.webp`, `images/vente-au-poids.webp`, `images/accompagnements.webp` et `images/sauces.webp` (chapitres 01 à 04) sont des images générées par IA, en attendant de vraies photos. À faire valider par le client ou à remplacer avant publication.
+- **Photothèque du client** (reçue le 02/10/2026, Drive https://drive.google.com/drive/folders/1aUsyKUt9Qy9bduarwUMVwYwm3GLQE6EN) : 418 photos uniques rangées dans `photos-client/` par thème (`plats/`, `ambiance/`, `equipe/`, `identite/`, `affiches/`, `divers/`), nommées `<theme>/<sujet>-NN.jpg`. `photos-client/INDEX.csv` relie chaque fichier à son nom et son identifiant d'origine sur le Drive. Le dossier pèse 2,6 Go : **il n'est pas versionné** (seul l'index l'est) ; pour le reconstituer, retélécharger depuis le Drive avec l'index. Les 95 vidéos n'ont pas été rapatriées.
+  - À ne pas publier : `divers/stand-autre-marque-01.jpg` (autre marque), les affiches avec d'anciens prix, les poutines à viande rose (aspect charcuterie, restaurant halal).
+  - `ambiance/` et `equipe/` viennent surtout du shooting pro avant ouverture (haute définition) ; les fichiers d'origine `IMG-…-WA…` sont des photos WhatsApp, en basse définition.
+- Photos du site (`images/`, toutes issues de `photos-client/`, recadrées et converties en WebP qualité 80) : `agneau-sauces` (hero accueil) ← `plats/agneau-plateau-05` · `fumoir` ← `ambiance/fumoir-01` · `viande-gants` ← `plats/viande-gants-01` · `agneau-accompagnements` ← `plats/agneau-plateau-06` · `sauces` ← `plats/viande-effilochee-09` · `flammes-chef` (Menu) ← `ambiance/flammes-03` · `viande-flambee` (À propos) ← `plats/viande-flambee-08` · `chef-decoupe` ← `equipe/chef-decoupe-02` · `service-foule` (Événementiel, photo WhatsApp basse déf.) ← `equipe/service-foule-02` · `salle` (salon VIP, à confirmer que c'est bien le salon) ← `ambiance/salle-02`.
+- **Archivées** (plus utilisées) : `archives/ia/` (4 images générées par IA, chapitres de l'accueil) et `archives/internet/` (`short-ribs`, photo de banque d'images de l'ancien hero, droits jamais confirmés).
 
 ## Règle de contenu
 
