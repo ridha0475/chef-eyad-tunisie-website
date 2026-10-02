@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Events and private dining — Chef Eyad Tunisia</title>
+<title>Events and VIP lounge — Chef Eyad Tunisia</title>
 <meta name="description" content="Slow-smoked meat, the Chef Eyad way">
 <link rel="icon" href="../logo.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +22,108 @@
   <a class="btn" href="booking.html">Book now</a>
 </div></header>
 <main>
-<section><div class="w">
-  <h1>Events and private dining</h1>
-  <p class="mute">Family meals, business lunches, birthdays.</p>
-  <div class="g">
-    <div class="c"><h3>VIP room</h3><p>Reserve a private space for your table, with family or colleagues.</p></div>
-    <div class="c"><h3>Catering</h3><p>Our smoked meat at your home or workplace.</p></div>
+<header class="mhead ehead">
+  <img class="hero-img" src="../images/accompagnements.webp" alt="" width="1448" height="1086" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w">
+  <p class="eyebrow">Events · Greater Tunis</p>
+  <h1>Chef Eyad at your place</h1>
+  <p class="lead">For your big occasions, the smokehouse comes to you. The meat arrives ready, smoked for hours over natural wood, and our team carves it in front of your guests.</p>
+  <div class="actions"><a class="btn" href="#devis">Request a quote</a><a class="btn o" href="#vip">The VIP lounge</a></div>
+</div></header>
+
+<section class="occ" aria-label="For which occasions">
+  <div class="occ-track">
+    <ul><li>Weddings</li><li>Engagements</li><li>Birthdays</li><li>Family gatherings</li><li>Company parties</li><li>Receptions</li></ul>
+    <ul aria-hidden="true"><li>Weddings</li><li>Engagements</li><li>Birthdays</li><li>Family gatherings</li><li>Company parties</li><li>Receptions</li></ul>
   </div>
-  <p class="gap"><a class="btn" href="https://wa.me/21629909375?text=Hello%2C%20I%20would%20like%20to%20book%20a%20table%20at%20Chef%20Eyad.">Request a quote on WhatsApp</a></p>
+</section>
+
+<section class="how"><div class="w">
+  <p class="eyebrow reveal">How it works</p>
+  <h2 class="reveal">Three steps, no worries</h2>
+  <ol class="how-in">
+    <li class="reveal"><span class="num" aria-hidden="true">01</span><h3>You tell us</h3><p>The date, the place, the number of guests: we suggest a menu and a quote.</p></li>
+    <li class="reveal"><span class="num" aria-hidden="true">02</span><h3>The fire does its work</h3><p>The meat smokes for 10 to 12 hours in our ovens, then travels to you, ready to serve.</p></li>
+    <li class="reveal"><span class="num" aria-hidden="true">03</span><h3>Carved on site</h3><p>Our team carves the meat in front of your guests, right as it is served. The show is part of the meal.</p></li>
+  </ol>
+  <p class="zone reveal">We travel across Greater Tunis: Tunis, Ariana, Ben Arous and La Manouba.</p>
 </div></section>
+
+<section class="vip" id="vip"><div class="w vip-in reveal">
+  <img src="../images/fumoir.webp" alt="" loading="lazy" width="1448" height="1086">
+  <div><p class="eyebrow">At the restaurant</p><h2>The VIP lounge</h2><p>Would you rather host at our place? Book our private lounge for your table, with family or colleagues, a few steps from the ovens.</p></div>
+</div></section>
+
+<section class="book" id="devis"><div class="w narrow">
+  <h2 class="form-h">Your quote</h2>
+  <form id="f" class="bform">
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">1</span>What's the occasion?</legend>
+      <div class="chips">
+        <label class="chip txt"><input type="radio" name="type" value="Wedding" required><span>Wedding</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="Engagement"><span>Engagement</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="Birthday"><span>Birthday</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="Family gathering"><span>Family gathering</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="Company party"><span>Company party</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="VIP lounge at the restaurant"><span>VIP lounge at the restaurant</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="Other"><span>Other</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">2</span>When and where?</legend>
+      <div class="row">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Number of guests<input name="guests" type="number" min="1" inputmode="numeric" required></label>
+      </div>
+      <label>Place (town or area)<input name="place" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">3</span>Your details</legend>
+      <div class="row">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" dir="ltr" required></label>
+      </div>
+      <label>Your event in a few words (optional)<textarea name="notes" rows="3"></textarea></label>
+    </fieldset>
+
+    <div class="send">
+      <p class="sum" aria-live="polite"></p>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+      <p class="hint">Your request opens in WhatsApp, ready to send. The team will get back to you to prepare your quote.</p>
+    </div>
+  </form>
+</div></section>
+
+<script>
+(function(){
+  // Devis sans serveur : la demande s'ouvre dans WhatsApp, rédigée dans la langue de la page.
+  var f=document.getElementById('f'), E=f.elements, sum=f.querySelector('.sum'),
+      lang="en", loc=lang==='ar'?'ar-TN':lang, sep=lang==='fr'?' : ':': ';
+  var d0=new Date(); d0.setMinutes(d0.getMinutes()-d0.getTimezoneOffset());
+  E.date.min=d0.toISOString().slice(0,10);
+  function day(v){return v?new Date(v+'T12:00').toLocaleDateString(loc,{weekday:'long',day:'numeric',month:'long',year:'numeric'}):''}
+  function upd(){
+    var n=E.guests.value;
+    sum.textContent=[E.type.value, day(E.date.value), n&&"{n} guests".replace('{n}',n), E.place.value].filter(Boolean).join(' · ');
+  }
+  f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var t=["Hello, I would like a quote for an event with Chef Eyad.",''];
+    [["Occasion",E.type.value],["Date",day(E.date.value)],["Number of guests",E.guests.value],
+     ["Place (town or area)",E.place.value],["Name",E.name.value],["Phone",E.phone.value],["Notes (optional)",E.notes.value]]
+      .forEach(function(r){if(r[1])t.push(r[0]+sep+r[1])});
+    location.href='https://wa.me/21629909375?text='+encodeURIComponent(t.join('\n'));
+  });
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
 
 </main>
 <footer><div class="w">© 2026 Chef Eyad Tunisia · All rights reserved.</div></footer>

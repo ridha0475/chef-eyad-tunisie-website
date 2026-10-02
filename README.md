@@ -26,8 +26,8 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 3. **Menu** — source : carte imprimée du restaurant (`photos-source/menu-p1-viandes.jpeg`, `menu-p2-plats.jpeg`) et prix au poids donné par le client le 02/10/2026
    - Viandes fumées (8 plats, riz basmati et 5 salades à volonté) · Au poids (veau et agneau, 27,900 DT / 100 g) · Pâtes Chef Eyad · Poutines & frites · Tasty Smoky · Sauces
    - *À confirmer avec le client :* boissons, desserts, détail des sauces ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)
-4. **Événements et salons privés** — salon VIP, traiteur / catering
-5. **Réservation** — formulaire (date, heure, convives) + lien WhatsApp
+4. **Événementiel et salon VIP** — Chef Eyad se déplace dans le Grand Tunis (mariages, fiançailles, anniversaires, fêtes de famille et d'entreprise) : viande livrée prête, découpe sur place devant les invités (client, 02/10/2026) ; salon VIP au restaurant ; demande de devis sur WhatsApp
+5. **Réservation** — formulaire en 3 étapes (convives, date et heure de 12:00 à 23:30, coordonnées), résumé en direct, envoi WhatsApp dans la langue de la page
 6. **Contact et accès** — adresse, téléphone, horaires, plan Google Maps ; FAQ courte *à confirmer*
 
 Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles.
@@ -53,7 +53,7 @@ python3 build.py      # lit i18n.json + templates/, écrit docs/{fr,ar,en}/*.htm
 
 ## Données manquantes (à obtenir du client)
 
-- [ ] Horaires d'ouverture officiels
+- [x] Horaires d'ouverture : tous les jours, 12 h – minuit (client, 02/10/2026) ; pas de taille maximale de groupe
 - [x] Carte avec prix en TND (carte imprimée, 02/10/2026)
 - [ ] Photos des plats et du restaurant
 - [ ] Boissons et desserts : absents de la carte imprimée, proposés ou non ?

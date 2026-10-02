@@ -79,7 +79,7 @@ def main():
                 "lang": lang, "dir": meta["dir"], "page": page,
                 "fonts": FONTS["ar" if lang == "ar" else "latin"].replace("&", "&amp;"), "year": str(date.today().year),
                 "phone": DATA["phone"], "phone_raw": DATA["phone"].replace(" ", ""), "wa": DATA["whatsapp"],
-                "hours": DATA["hours"] or t("common.tbc", lang),
+                "hours": t("contact.hours", lang),
                 "nav": nav, "langswitch": langswitch, "hreflang": hreflang,
                 "menu_chips": "".join(f'<a href="#{a}">{t("nav." + k, lang)}</a>' for a, k in SUB),
             }

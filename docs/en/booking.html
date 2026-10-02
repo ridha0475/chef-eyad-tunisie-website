@@ -22,26 +22,84 @@
   <a class="btn" href="booking.html">Book now</a>
 </div></header>
 <main>
-<section><div class="w narrow">
+<header class="bhead"><div class="w">
+  <p class="eyebrow">Berges du Lac 2 · Tunis</p>
   <h1>Book a table</h1>
-  <form id="f">
-    <label>Name<input name="name" required></label>
-    <label>Phone<input name="phone" type="tel" required></label>
-    <label>Date<input name="date" type="date" required></label>
-    <label>Time<input name="time" type="time" required></label>
-    <label>Number of guests<input name="guests" type="number" min="1" max="100" required></label>
-    <label>Notes (optional)<textarea name="notes" rows="3"></textarea></label>
-    <button class="btn" type="submit">Send request</button>
+  <p class="lead">Tell us when you're coming, we'll tend the fire.</p>
+</div></header>
+
+<section class="book"><div class="w book-in">
+  <form id="f" class="bform">
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">1</span>How many of you?</legend>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="g" value="2" required><span>2</span></label>
+        <label class="chip"><input type="radio" name="g" value="3"><span>3</span></label>
+        <label class="chip"><input type="radio" name="g" value="4"><span>4</span></label>
+        <label class="chip"><input type="radio" name="g" value="5"><span>5</span></label>
+        <label class="chip"><input type="radio" name="g" value="6"><span>6</span></label>
+        <label class="chip"><input type="radio" name="g" value="7"><span>7</span></label>
+        <label class="chip"><input type="radio" name="g" value="8"><span>8</span></label>
+        <label class="chip"><input type="radio" name="g" value="more" aria-label="Exact number of guests"><span dir="ltr">8+</span></label>
+      </div>
+      <label class="more">Exact number of guests<input name="gx" type="number" min="9" inputmode="numeric"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">2</span>When are you coming?</legend>
+      <div class="row">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time<select name="time" required><option value="">Choose</option><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option><option>23:00</option><option>23:30</option></select></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">3</span>Your details</legend>
+      <div class="row">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" dir="ltr" required></label>
+      </div>
+      <label>Notes (optional)<textarea name="notes" rows="3"></textarea></label>
+    </fieldset>
+
+    <div class="send">
+      <p class="sum" aria-live="polite"></p>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+      <p class="hint">Your request opens in WhatsApp, ready to send. The team will reply to confirm your table.</p>
+    </div>
   </form>
+
+  <aside class="bside">
+    <div><h3>Opening hours</h3><p>Every day, noon to midnight</p></div>
+    <div><h3>By phone</h3><p><a href="tel:+21629909375" dir="ltr">+216 29 909 375</a></p></div>
+    <div class="evt"><h3>A party at your place?</h3><p>Wedding, birthday, company party: Chef Eyad comes to you.</p><a class="link" href="events.html">Discover our events service →</a></div>
+  </aside>
 </div></section>
+
 <script>
-// Pas de serveur : la demande s'ouvre dans WhatsApp, prête à envoyer.
-document.getElementById('f').addEventListener('submit',function(e){
-  e.preventDefault();
-  var d=new FormData(e.target),t=["Hello, I would like to book a table at Chef Eyad."];
-  ['name','phone','date','time','guests','notes'].forEach(function(k){if(d.get(k))t.push(k+': '+d.get(k))});
-  location.href='https://wa.me/21629909375?text='+encodeURIComponent(t.join('\n'));
-});
+(function(){
+  // Pas de serveur : la demande s'ouvre dans WhatsApp, rédigée dans la langue de la page.
+  var f=document.getElementById('f'), sum=f.querySelector('.sum'), gx=f.elements.gx,
+      lang="en", loc=lang==='ar'?'ar-TN':lang, sep=lang==='fr'?' : ':': ';
+  var d0=new Date(); d0.setMinutes(d0.getMinutes()-d0.getTimezoneOffset());
+  f.elements.date.min=d0.toISOString().slice(0,10); // pas de date passée
+  function guests(){var g=f.elements.g.value;return g==='more'?gx.value:g}
+  function day(v){return v?new Date(v+'T12:00').toLocaleDateString(loc,{weekday:'long',day:'numeric',month:'long'}):''}
+  function upd(){
+    gx.required=f.elements.g.value==='more';
+    var n=guests(), parts=[n&&"{n} guests".replace('{n}',n), day(f.elements.date.value), f.elements.time.value];
+    sum.textContent=parts.filter(Boolean).join(' · ');
+  }
+  f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var E=f.elements, t=["Hello, I would like to book a table at Chef Eyad.",''];
+    [["Number of guests",guests()],["Date",day(E.date.value)],["Time",E.time.value],
+     ["Name",E.name.value],["Phone",E.phone.value],["Notes (optional)",E.notes.value]]
+      .forEach(function(r){if(r[1])t.push(r[0]+sep+r[1])});
+    location.href='https://wa.me/21629909375?text='+encodeURIComponent(t.join('\n'));
+  });
+})();
 </script>
 
 </main>

@@ -1,9 +1,102 @@
-<section><div class="w">
-  <h1>{{events.title}}</h1>
-  <p class="mute">{{events.intro}}</p>
-  <div class="g">
-    <div class="c"><h3>{{events.vip_title}}</h3><p>{{events.vip_text}}</p></div>
-    <div class="c"><h3>{{events.catering_title}}</h3><p>{{events.catering_text}}</p></div>
+<header class="mhead ehead">
+  <img class="hero-img" src="../images/accompagnements.webp" alt="" width="1448" height="1086" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w">
+  <p class="eyebrow">{{events.eyebrow}}</p>
+  <h1>{{events.h1}}</h1>
+  <p class="lead">{{events.lead}}</p>
+  <div class="actions"><a class="btn" href="#devis">{{events.cta}}</a><a class="btn o" href="#vip">{{events.vip_title}}</a></div>
+</div></header>
+
+<section class="occ" aria-label="{{events.occasions_label}}">
+  <div class="occ-track">
+    <ul><li>{{events.o_wedding}}</li><li>{{events.o_engagement}}</li><li>{{events.o_birthday}}</li><li>{{events.o_family}}</li><li>{{events.o_work}}</li><li>{{events.o_reception}}</li></ul>
+    <ul aria-hidden="true"><li>{{events.o_wedding}}</li><li>{{events.o_engagement}}</li><li>{{events.o_birthday}}</li><li>{{events.o_family}}</li><li>{{events.o_work}}</li><li>{{events.o_reception}}</li></ul>
   </div>
-  <p class="gap"><a class="btn" href="https://wa.me/{{wa}}?text={{booking.whatsapp_msg|url}}">{{events.cta}}</a></p>
+</section>
+
+<section class="how"><div class="w">
+  <p class="eyebrow reveal">{{events.how_kicker}}</p>
+  <h2 class="reveal">{{events.how_title}}</h2>
+  <ol class="how-in">
+    <li class="reveal"><span class="num" aria-hidden="true">01</span><h3>{{events.h1_title}}</h3><p>{{events.h1_text}}</p></li>
+    <li class="reveal"><span class="num" aria-hidden="true">02</span><h3>{{events.h2_title}}</h3><p>{{events.h2_text}}</p></li>
+    <li class="reveal"><span class="num" aria-hidden="true">03</span><h3>{{events.h3_title}}</h3><p>{{events.h3_text}}</p></li>
+  </ol>
+  <p class="zone reveal">{{events.zone}}</p>
 </div></section>
+
+<section class="vip" id="vip"><div class="w vip-in reveal">
+  <img src="../images/fumoir.webp" alt="" loading="lazy" width="1448" height="1086">
+  <div><p class="eyebrow">{{events.vip_kicker}}</p><h2>{{events.vip_title}}</h2><p>{{events.vip_text}}</p></div>
+</div></section>
+
+<section class="book" id="devis"><div class="w narrow">
+  <h2 class="form-h">{{events.form_title}}</h2>
+  <form id="f" class="bform">
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">1</span>{{events.s1}}</legend>
+      <div class="chips">
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_wedding}}" required><span>{{events.t_wedding}}</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_engagement}}"><span>{{events.t_engagement}}</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_birthday}}"><span>{{events.t_birthday}}</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_family}}"><span>{{events.t_family}}</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_work}}"><span>{{events.t_work}}</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_vip}}"><span>{{events.t_vip}}</span></label>
+        <label class="chip txt"><input type="radio" name="type" value="{{events.t_other}}"><span>{{events.t_other}}</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">2</span>{{events.s2}}</legend>
+      <div class="row">
+        <label>{{events.date}}<input name="date" type="date" required></label>
+        <label>{{events.guests}}<input name="guests" type="number" min="1" inputmode="numeric" required></label>
+      </div>
+      <label>{{events.place}}<input name="place" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">3</span>{{events.s3}}</legend>
+      <div class="row">
+        <label>{{booking.name}}<input name="name" autocomplete="name" required></label>
+        <label>{{booking.phone}}<input name="phone" type="tel" autocomplete="tel" dir="ltr" required></label>
+      </div>
+      <label>{{events.notes}}<textarea name="notes" rows="3"></textarea></label>
+    </fieldset>
+
+    <div class="send">
+      <p class="sum" aria-live="polite"></p>
+      <button class="btn" type="submit">{{events.submit}}</button>
+      <p class="hint">{{events.wa_note}}</p>
+    </div>
+  </form>
+</div></section>
+
+<script>
+(function(){
+  // Devis sans serveur : la demande s'ouvre dans WhatsApp, rédigée dans la langue de la page.
+  var f=document.getElementById('f'), E=f.elements, sum=f.querySelector('.sum'),
+      lang={{lang|js}}, loc=lang==='ar'?'ar-TN':lang, sep=lang==='fr'?' : ':': ';
+  var d0=new Date(); d0.setMinutes(d0.getMinutes()-d0.getTimezoneOffset());
+  E.date.min=d0.toISOString().slice(0,10);
+  function day(v){return v?new Date(v+'T12:00').toLocaleDateString(loc,{weekday:'long',day:'numeric',month:'long',year:'numeric'}):''}
+  function upd(){
+    var n=E.guests.value;
+    sum.textContent=[E.type.value, day(E.date.value), n&&{{events.sum_guests|js}}.replace('{n}',n), E.place.value].filter(Boolean).join(' · ');
+  }
+  f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var t=[{{events.whatsapp_msg|js}},''];
+    [[{{events.occasion|js}},E.type.value],[{{events.date|js}},day(E.date.value)],[{{events.guests|js}},E.guests.value],
+     [{{events.place|js}},E.place.value],[{{booking.name|js}},E.name.value],[{{booking.phone|js}},E.phone.value],[{{booking.notes|js}},E.notes.value]]
+      .forEach(function(r){if(r[1])t.push(r[0]+sep+r[1])});
+    location.href='https://wa.me/{{wa}}?text='+encodeURIComponent(t.join('\n'));
+  });
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>

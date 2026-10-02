@@ -43,7 +43,7 @@
       "en": "Menu"
     },
     "events": {
-      "fr": "Événements",
+      "fr": "Événementiel",
       "ar": "المناسبات",
       "en": "Events"
     },
@@ -488,39 +488,224 @@
   },
   "events": {
     "title": {
-      "fr": "Événements et salons privés",
-      "ar": "المناسبات والقاعات الخاصة",
-      "en": "Events and private dining"
-    },
-    "intro": {
-      "fr": "Repas de famille, déjeuners d'affaires, anniversaires.",
-      "ar": "وجبات عائلية، غداء عمل، أعياد ميلاد.",
-      "en": "Family meals, business lunches, birthdays."
+      "fr": "Événementiel et salon VIP",
+      "ar": "المناسبات والصالون الخاص",
+      "en": "Events and VIP lounge"
     },
     "vip_title": {
-      "fr": "Salon VIP",
-      "ar": "القاعة الخاصة",
-      "en": "VIP room"
+      "fr": "Le salon VIP",
+      "ar": "الصالون الخاص",
+      "en": "The VIP lounge"
     },
     "vip_text": {
-      "fr": "Privatisez un espace pour votre table, en famille ou entre collègues.",
-      "ar": "احجز مساحة خاصة لطاولتك مع العائلة أو الزملاء.",
-      "en": "Reserve a private space for your table, with family or colleagues."
-    },
-    "catering_title": {
-      "fr": "Traiteur",
-      "ar": "خدمة التموين",
-      "en": "Catering"
-    },
-    "catering_text": {
-      "fr": "Notre viande fumée chez vous ou dans votre entreprise.",
-      "ar": "لحمنا المدخّن في منزلك أو في شركتك.",
-      "en": "Our smoked meat at your home or workplace."
+      "fr": "Vous préférez recevoir chez nous ? Privatisez notre salon pour votre table, en famille ou entre collègues, à deux pas des fours.",
+      "ar": "تفضّل الاستقبال عندنا؟ احجز صالوننا الخاص لطاولتك، مع العائلة أو الزملاء، على بعد خطوات من الأفران.",
+      "en": "Would you rather host at our place? Book our private lounge for your table, with family or colleagues, a few steps from the ovens."
     },
     "cta": {
-      "fr": "Demander un devis sur WhatsApp",
-      "ar": "اطلب عرض سعر عبر واتساب",
-      "en": "Request a quote on WhatsApp"
+      "fr": "Demander un devis",
+      "ar": "اطلب عرض سعر",
+      "en": "Request a quote"
+    },
+    "eyebrow": {
+      "fr": "Événementiel · Grand Tunis",
+      "ar": "المناسبات · تونس الكبرى",
+      "en": "Events · Greater Tunis"
+    },
+    "h1": {
+      "fr": "Chef Eyad chez vous",
+      "ar": "الشيف إياد في بيتك",
+      "en": "Chef Eyad at your place"
+    },
+    "lead": {
+      "fr": "Pour vos grandes occasions, le fumoir se déplace. La viande arrive prête, fumée des heures au bois naturel, et notre équipe la découpe devant vos invités.",
+      "ar": "في مناسباتكم الكبرى، يأتي المدخن إليكم. يصل اللحم جاهزًا بعد ساعات من التدخين على الحطب الطبيعي، ويقطّعه فريقنا أمام ضيوفكم.",
+      "en": "For your big occasions, the smokehouse comes to you. The meat arrives ready, smoked for hours over natural wood, and our team carves it in front of your guests."
+    },
+    "occasions_label": {
+      "fr": "Pour quelles occasions",
+      "ar": "لأيّ مناسبات",
+      "en": "For which occasions"
+    },
+    "o_wedding": {
+      "fr": "Mariages",
+      "ar": "حفلات الزفاف",
+      "en": "Weddings"
+    },
+    "o_engagement": {
+      "fr": "Fiançailles",
+      "ar": "الخطوبة",
+      "en": "Engagements"
+    },
+    "o_birthday": {
+      "fr": "Anniversaires",
+      "ar": "أعياد الميلاد",
+      "en": "Birthdays"
+    },
+    "o_family": {
+      "fr": "Fêtes de famille",
+      "ar": "المناسبات العائلية",
+      "en": "Family gatherings"
+    },
+    "o_work": {
+      "fr": "Fêtes d'entreprise",
+      "ar": "حفلات الشركات",
+      "en": "Company parties"
+    },
+    "o_reception": {
+      "fr": "Réceptions",
+      "ar": "حفلات الاستقبال",
+      "en": "Receptions"
+    },
+    "how_kicker": {
+      "fr": "Comment ça se passe",
+      "ar": "كيف تجري الأمور",
+      "en": "How it works"
+    },
+    "how_title": {
+      "fr": "Trois temps, zéro souci",
+      "ar": "ثلاث مراحل، دون أيّ عناء",
+      "en": "Three steps, no worries"
+    },
+    "h1_title": {
+      "fr": "Vous nous racontez",
+      "ar": "تحدّثنا عن مناسبتك",
+      "en": "You tell us"
+    },
+    "h1_text": {
+      "fr": "La date, le lieu, le nombre d'invités : on vous propose une formule et un devis.",
+      "ar": "التاريخ والمكان وعدد الضيوف: نقترح عليك عرضًا وسعرًا.",
+      "en": "The date, the place, the number of guests: we suggest a menu and a quote."
+    },
+    "h2_title": {
+      "fr": "Le feu travaille",
+      "ar": "النار تعمل",
+      "en": "The fire does its work"
+    },
+    "h2_text": {
+      "fr": "La viande fume 10 à 12 heures dans nos fours, puis part chez vous, prête à servir.",
+      "ar": "يُدخَّن اللحم من 10 إلى 12 ساعة في أفراننا، ثم يصل إليك جاهزًا للتقديم.",
+      "en": "The meat smokes for 10 to 12 hours in our ovens, then travels to you, ready to serve."
+    },
+    "h3_title": {
+      "fr": "La découpe sur place",
+      "ar": "التقطيع في المكان",
+      "en": "Carved on site"
+    },
+    "h3_text": {
+      "fr": "Notre équipe tranche la viande devant vos invités, au moment de servir. Le spectacle fait partie du repas.",
+      "ar": "يقطّع فريقنا اللحم أمام ضيوفك لحظة التقديم. العرض جزء من الوليمة.",
+      "en": "Our team carves the meat in front of your guests, right as it is served. The show is part of the meal."
+    },
+    "zone": {
+      "fr": "Nous nous déplaçons dans tout le Grand Tunis : Tunis, Ariana, Ben Arous et La Manouba.",
+      "ar": "نتنقّل في كامل تونس الكبرى: تونس وأريانة وبن عروس ومنوبة.",
+      "en": "We travel across Greater Tunis: Tunis, Ariana, Ben Arous and La Manouba."
+    },
+    "vip_kicker": {
+      "fr": "Au restaurant",
+      "ar": "في المطعم",
+      "en": "At the restaurant"
+    },
+    "form_title": {
+      "fr": "Votre devis",
+      "ar": "عرض السعر",
+      "en": "Your quote"
+    },
+    "s1": {
+      "fr": "Quelle occasion ?",
+      "ar": "ما المناسبة؟",
+      "en": "What's the occasion?"
+    },
+    "t_vip": {
+      "fr": "Salon VIP au restaurant",
+      "ar": "الصالون الخاص في المطعم",
+      "en": "VIP lounge at the restaurant"
+    },
+    "t_other": {
+      "fr": "Autre",
+      "ar": "أخرى",
+      "en": "Other"
+    },
+    "s2": {
+      "fr": "Quand et où ?",
+      "ar": "متى وأين؟",
+      "en": "When and where?"
+    },
+    "date": {
+      "fr": "Date",
+      "ar": "التاريخ",
+      "en": "Date"
+    },
+    "guests": {
+      "fr": "Nombre d'invités",
+      "ar": "عدد الضيوف",
+      "en": "Number of guests"
+    },
+    "place": {
+      "fr": "Lieu (ville ou quartier)",
+      "ar": "المكان (المدينة أو الحي)",
+      "en": "Place (town or area)"
+    },
+    "s3": {
+      "fr": "Vos coordonnées",
+      "ar": "بياناتك",
+      "en": "Your details"
+    },
+    "notes": {
+      "fr": "Votre fête en quelques mots (facultatif)",
+      "ar": "مناسبتك في كلمات (اختياري)",
+      "en": "Your event in a few words (optional)"
+    },
+    "sum_guests": {
+      "fr": "{n} invités",
+      "ar": "{n} ضيفًا",
+      "en": "{n} guests"
+    },
+    "occasion": {
+      "fr": "Occasion",
+      "ar": "المناسبة",
+      "en": "Occasion"
+    },
+    "whatsapp_msg": {
+      "fr": "Bonjour, je souhaite un devis pour un événement avec Chef Eyad.",
+      "ar": "مرحبًا، أودّ الحصول على عرض سعر لمناسبة مع الشيف إياد.",
+      "en": "Hello, I would like a quote for an event with Chef Eyad."
+    },
+    "submit": {
+      "fr": "Envoyer sur WhatsApp",
+      "ar": "إرسال عبر واتساب",
+      "en": "Send on WhatsApp"
+    },
+    "wa_note": {
+      "fr": "La demande s'ouvre dans WhatsApp, prête à envoyer. L'équipe vous rappelle pour préparer votre devis.",
+      "ar": "يُفتح الطلب في واتساب جاهزًا للإرسال، ويتصل بك الفريق لإعداد عرض السعر.",
+      "en": "Your request opens in WhatsApp, ready to send. The team will get back to you to prepare your quote."
+    },
+    "t_wedding": {
+      "fr": "Mariage",
+      "ar": "زفاف",
+      "en": "Wedding"
+    },
+    "t_engagement": {
+      "fr": "Fiançailles",
+      "ar": "خطوبة",
+      "en": "Engagement"
+    },
+    "t_birthday": {
+      "fr": "Anniversaire",
+      "ar": "عيد ميلاد",
+      "en": "Birthday"
+    },
+    "t_family": {
+      "fr": "Fête de famille",
+      "ar": "مناسبة عائلية",
+      "en": "Family gathering"
+    },
+    "t_work": {
+      "fr": "Fête d'entreprise",
+      "ar": "حفل شركة",
+      "en": "Company party"
     }
   },
   "booking": {
@@ -560,14 +745,74 @@
       "en": "Notes (optional)"
     },
     "submit": {
-      "fr": "Envoyer la demande",
-      "ar": "إرسال الطلب",
-      "en": "Send request"
+      "fr": "Envoyer sur WhatsApp",
+      "ar": "إرسال عبر واتساب",
+      "en": "Send on WhatsApp"
     },
     "whatsapp_msg": {
       "fr": "Bonjour, je souhaite réserver chez Chef Eyad.",
       "ar": "مرحبًا، أودّ الحجز عند الشيف إياد.",
       "en": "Hello, I would like to book a table at Chef Eyad."
+    },
+    "intro": {
+      "fr": "Dites-nous quand vous venez, on s'occupe du feu.",
+      "ar": "أخبرنا متى ستأتي، ونحن نتكفّل بالنار.",
+      "en": "Tell us when you're coming, we'll tend the fire."
+    },
+    "s1": {
+      "fr": "Combien serez-vous ?",
+      "ar": "كم عددكم؟",
+      "en": "How many of you?"
+    },
+    "s2": {
+      "fr": "Quand venez-vous ?",
+      "ar": "متى ستأتون؟",
+      "en": "When are you coming?"
+    },
+    "s3": {
+      "fr": "Vos coordonnées",
+      "ar": "بياناتك",
+      "en": "Your details"
+    },
+    "guests_more": {
+      "fr": "Nombre exact de convives",
+      "ar": "العدد الدقيق للأشخاص",
+      "en": "Exact number of guests"
+    },
+    "pick": {
+      "fr": "Choisir",
+      "ar": "اختر",
+      "en": "Choose"
+    },
+    "sum_guests": {
+      "fr": "{n} convives",
+      "ar": "{n} أشخاص",
+      "en": "{n} guests"
+    },
+    "wa_note": {
+      "fr": "La demande s'ouvre dans WhatsApp, prête à envoyer. L'équipe vous répond pour confirmer votre table.",
+      "ar": "يُفتح الطلب في واتساب جاهزًا للإرسال، ويردّ عليك الفريق لتأكيد طاولتك.",
+      "en": "Your request opens in WhatsApp, ready to send. The team will reply to confirm your table."
+    },
+    "by_phone": {
+      "fr": "Par téléphone",
+      "ar": "عبر الهاتف",
+      "en": "By phone"
+    },
+    "events_q": {
+      "fr": "Une fête chez vous ?",
+      "ar": "مناسبة في بيتك؟",
+      "en": "A party at your place?"
+    },
+    "events_txt": {
+      "fr": "Mariage, anniversaire, fête d'entreprise : Chef Eyad vient à vous.",
+      "ar": "زفاف، عيد ميلاد، حفل شركة: الشيف إياد يأتي إليك.",
+      "en": "Wedding, birthday, company party: Chef Eyad comes to you."
+    },
+    "events_link": {
+      "fr": "Découvrir l'événementiel",
+      "ar": "اكتشف خدمة المناسبات",
+      "en": "Discover our events service"
     }
   },
   "contact": {
@@ -600,6 +845,11 @@
       "fr": "Ouvrir dans Google Maps",
       "ar": "افتح في خرائط جوجل",
       "en": "Open in Google Maps"
+    },
+    "hours": {
+      "fr": "Tous les jours, de 12 h à minuit",
+      "ar": "كل يوم، من 12 ظهرًا إلى منتصف الليل",
+      "en": "Every day, noon to midnight"
     }
   },
   "footer": {
@@ -612,7 +862,6 @@
   "_data": {
     "phone": "+216 29 909 375",
     "whatsapp": "21629909375",
-    "hours": null,
-    "_note": "Données non traduites. hours = null tant que les horaires officiels ne sont pas fournis (afficher common.tbc)."
+    "_note": "Données non traduites (téléphone, WhatsApp). Horaires : contact.hours, donnés par le client le 02/10/2026."
   }
 }

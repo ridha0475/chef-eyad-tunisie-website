@@ -1,21 +1,79 @@
-<section><div class="w narrow">
+<header class="bhead"><div class="w">
+  <p class="eyebrow">{{home.eyebrow}}</p>
   <h1>{{booking.title}}</h1>
-  <form id="f">
-    <label>{{booking.name}}<input name="name" required></label>
-    <label>{{booking.phone}}<input name="phone" type="tel" required></label>
-    <label>{{booking.date}}<input name="date" type="date" required></label>
-    <label>{{booking.time}}<input name="time" type="time" required></label>
-    <label>{{booking.guests}}<input name="guests" type="number" min="1" max="100" required></label>
-    <label>{{booking.notes}}<textarea name="notes" rows="3"></textarea></label>
-    <button class="btn" type="submit">{{booking.submit}}</button>
+  <p class="lead">{{booking.intro}}</p>
+</div></header>
+
+<section class="book"><div class="w book-in">
+  <form id="f" class="bform">
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">1</span>{{booking.s1}}</legend>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="g" value="2" required><span>2</span></label>
+        <label class="chip"><input type="radio" name="g" value="3"><span>3</span></label>
+        <label class="chip"><input type="radio" name="g" value="4"><span>4</span></label>
+        <label class="chip"><input type="radio" name="g" value="5"><span>5</span></label>
+        <label class="chip"><input type="radio" name="g" value="6"><span>6</span></label>
+        <label class="chip"><input type="radio" name="g" value="7"><span>7</span></label>
+        <label class="chip"><input type="radio" name="g" value="8"><span>8</span></label>
+        <label class="chip"><input type="radio" name="g" value="more" aria-label="{{booking.guests_more}}"><span dir="ltr">8+</span></label>
+      </div>
+      <label class="more">{{booking.guests_more}}<input name="gx" type="number" min="9" inputmode="numeric"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">2</span>{{booking.s2}}</legend>
+      <div class="row">
+        <label>{{booking.date}}<input name="date" type="date" required></label>
+        <label>{{booking.time}}<select name="time" required><option value="">{{booking.pick}}</option><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option><option>23:00</option><option>23:30</option></select></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n" aria-hidden="true">3</span>{{booking.s3}}</legend>
+      <div class="row">
+        <label>{{booking.name}}<input name="name" autocomplete="name" required></label>
+        <label>{{booking.phone}}<input name="phone" type="tel" autocomplete="tel" dir="ltr" required></label>
+      </div>
+      <label>{{booking.notes}}<textarea name="notes" rows="3"></textarea></label>
+    </fieldset>
+
+    <div class="send">
+      <p class="sum" aria-live="polite"></p>
+      <button class="btn" type="submit">{{booking.submit}}</button>
+      <p class="hint">{{booking.wa_note}}</p>
+    </div>
   </form>
+
+  <aside class="bside">
+    <div><h3>{{contact.hours_label}}</h3><p>{{hours}}</p></div>
+    <div><h3>{{booking.by_phone}}</h3><p><a href="tel:{{phone_raw}}" dir="ltr">{{phone}}</a></p></div>
+    <div class="evt"><h3>{{booking.events_q}}</h3><p>{{booking.events_txt}}</p><a class="link" href="events.html">{{booking.events_link}} →</a></div>
+  </aside>
 </div></section>
+
 <script>
-// Pas de serveur : la demande s'ouvre dans WhatsApp, prête à envoyer.
-document.getElementById('f').addEventListener('submit',function(e){
-  e.preventDefault();
-  var d=new FormData(e.target),t=[{{booking.whatsapp_msg|js}}];
-  ['name','phone','date','time','guests','notes'].forEach(function(k){if(d.get(k))t.push(k+': '+d.get(k))});
-  location.href='https://wa.me/{{wa}}?text='+encodeURIComponent(t.join('\n'));
-});
+(function(){
+  // Pas de serveur : la demande s'ouvre dans WhatsApp, rédigée dans la langue de la page.
+  var f=document.getElementById('f'), sum=f.querySelector('.sum'), gx=f.elements.gx,
+      lang={{lang|js}}, loc=lang==='ar'?'ar-TN':lang, sep=lang==='fr'?' : ':': ';
+  var d0=new Date(); d0.setMinutes(d0.getMinutes()-d0.getTimezoneOffset());
+  f.elements.date.min=d0.toISOString().slice(0,10); // pas de date passée
+  function guests(){var g=f.elements.g.value;return g==='more'?gx.value:g}
+  function day(v){return v?new Date(v+'T12:00').toLocaleDateString(loc,{weekday:'long',day:'numeric',month:'long'}):''}
+  function upd(){
+    gx.required=f.elements.g.value==='more';
+    var n=guests(), parts=[n&&{{booking.sum_guests|js}}.replace('{n}',n), day(f.elements.date.value), f.elements.time.value];
+    sum.textContent=parts.filter(Boolean).join(' · ');
+  }
+  f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var E=f.elements, t=[{{booking.whatsapp_msg|js}},''];
+    [[{{booking.guests|js}},guests()],[{{booking.date|js}},day(E.date.value)],[{{booking.time|js}},E.time.value],
+     [{{booking.name|js}},E.name.value],[{{booking.phone|js}},E.phone.value],[{{booking.notes|js}},E.notes.value]]
+      .forEach(function(r){if(r[1])t.push(r[0]+sep+r[1])});
+    location.href='https://wa.me/{{wa}}?text='+encodeURIComponent(t.join('\n'));
+  });
+})();
 </script>
