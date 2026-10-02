@@ -119,8 +119,19 @@ h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
 .js-reveal .reveal.in{opacity:1;transform:none}
 
 /* Menu : carte à prix, barre de catégories collée sous l'en-tête */
-.mhead{padding:56px 0 40px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#3a160866,#0000 65%)}
-.mhead .lead{margin:0 auto}
+.mhead{position:relative;isolation:isolate;overflow:hidden;min-height:min(78svh,720px);display:flex;align-items:center;padding:72px 0 64px;text-align:center}
+.mhead .hero-img{object-position:40% 70%;filter:saturate(1.1)}
+.mhead::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,var(--bg) 0%,#0e0a08b3 30%,#0e0a0866 60%,#0e0a08d9 100%),radial-gradient(ellipse at 50% 45%,#0e0a08b3,#0000 60%)}
+.mhead .w{width:100%}
+.mhead h1{font-size:clamp(3rem,8vw,5.5rem);text-shadow:0 4px 30px #000c}
+.mhead .lead{margin:0 auto;color:var(--txt)}
+/* Lueur de braise fixe en bas d'écran, qui vacille pendant qu'on lit la carte */
+.fireglow{position:fixed;inset-inline:0;bottom:0;height:45vh;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 120%,#e8561c55,#8a2e0c22 45%,#0000 75%);transform-origin:bottom;animation:flicker 4s ease-in-out infinite alternate}
+@keyframes flicker{0%{opacity:.7;transform:scaleY(1)}35%{opacity:1;transform:scaleY(1.08)}60%{opacity:.8;transform:scaleY(.96)}100%{opacity:1;transform:scaleY(1.04)}}
+.js-reveal .reveal .ml li{opacity:0;transform:translateY(10px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js-reveal .reveal.in .ml li{opacity:1;transform:none}
+.ml li:nth-child(2){transition-delay:60ms}.ml li:nth-child(3){transition-delay:120ms}.ml li:nth-child(4){transition-delay:180ms}
+.ml li:nth-child(5){transition-delay:240ms}.ml li:nth-child(6){transition-delay:300ms}.ml li:nth-child(7){transition-delay:360ms}.ml li:nth-child(8){transition-delay:420ms}
 .emblem{width:120px;height:120px;border-radius:50%;margin:0 auto 22px;box-shadow:0 0 0 3px var(--gold),0 0 60px #e8561c55}
 .mnav{position:sticky;top:var(--navh,69px);z-index:15;background:#0e0a08ee;backdrop-filter:blur(10px);border-block:1px solid var(--line)}
 .mnav .w{display:flex;gap:10px;padding-block:10px;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth}

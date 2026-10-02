@@ -22,7 +22,11 @@
   <a class="btn" href="booking.html">Réserver</a>
 </div></header>
 <main>
-<header class="mhead"><div class="w">
+<div class="fireglow" aria-hidden="true"></div>
+<header class="mhead">
+  <img class="hero-img" src="../images/menu-feu.webp" alt="" width="827" height="347" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w">
   <img class="emblem" src="../logo.jpeg" alt="" width="447" height="447">
   <h1>Notre menu</h1>
   <p class="lead">Viande fumée lentement, à la manière du Chef Eyad</p>
@@ -30,7 +34,7 @@
 
 <nav class="mnav" aria-label="Notre menu"><div class="w"><a href="#smoked">Viandes fumées</a><a href="#weight">Au poids</a><a href="#pasta">Pâtes Chef Eyad</a><a href="#poutine">Poutines & frites</a><a href="#smoky">Tasty Smoky</a><a href="#sauces">Sauces</a></div></nav>
 
-<section class="mc" id="smoked"><div class="w mc-in">
+<section class="mc" id="smoked"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">01</span><h2>Viandes fumées</h2><p>Fumées 10 à 12 heures au feu de bois naturel.</p></header>
   <div>
     <ul class="ml">
@@ -47,7 +51,7 @@
   </div>
 </div></section>
 
-<section class="mc" id="weight"><div class="w mc-in">
+<section class="mc" id="weight"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">02</span><h2>Au poids</h2><p>Veau et agneau, au même prix.</p></header>
   <ul class="ml">
     <li><span>Veau</span><i></i><b>27,900 DT / 100 g</b></li>
@@ -55,7 +59,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="pasta"><div class="w mc-in">
+<section class="mc" id="pasta"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">03</span><h2>Pâtes Chef Eyad</h2></header>
   <ul class="ml">
     <li><span>Spaghetti à la viande fumée</span><i></i><b>32 DT</b><small>Sauce rouge maison</small></li>
@@ -63,7 +67,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="poutine"><div class="w mc-in">
+<section class="mc" id="poutine"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">04</span><h2>Poutines & frites</h2></header>
   <ul class="ml">
     <li><span>Poutine au bœuf fumé</span><i></i><b>26 DT</b><small>Sauce demi-glace maison, sauce fromagère et oignons caramélisés</small></li>
@@ -74,7 +78,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="smoky"><div class="w mc-in">
+<section class="mc" id="smoky"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">05</span><h2>Tasty Smoky</h2></header>
   <ul class="ml">
     <li><span>Riz basmati parfumé au bœuf fumé</span><i></i><b>26 DT</b><small>Sauce maison, sauce fromagère et oignons caramélisés</small></li>
@@ -82,7 +86,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="sauces"><div class="w mc-in">
+<section class="mc" id="sauces"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">06</span><h2>Sauces</h2></header>
   <p class="mc-txt">Plus de 15 sauces maison.</p>
 </div></section>
@@ -106,6 +110,12 @@
     bar.scrollBy({left:a.left+a.width/2-b.left-b.width/2});
   }
   addEventListener('scroll',function(){requestAnimationFrame(spy)},{passive:true}); spy();
+  addEventListener('load',function(){setH();cur=-1;spy()}); // polices chargées : largeurs des boutons définitives
+  // Révélation au défilement (comme l'accueil) ; sans JS ou « réduire les animations », tout reste visible
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  root.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 })();
 </script>
 

@@ -22,7 +22,11 @@
   <a class="btn" href="booking.html">احجز الآن</a>
 </div></header>
 <main>
-<header class="mhead"><div class="w">
+<div class="fireglow" aria-hidden="true"></div>
+<header class="mhead">
+  <img class="hero-img" src="../images/menu-feu.webp" alt="" width="827" height="347" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w">
   <img class="emblem" src="../logo.jpeg" alt="" width="447" height="447">
   <h1>قائمتنا</h1>
   <p class="lead">لحم مدخّن ببطء على طريقة الشيف إياد</p>
@@ -30,7 +34,7 @@
 
 <nav class="mnav" aria-label="قائمتنا"><div class="w"><a href="#smoked">اللحوم المدخّنة</a><a href="#weight">بالوزن</a><a href="#pasta">معكرونة الشيف إياد</a><a href="#poutine">بوتين وبطاطس مقلية</a><a href="#smoky">تيستي سموكي</a><a href="#sauces">الصلصات</a></div></nav>
 
-<section class="mc" id="smoked"><div class="w mc-in">
+<section class="mc" id="smoked"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">01</span><h2>اللحوم المدخّنة</h2><p>تُدخَّن من 10 إلى 12 ساعة على نار الحطب الطبيعي.</p></header>
   <div>
     <ul class="ml">
@@ -47,7 +51,7 @@
   </div>
 </div></section>
 
-<section class="mc" id="weight"><div class="w mc-in">
+<section class="mc" id="weight"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">02</span><h2>بالوزن</h2><p>العجل والضأن بنفس السعر.</p></header>
   <ul class="ml">
     <li><span>لحم العجل</span><i></i><b>27,900 د.ت / 100 غ</b></li>
@@ -55,7 +59,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="pasta"><div class="w mc-in">
+<section class="mc" id="pasta"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">03</span><h2>معكرونة الشيف إياد</h2></header>
   <ul class="ml">
     <li><span>سباغيتي باللحم المدخّن</span><i></i><b>32 د.ت</b><small>صلصة حمراء من صنع المطعم</small></li>
@@ -63,7 +67,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="poutine"><div class="w mc-in">
+<section class="mc" id="poutine"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">04</span><h2>بوتين وبطاطس مقلية</h2></header>
   <ul class="ml">
     <li><span>بوتين باللحم البقري المدخّن</span><i></i><b>26 د.ت</b><small>صلصة ديمي غلاس من صنع المطعم، صلصة الجبن وبصل مكرمل</small></li>
@@ -74,7 +78,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="smoky"><div class="w mc-in">
+<section class="mc" id="smoky"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">05</span><h2>تيستي سموكي</h2></header>
   <ul class="ml">
     <li><span>أرز بسمتي معطّر باللحم البقري المدخّن</span><i></i><b>26 د.ت</b><small>صلصة من صنع المطعم، صلصة الجبن وبصل مكرمل</small></li>
@@ -82,7 +86,7 @@
   </ul>
 </div></section>
 
-<section class="mc" id="sauces"><div class="w mc-in">
+<section class="mc" id="sauces"><div class="w mc-in reveal">
   <header><span class="num" aria-hidden="true">06</span><h2>الصلصات</h2></header>
   <p class="mc-txt">أكثر من 15 صلصة من صنع المطعم.</p>
 </div></section>
@@ -106,6 +110,12 @@
     bar.scrollBy({left:a.left+a.width/2-b.left-b.width/2});
   }
   addEventListener('scroll',function(){requestAnimationFrame(spy)},{passive:true}); spy();
+  addEventListener('load',function(){setH();cur=-1;spy()}); // polices chargées : largeurs des boutons définitives
+  // Révélation au défilement (comme l'accueil) ; sans JS ou « réduire les animations », tout reste visible
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  root.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 })();
 </script>
 
