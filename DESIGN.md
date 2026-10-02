@@ -84,6 +84,8 @@ Règles :
 | Étiquette | `.tag` | Contour or, ex. « à confirmer ». |
 | Carte à prix | `.mc` + `.ml` | Section du menu : titre collant à gauche, liste nom · pointillés · prix (or). Description en dessous, en gris. |
 | Barre de catégories | `.mnav` | Collée sous l'en-tête, une seule ligne qui défile au doigt ; catégorie en cours en or plein (`aria-current`). Liens d'ancre, fonctionne sans JS. |
+| Ligne de fumage | `.tl` + `.st` | Page À propos : ligne verticale graduée 00:00 → 12:00, la braise la remplit au défilement et allume chaque étape (`.on`) aux 3/5 de l'écran. Sans JS ou en mouvement réduit : ligne pleine, étapes allumées. |
+| Villes de la marque | `.route` | Noms en grand Cormorant reliés par un filet ; Tunis en braise vive. En colonne sur mobile. |
 | Infos pratiques | `.visit` | Bandeau adresse / horaires / contact. |
 
 ## 6. Photos
@@ -120,4 +122,4 @@ Règles :
 ## 9. Points ouverts
 
 - [ ] Menu déroulant `.dd` masqué sur mobile : les sous-pages doivent rester accessibles autrement.
-- [ ] Appliquer cette direction aux 5 autres pages (menu, à propos, événements, réservation, contact).
+- [ ] Appliquer cette direction aux pages restantes (événements, réservation, contact). Faites : accueil, menu, à propos.

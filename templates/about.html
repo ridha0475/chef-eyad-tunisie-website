@@ -1,4 +1,65 @@
-<section><div class="w narrow">
-  <h1>{{about.title}}</h1>
-  <p>{{about.text}}</p>
+<header class="mhead ahead">
+  <img class="hero-img" src="../images/fumoir.webp" alt="" width="1448" height="1086" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w">
+  <p class="eyebrow">{{about.kicker}}</p>
+  <h1>{{about.h1}}</h1>
+  <p class="lead">{{about.text}}</p>
+</div></header>
+
+<section class="origin"><div class="w origin-in reveal">
+  <div><p class="eyebrow">{{about.origin_kicker}}</p><h2>{{about.origin_title}}</h2></div>
+  <p class="big">{{about.origin_text}}</p>
 </div></section>
+
+<section class="tl-sec"><div class="w">
+  <p class="eyebrow">{{about.tl_kicker}}</p>
+  <h2 class="tl-h">{{about.tl_title}}</h2>
+  <ol class="tl">
+    <li class="st"><time>00:00</time><h3>{{about.st1_title}}</h3><p>{{about.st1_text}}</p></li>
+    <li class="st"><time>10:00</time><h3>{{about.st2_title}}</h3><p>{{about.st2_text}}</p></li>
+    <li class="st"><time>12:00</time><h3>{{about.st3_title}}</h3><p>{{about.st3_text}}</p>
+      <img src="../images/vente-au-poids.webp" alt="" loading="lazy" width="1122" height="1402"></li>
+    <li class="st end"><h3>{{about.st4_title}}</h3><p>{{about.st4_text}}</p></li>
+  </ol>
+</div></section>
+
+<section class="cities"><div class="w reveal">
+  <h2>{{about.brand_title}}</h2>
+  <p class="mute">{{about.brand_text}}</p>
+  <ul class="route">
+    <li>{{about.city_riyadh}}</li>
+    <li>{{about.city_khobar}}</li>
+    <li class="here">{{about.city_tunis}}<small>{{about.since}}</small></li>
+  </ul>
+</div></section>
+
+<section class="climax">
+  <div class="w reveal">
+    <h2>{{home.cta_title}}</h2>
+    <p>{{home.cta_text}}</p>
+    <div class="actions">
+      <a class="btn light" href="booking.html">{{common.book_now}}</a>
+      <a class="btn o" href="menu.html">{{common.see_menu}}</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  // Sans JS ou avec « réduire les animations » : ligne pleine, toutes les étapes allumées
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var root=document.documentElement, tl=document.querySelector('.tl'), sts=[].slice.call(tl.children);
+  // La braise descend le long de la ligne et allume chaque étape quand elle passe aux 3/5 de l'écran
+  tl.classList.add('tl-js');
+  function burn(){
+    var r=tl.getBoundingClientRect(), c=innerHeight*.6;
+    tl.style.setProperty('--p',Math.min(1,Math.max(0,(c-r.top)/r.height)));
+    sts.forEach(function(s){s.classList.toggle('on',s.getBoundingClientRect().top+14<=c)});
+  }
+  addEventListener('scroll',function(){requestAnimationFrame(burn)},{passive:true}); burn();
+  root.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>

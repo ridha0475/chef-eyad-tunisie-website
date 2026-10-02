@@ -21,6 +21,8 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 
 1. **Accueil** — accroche, 3 points clés, aperçu des viandes, galerie, bouton Réserver
 2. **À propos** — la marque, le concept (fumage lent, vente au poids), le restaurant de Tunis
+   - Histoire de la marque reprise de https://chefeyad.com.sa/ (accueil et /about-us/, 02/10/2026) : voyage du Chef Eyad dans les fumoirs du Texas, touche orientale, mélange d'épices secret, restaurants à Riyad et Al Khobar
+   - *À faire valider par le client :* ce récit et le lien de franchise avec la marque saoudienne (le site saoudien annonce « jusqu'à 14 h » de fumage ; on garde 10 à 12 h, la durée de la carte de Tunis)
 3. **Menu** — source : carte imprimée du restaurant (`photos-source/menu-p1-viandes.jpeg`, `menu-p2-plats.jpeg`) et prix au poids donné par le client le 02/10/2026
    - Viandes fumées (8 plats, riz basmati et 5 salades à volonté) · Au poids (veau et agneau, 27,900 DT / 100 g) · Pâtes Chef Eyad · Poutines & frites · Tasty Smoky · Sauces
    - *À confirmer avec le client :* boissons, desserts, détail des sauces ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)

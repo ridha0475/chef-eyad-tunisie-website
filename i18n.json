@@ -204,9 +204,114 @@
       "en": "About us"
     },
     "text": {
-      "fr": "Chef Eyad est une marque de restaurants spécialisée dans la viande fumée lentement, fours exposés en salle. Le restaurant de Tunis, aux Berges du Lac 2, a ouvert ses portes le 7 juin 2024.",
-      "ar": "الشيف إياد علامة مطاعم متخصصة في اللحم المدخّن ببطء، مع أفران ظاهرة داخل القاعة. افتُتح مطعم تونس في ضفاف البحيرة 2 بتاريخ 7 جوان 2024.",
-      "en": "Chef Eyad is a restaurant brand specialising in slow-smoked meat, with ovens on display in the dining room. The Tunis restaurant, in Berges du Lac 2, opened on 7 June 2024."
+      "fr": "Chez Chef Eyad, rien ne se presse. La viande fume des heures au bois naturel, dans des fours ouverts sur la salle, jusqu'à devenir fondante. Il ne vous reste qu'à prendre place, aux Berges du Lac 2.",
+      "ar": "عند الشيف إياد، لا شيء على عجل. يُدخَّن اللحم لساعات على الحطب الطبيعي، في أفران مفتوحة على القاعة، حتى يذوب. لم يبقَ لك سوى أن تأخذ مكانك، في ضفاف البحيرة 2.",
+      "en": "At Chef Eyad, nothing is rushed. The meat smokes for hours over natural wood, in ovens open to the dining room, until it melts. All that's left is to take your seat, at Berges du Lac 2."
+    },
+    "kicker": {
+      "fr": "Notre histoire",
+      "ar": "حكايتنا",
+      "en": "Our story"
+    },
+    "h1": {
+      "fr": "Le temps est notre ingrédient",
+      "ar": "الوقت أهمّ مكوّناتنا",
+      "en": "Time is our ingredient"
+    },
+    "origin_kicker": {
+      "fr": "Les origines",
+      "ar": "البدايات",
+      "en": "Where it began"
+    },
+    "origin_title": {
+      "fr": "Né sur la route des fumoirs texans",
+      "ar": "وُلد على طريق مدخّنات تكساس",
+      "en": "Born on the Texas smokehouse trail"
+    },
+    "origin_text": {
+      "fr": "Tout part d'un voyage : celui du Chef Eyad à travers les fumoirs du Texas. Il en rapporte la patience du feu de bois et la cuisson lente à basse température, qu'il relève d'une touche orientale et d'un mélange d'épices dont il garde le secret.",
+      "ar": "بدأت الحكاية برحلة الشيف إياد بين مدخّنات تكساس. عاد منها بصبر نار الحطب والطهي البطيء على حرارة منخفضة، وأضاف إليها لمسة شرقية وخلطة توابل يحتفظ بسرّها.",
+      "en": "It all started with a journey: Chef Eyad's travels through the smokehouses of Texas. He came back with the patience of a wood fire and low-and-slow cooking, then gave it a Middle Eastern touch and a spice blend whose recipe he keeps to himself."
+    },
+    "brand_title": {
+      "fr": "Une marque, plusieurs tables",
+      "ar": "علامة واحدة، موائد عديدة",
+      "en": "One brand, many tables"
+    },
+    "brand_text": {
+      "fr": "Chef Eyad accueille ses clients à Riyad et à Al Khobar, en Arabie saoudite. Depuis le 7 juin 2024, la même recette a sa table à Tunis, aux Berges du Lac 2.",
+      "ar": "يستقبل الشيف إياد ضيوفه في الرياض والخبر بالمملكة العربية السعودية. ومنذ 7 جوان 2024، صارت للوصفة نفسها مائدة في تونس، بضفاف البحيرة 2.",
+      "en": "Chef Eyad welcomes guests in Riyadh and Al Khobar, Saudi Arabia. Since 7 June 2024, the same recipe has had its table in Tunis, at Berges du Lac 2."
+    },
+    "city_riyadh": {
+      "fr": "Riyad",
+      "ar": "الرياض",
+      "en": "Riyadh"
+    },
+    "city_khobar": {
+      "fr": "Al Khobar",
+      "ar": "الخبر",
+      "en": "Al Khobar"
+    },
+    "city_tunis": {
+      "fr": "Tunis",
+      "ar": "تونس",
+      "en": "Tunis"
+    },
+    "since": {
+      "fr": "depuis 2024",
+      "ar": "منذ 2024",
+      "en": "since 2024"
+    },
+    "tl_kicker": {
+      "fr": "Douze heures",
+      "ar": "اثنتا عشرة ساعة",
+      "en": "Twelve hours"
+    },
+    "tl_title": {
+      "fr": "Du feu à votre assiette",
+      "ar": "من النار إلى طبقك",
+      "en": "From the fire to your plate"
+    },
+    "st1_title": {
+      "fr": "Le feu",
+      "ar": "النار",
+      "en": "The fire"
+    },
+    "st1_text": {
+      "fr": "Le bois naturel est allumé, la viande marinée au mélange d'épices du Chef. Nos fours sont en salle : tout se passe sous vos yeux.",
+      "ar": "نُشعل الحطب الطبيعي ونتبّل اللحم بخلطة توابل الشيف. أفراننا داخل القاعة: كل شيء يحدث أمام عينيك.",
+      "en": "Natural wood is lit and the meat marinated in the Chef's spice blend. Our ovens sit in the dining room: it all happens before your eyes."
+    },
+    "st2_title": {
+      "fr": "La patience",
+      "ar": "الصبر",
+      "en": "Patience"
+    },
+    "st2_text": {
+      "fr": "Agneau et bœuf fument lentement, à basse température, pendant 10 à 12 heures, jusqu'à devenir fondants.",
+      "ar": "يُدخَّن الضأن والبقر ببطء على حرارة منخفضة من 10 إلى 12 ساعة، حتى يذوب اللحم.",
+      "en": "Lamb and beef smoke slowly at low heat for 10 to 12 hours, until the meat melts."
+    },
+    "st3_title": {
+      "fr": "La sortie du four",
+      "ar": "الخروج من الفرن",
+      "en": "Out of the oven"
+    },
+    "st3_text": {
+      "fr": "Vous choisissez vos morceaux. Ils sont tranchés à la sortie du four et vendus au poids.",
+      "ar": "تختار قطعك، فتُقطَّع عند خروجها من الفرن وتُباع بالوزن.",
+      "en": "You pick your cuts. They are sliced as they come out of the oven and sold by weight."
+    },
+    "st4_title": {
+      "fr": "À table",
+      "ar": "إلى المائدة",
+      "en": "To the table"
+    },
+    "st4_text": {
+      "fr": "Riz basmati et cinq salades à volonté accompagnent chaque viande fumée, avec plus de 15 sauces pour relever chaque bouchée.",
+      "ar": "أرز بسمتي وخمس سلطات بلا حدود مع كل لحم مدخّن، وأكثر من 15 صلصة لتتبيل كل لقمة.",
+      "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus more than 15 sauces to season every bite."
     }
   },
   "menu": {

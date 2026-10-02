@@ -22,10 +22,71 @@
   <a class="btn" href="booking.html">Book now</a>
 </div></header>
 <main>
-<section><div class="w narrow">
-  <h1>About us</h1>
-  <p>Chef Eyad is a restaurant brand specialising in slow-smoked meat, with ovens on display in the dining room. The Tunis restaurant, in Berges du Lac 2, opened on 7 June 2024.</p>
+<header class="mhead ahead">
+  <img class="hero-img" src="../images/fumoir.webp" alt="" width="1448" height="1086" fetchpriority="high">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="w">
+  <p class="eyebrow">Our story</p>
+  <h1>Time is our ingredient</h1>
+  <p class="lead">At Chef Eyad, nothing is rushed. The meat smokes for hours over natural wood, in ovens open to the dining room, until it melts. All that's left is to take your seat, at Berges du Lac 2.</p>
+</div></header>
+
+<section class="origin"><div class="w origin-in reveal">
+  <div><p class="eyebrow">Where it began</p><h2>Born on the Texas smokehouse trail</h2></div>
+  <p class="big">It all started with a journey: Chef Eyad's travels through the smokehouses of Texas. He came back with the patience of a wood fire and low-and-slow cooking, then gave it a Middle Eastern touch and a spice blend whose recipe he keeps to himself.</p>
 </div></section>
+
+<section class="tl-sec"><div class="w">
+  <p class="eyebrow">Twelve hours</p>
+  <h2 class="tl-h">From the fire to your plate</h2>
+  <ol class="tl">
+    <li class="st"><time>00:00</time><h3>The fire</h3><p>Natural wood is lit and the meat marinated in the Chef's spice blend. Our ovens sit in the dining room: it all happens before your eyes.</p></li>
+    <li class="st"><time>10:00</time><h3>Patience</h3><p>Lamb and beef smoke slowly at low heat for 10 to 12 hours, until the meat melts.</p></li>
+    <li class="st"><time>12:00</time><h3>Out of the oven</h3><p>You pick your cuts. They are sliced as they come out of the oven and sold by weight.</p>
+      <img src="../images/vente-au-poids.webp" alt="" loading="lazy" width="1122" height="1402"></li>
+    <li class="st end"><h3>To the table</h3><p>Basmati rice and five salads, as much as you like, come with every smoked meat, plus more than 15 sauces to season every bite.</p></li>
+  </ol>
+</div></section>
+
+<section class="cities"><div class="w reveal">
+  <h2>One brand, many tables</h2>
+  <p class="mute">Chef Eyad welcomes guests in Riyadh and Al Khobar, Saudi Arabia. Since 7 June 2024, the same recipe has had its table in Tunis, at Berges du Lac 2.</p>
+  <ul class="route">
+    <li>Riyadh</li>
+    <li>Al Khobar</li>
+    <li class="here">Tunis<small>since 2024</small></li>
+  </ul>
+</div></section>
+
+<section class="climax">
+  <div class="w reveal">
+    <h2>Your table is waiting</h2>
+    <p>Book by phone or on WhatsApp, for two or for the whole family.</p>
+    <div class="actions">
+      <a class="btn light" href="booking.html">Book now</a>
+      <a class="btn o" href="menu.html">See the menu</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  // Sans JS ou avec « réduire les animations » : ligne pleine, toutes les étapes allumées
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var root=document.documentElement, tl=document.querySelector('.tl'), sts=[].slice.call(tl.children);
+  // La braise descend le long de la ligne et allume chaque étape quand elle passe aux 3/5 de l'écran
+  tl.classList.add('tl-js');
+  function burn(){
+    var r=tl.getBoundingClientRect(), c=innerHeight*.6;
+    tl.style.setProperty('--p',Math.min(1,Math.max(0,(c-r.top)/r.height)));
+    sts.forEach(function(s){s.classList.toggle('on',s.getBoundingClientRect().top+14<=c)});
+  }
+  addEventListener('scroll',function(){requestAnimationFrame(burn)},{passive:true}); burn();
+  root.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
 
 </main>
 <footer><div class="w">© 2026 Chef Eyad Tunisia · All rights reserved.</div></footer>
