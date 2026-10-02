@@ -22,15 +22,48 @@
   <a class="btn" href="booking.html">احجز الآن</a>
 </div></header>
 <main>
-<section><div class="w narrow">
-  <h1>اتصل بنا وكيفية الوصول</h1>
-  <dl>
-    <dt>العنوان</dt><dd>ريجنسي 3، حي الصنوبر، ضفاف البحيرة 2، تونس (خلف نزل نوفوتيل، جهة البحيرة)</dd>
-    <dt>الهاتف</dt><dd><a href="tel:+21629909375" dir="ltr">+216 29 909 375</a></dd>
-    <dt>ساعات العمل</dt><dd>كل يوم، من 12 ظهرًا إلى منتصف الليل</dd>
-  </dl>
-  <p class="gap"><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Chef+Eyad+Berges+du+Lac+2+Tunis">افتح في خرائط جوجل</a></p>
+<header class="bhead"><div class="w">
+  <p class="eyebrow">ضفاف البحيرة 2 · تونس</p>
+  <h1>تفضّلوا بزيارتنا</h1>
+  <p class="lead">في ضفاف البحيرة 2، على جهة البحيرة. النار مشتعلة كل يوم، من الظهر إلى منتصف الليل.</p>
+</div></header>
+
+<section class="book"><div class="w cont-in">
+  <div class="map">
+    <iframe title="خريطة الوصول إلى مطعم الشيف إياد" src="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <ul class="cl">
+    <li><h3>العنوان</h3><p>ريجنسي 3، حي الصنوبر، ضفاف البحيرة 2، تونس (خلف نزل نوفوتيل، جهة البحيرة)</p>
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Chef+Eyad+Berges+du+Lac+2+Tunis">الاتجاهات →</a></li>
+    <li><h3>الهاتف</h3><p><a class="big" href="tel:+21629909375" dir="ltr">+216 29 909 375</a></p></li>
+    <li><h3>واتساب</h3><p><a class="link" href="https://wa.me/21629909375">راسلنا عبر واتساب →</a></p></li>
+    <li><h3>ساعات العمل</h3><p>كل يوم، من 12 ظهرًا إلى منتصف الليل</p><p class="now" hidden></p></li>
+  </ul>
 </div></section>
+
+<section class="climax">
+  <div class="w reveal">
+    <h2>طاولة أم مناسبة؟</h2>
+    <div class="actions">
+      <a class="btn light" href="booking.html">احجز الآن</a>
+      <a class="btn o" href="events.html">اكتشف خدمة المناسبات</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  // Ouvert tous les jours de 12 h à minuit, heure de Tunis quel que soit le fuseau du visiteur
+  var h=+new Intl.DateTimeFormat('en-GB',{hour:'numeric',hourCycle:'h23',timeZone:'Africa/Tunis'}).format(new Date()),
+      now=document.querySelector('.now'), open=h>=12;
+  now.textContent=open?"مفتوح الآن":"مغلق، نفتح على الساعة 12";
+  now.classList.toggle('on',open); now.hidden=false;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
 
 </main>
 <footer><div class="w">© 2026 الشيف إياد تونس · جميع الحقوق محفوظة.</div></footer>

@@ -841,15 +841,55 @@
       "ar": "ساعات العمل",
       "en": "Opening hours"
     },
-    "map_label": {
-      "fr": "Ouvrir dans Google Maps",
-      "ar": "افتح في خرائط جوجل",
-      "en": "Open in Google Maps"
-    },
     "hours": {
       "fr": "Tous les jours, de 12 h à minuit",
       "ar": "كل يوم، من 12 ظهرًا إلى منتصف الليل",
       "en": "Every day, noon to midnight"
+    },
+    "h1": {
+      "fr": "Venez nous voir",
+      "ar": "تفضّلوا بزيارتنا",
+      "en": "Come and see us"
+    },
+    "lead": {
+      "fr": "Aux Berges du Lac 2, côté lac. Le feu est allumé tous les jours, de midi à minuit.",
+      "ar": "في ضفاف البحيرة 2، على جهة البحيرة. النار مشتعلة كل يوم، من الظهر إلى منتصف الليل.",
+      "en": "At Berges du Lac 2, by the lake. The fire is lit every day, from noon to midnight."
+    },
+    "directions": {
+      "fr": "Itinéraire",
+      "ar": "الاتجاهات",
+      "en": "Directions"
+    },
+    "wa_label": {
+      "fr": "WhatsApp",
+      "ar": "واتساب",
+      "en": "WhatsApp"
+    },
+    "wa_cta": {
+      "fr": "Écrire sur WhatsApp",
+      "ar": "راسلنا عبر واتساب",
+      "en": "Message us on WhatsApp"
+    },
+    "open_now": {
+      "fr": "Ouvert en ce moment",
+      "ar": "مفتوح الآن",
+      "en": "Open now"
+    },
+    "closed_now": {
+      "fr": "Fermé, réouverture à 12 h",
+      "ar": "مغلق، نفتح على الساعة 12",
+      "en": "Closed, reopens at noon"
+    },
+    "map_title": {
+      "fr": "Plan d'accès au restaurant Chef Eyad",
+      "ar": "خريطة الوصول إلى مطعم الشيف إياد",
+      "en": "Map to the Chef Eyad restaurant"
+    },
+    "next": {
+      "fr": "Une table ou une fête ?",
+      "ar": "طاولة أم مناسبة؟",
+      "en": "A table or a party?"
     }
   },
   "footer": {

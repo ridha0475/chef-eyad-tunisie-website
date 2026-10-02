@@ -1,9 +1,42 @@
-<section><div class="w narrow">
-  <h1>{{contact.title}}</h1>
-  <dl>
-    <dt>{{contact.address_label}}</dt><dd>{{contact.address}}</dd>
-    <dt>{{contact.phone_label}}</dt><dd><a href="tel:{{phone_raw}}" dir="ltr">{{phone}}</a></dd>
-    <dt>{{contact.hours_label}}</dt><dd>{{hours}}</dd>
-  </dl>
-  <p class="gap"><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Chef+Eyad+Berges+du+Lac+2+Tunis">{{contact.map_label}}</a></p>
+<header class="bhead"><div class="w">
+  <p class="eyebrow">{{home.eyebrow}}</p>
+  <h1>{{contact.h1}}</h1>
+  <p class="lead">{{contact.lead}}</p>
+</div></header>
+
+<section class="book"><div class="w cont-in">
+  <div class="map">
+    <iframe title="{{contact.map_title}}" src="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <ul class="cl">
+    <li><h3>{{contact.address_label}}</h3><p>{{contact.address}}</p>
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Chef+Eyad+Berges+du+Lac+2+Tunis">{{contact.directions}} →</a></li>
+    <li><h3>{{contact.phone_label}}</h3><p><a class="big" href="tel:{{phone_raw}}" dir="ltr">{{phone}}</a></p></li>
+    <li><h3>{{contact.wa_label}}</h3><p><a class="link" href="https://wa.me/{{wa}}">{{contact.wa_cta}} →</a></p></li>
+    <li><h3>{{contact.hours_label}}</h3><p>{{hours}}</p><p class="now" hidden></p></li>
+  </ul>
 </div></section>
+
+<section class="climax">
+  <div class="w reveal">
+    <h2>{{contact.next}}</h2>
+    <div class="actions">
+      <a class="btn light" href="booking.html">{{common.book_now}}</a>
+      <a class="btn o" href="events.html">{{booking.events_link}}</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  // Ouvert tous les jours de 12 h à minuit, heure de Tunis quel que soit le fuseau du visiteur
+  var h=+new Intl.DateTimeFormat('en-GB',{hour:'numeric',hourCycle:'h23',timeZone:'Africa/Tunis'}).format(new Date()),
+      now=document.querySelector('.now'), open=h>=12;
+  now.textContent=open?{{contact.open_now|js}}:{{contact.closed_now|js}};
+  now.classList.toggle('on',open); now.hidden=false;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>

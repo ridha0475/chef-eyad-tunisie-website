@@ -22,15 +22,48 @@
   <a class="btn" href="booking.html">Book now</a>
 </div></header>
 <main>
-<section><div class="w narrow">
-  <h1>Contact and directions</h1>
-  <dl>
-    <dt>Address</dt><dd>Regency 3, Cité Les Pins, Les Berges du Lac 2, Tunis (behind the Novotel hotel, lake side)</dd>
-    <dt>Phone</dt><dd><a href="tel:+21629909375" dir="ltr">+216 29 909 375</a></dd>
-    <dt>Opening hours</dt><dd>Every day, noon to midnight</dd>
-  </dl>
-  <p class="gap"><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Chef+Eyad+Berges+du+Lac+2+Tunis">Open in Google Maps</a></p>
+<header class="bhead"><div class="w">
+  <p class="eyebrow">Berges du Lac 2 · Tunis</p>
+  <h1>Come and see us</h1>
+  <p class="lead">At Berges du Lac 2, by the lake. The fire is lit every day, from noon to midnight.</p>
+</div></header>
+
+<section class="book"><div class="w cont-in">
+  <div class="map">
+    <iframe title="Map to the Chef Eyad restaurant" src="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <ul class="cl">
+    <li><h3>Address</h3><p>Regency 3, Cité Les Pins, Les Berges du Lac 2, Tunis (behind the Novotel hotel, lake side)</p>
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Chef+Eyad+Berges+du+Lac+2+Tunis">Directions →</a></li>
+    <li><h3>Phone</h3><p><a class="big" href="tel:+21629909375" dir="ltr">+216 29 909 375</a></p></li>
+    <li><h3>WhatsApp</h3><p><a class="link" href="https://wa.me/21629909375">Message us on WhatsApp →</a></p></li>
+    <li><h3>Opening hours</h3><p>Every day, noon to midnight</p><p class="now" hidden></p></li>
+  </ul>
 </div></section>
+
+<section class="climax">
+  <div class="w reveal">
+    <h2>A table or a party?</h2>
+    <div class="actions">
+      <a class="btn light" href="booking.html">Book now</a>
+      <a class="btn o" href="events.html">Discover our events service</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  // Ouvert tous les jours de 12 h à minuit, heure de Tunis quel que soit le fuseau du visiteur
+  var h=+new Intl.DateTimeFormat('en-GB',{hour:'numeric',hourCycle:'h23',timeZone:'Africa/Tunis'}).format(new Date()),
+      now=document.querySelector('.now'), open=h>=12;
+  now.textContent=open?"Open now":"Closed, reopens at noon";
+  now.classList.toggle('on',open); now.hidden=false;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('js-reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
 
 </main>
 <footer><div class="w">© 2026 Chef Eyad Tunisia · All rights reserved.</div></footer>

@@ -28,7 +28,7 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
    - *À confirmer avec le client :* boissons, desserts, détail des sauces ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)
 4. **Événementiel et salon VIP** — Chef Eyad se déplace dans le Grand Tunis (mariages, fiançailles, anniversaires, fêtes de famille et d'entreprise) : viande livrée prête, découpe sur place devant les invités (client, 02/10/2026) ; salon VIP au restaurant ; demande de devis sur WhatsApp
 5. **Réservation** — formulaire en 3 étapes (convives, date et heure de 12:00 à 23:30, coordonnées), résumé en direct, envoi WhatsApp dans la langue de la page
-6. **Contact et accès** — adresse, téléphone, horaires, plan Google Maps ; FAQ courte *à confirmer*
+6. **Contact et accès** — adresse, téléphone, WhatsApp, horaires avec état ouvert/fermé, plan Google Maps intégré (fiche « Chef Eyad Tunisia », Regency 3) ; FAQ courte *à confirmer, non publiée*
 
 Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles.
 
