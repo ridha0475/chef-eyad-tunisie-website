@@ -123,7 +123,7 @@
     },
     "intro": {
       "fr": "Agneau et bœuf fumés lentement pendant des heures, servis au poids avec des accompagnements à volonté. Berges du Lac 2, Tunis.",
-      "ar": "لحم الضأن والبقر المدخّن ببطء لساعات، يُقدَّم بالوزن مع أطباق جانبية مفتوحة. ضفاف البحيرة 2، تونس.",
+      "ar": "لحم الخروف والبقر المدخّن ببطء لساعات، يُقدَّم بالوزن مع أطباق جانبية مفتوحة. ضفاف البحيرة 2، تونس.",
       "en": "Lamb and beef smoked slowly for hours, sold by weight and served with generous sides. Berges du Lac 2, Tunis."
     },
     "point1_title": {
@@ -173,7 +173,7 @@
     },
     "hero_alt": {
       "fr": "Souris d'agneau fumée et ses sauces sur une planche en bois",
-      "ar": "موزة ضأن مدخّنة مع صلصاتها على لوح خشبي",
+      "ar": "موزة خروف مدخّنة مع صلصاتها على لوح خشبي",
       "en": "Smoked lamb shank with its sauces on a wooden board"
     },
     "scroll": {
@@ -205,7 +205,7 @@
     },
     "text": {
       "fr": "Chez Chef Eyad, rien ne se presse. La viande fume des heures au bois naturel, dans des fours ouverts sur la salle, jusqu'à devenir fondante. Il ne vous reste qu'à prendre place, aux Berges du Lac 2.",
-      "ar": "عند الشيف إياد، لا شيء على عجل. يُدخَّن اللحم لساعات على الحطب الطبيعي، في أفران مفتوحة على القاعة، حتى يذوب. لم يبقَ لك سوى أن تأخذ مكانك، في ضفاف البحيرة 2.",
+      "ar": "في Chef&nbsp;Eyad، لا شيء يُستعجل. نترك اللحم يُدخَّن لساعات فوق الحطب الطبيعي، داخل أفران مفتوحة على قاعة المطعم، ليصل إلى درجة مثالية من الطراوة والنكهة الغنية. نحن نؤمن أن المذاق الاستثنائي يحتاج إلى الوقت… وأن أجمل الأطباق تُحضَّر بشغف، وتُقدَّم على مهل.<br><br>ما عليك إلا أن تأخذ مكانك… ونحن نتكفّل بالباقي.",
       "en": "At Chef Eyad, nothing is rushed. The meat smokes for hours over natural wood, in ovens open to the dining room, until it melts. All that's left is to take your seat, at Berges du Lac 2."
     },
     "kicker": {
@@ -215,7 +215,7 @@
     },
     "h1": {
       "fr": "Le temps est notre ingrédient",
-      "ar": "الوقت أهمّ مكوّناتنا",
+      "ar": "الوقت هو سرّ مذاقنا",
       "en": "Time is our ingredient"
     },
     "origin_kicker": {
@@ -225,12 +225,12 @@
     },
     "origin_title": {
       "fr": "Né sur la route des fumoirs texans",
-      "ar": "وُلد على طريق مدخّنات تكساس",
+      "ar": "وُلدت الحكاية بين مدخّنات تكساس، ونضجت بشغف الشيف إياد.",
       "en": "Born on the Texas smokehouse trail"
     },
     "origin_text": {
       "fr": "Tout part d'un voyage : celui du Chef Eyad à travers les fumoirs du Texas. Il en rapporte la patience du feu de bois et la cuisson lente à basse température, qu'il relève d'une touche orientale et d'un mélange d'épices dont il garde le secret.",
-      "ar": "بدأت الحكاية برحلة الشيف إياد بين مدخّنات تكساس. عاد منها بصبر نار الحطب والطهي البطيء على حرارة منخفضة، وأضاف إليها لمسة شرقية وخلطة توابل يحتفظ بسرّها.",
+      "ar": "كل شيء بدأ برحلة… رحلة الشيف إياد بين أشهر بيوت التدخين في تكساس، حيث اكتشف أسرار النار الهادئة وفنّ الطهي البطيء على درجة حرارة منخفضة.<br><br>عاد من هناك بخبرةٍ وشغف، ليمنح هذا الأسلوب لمسته الخاصة؛ نفَسًا شرقيًا، وتوليفةً فريدة من التوابل يحتفظ بأسرارها.<br><br>هكذا وُلدت هوية Chef&nbsp;Eyad… مزيجٌ بين أصالة التقاليد الأمريكية وروح المطبخ الشرقي، في تجربة لا تشبه سواها.",
       "en": "It all started with a journey: Chef Eyad's travels through the smokehouses of Texas. He came back with the patience of a wood fire and low-and-slow cooking, then gave it a Middle Eastern touch and a spice blend whose recipe he keeps to himself."
     },
     "brand_title": {
@@ -275,42 +275,42 @@
     },
     "st1_title": {
       "fr": "Le feu",
-      "ar": "النار",
+      "ar": "بداية الحكاية — النار",
       "en": "The fire"
     },
     "st1_text": {
       "fr": "Le bois naturel est allumé, la viande marinée au mélange d'épices du Chef. Nos fours sont en salle : tout se passe sous vos yeux.",
-      "ar": "نُشعل الحطب الطبيعي ونتبّل اللحم بخلطة توابل الشيف. أفراننا داخل القاعة: كل شيء يحدث أمام عينيك.",
+      "ar": "تشتعل النيران بالحطب الطبيعي، وتُتبّل أجود قطع اللحم بخليط الشيف الخاص من التوابل. وفي أفرانٍ مفتوحة على قاعة المطعم، تبدأ أمام أعينكم رحلةٌ تُصاغ فيها النكهة على مهل.",
       "en": "Natural wood is lit and the meat marinated in the Chef's spice blend. Our ovens sit in the dining room: it all happens before your eyes."
     },
     "st2_title": {
       "fr": "La patience",
-      "ar": "الصبر",
+      "ar": "فنّ الصبر",
       "en": "Patience"
     },
     "st2_text": {
       "fr": "Agneau et bœuf fument lentement, à basse température, pendant 10 à 12 heures, jusqu'à devenir fondants.",
-      "ar": "يُدخَّن الضأن والبقر ببطء على حرارة منخفضة من 10 إلى 12 ساعة، حتى يذوب اللحم.",
+      "ar": "يتشرّب لحم الخروف والبقر عبق الحطب، ويُطهى ببطء على حرارة منخفضة، لمدة تتراوح بين 10 و12 ساعة. وقتٌ طويل، لكنه سرّ تلك الطراوة الاستثنائية، والنكهة العميقة التي تميّز تجربة Chef&nbsp;Eyad.",
       "en": "Lamb and beef smoke slowly at low heat for 10 to 12 hours, until the meat melts."
     },
     "st3_title": {
       "fr": "La sortie du four",
-      "ar": "الخروج من الفرن",
+      "ar": "لحظة الوصول",
       "en": "Out of the oven"
     },
     "st3_text": {
       "fr": "Vous choisissez vos morceaux. Ils sont tranchés à la sortie du four et vendus au poids.",
-      "ar": "تختار قطعك، فتُقطَّع عند خروجها من الفرن وتُباع بالوزن.",
+      "ar": "تخرج القطع من الفرن في أوج نضجها، فتختارون ما يليق بذوقكم. تُقطّع أمامكم لحظة خروجها، وتُقدَّم حسب الوزن، لتكون كل قطعة امتدادًا لهذه الرحلة… من النار إلى المائدة، حيث يتحوّل الوقت، والنار، والخشب إلى تجربة استثنائية.",
       "en": "You pick your cuts. They are sliced as they come out of the oven and sold by weight."
     },
     "st4_title": {
       "fr": "À table",
-      "ar": "إلى المائدة",
+      "ar": "إلى المائدة… حيث تكتمل التجربة",
       "en": "To the table"
     },
     "st4_text": {
       "fr": "Riz basmati et cinq salades à volonté accompagnent chaque viande fumée, avec trois sauces maison qui changent au fil des saisons.",
-      "ar": "أرز بسمتي وخمس سلطات بلا حدود مع كل لحم مدخّن، وثلاث صلصات من صنع البيت تتغيّر مع الفصول.",
+      "ar": "كل قطعة لحم مدخّنة تستحق مرافِقات تليق بها. ولهذا نقدّم لكم أرز بسمتي معطّرًا وخمس سلطات متنوعة بالقدر المرغوب به، لتختاروا من النكهات ما يكمّل كل لقمة.<br><br>ولمزيد من التميّز، ترافق وجبتكم ثلاث صلصات منزلية الصنع، تتغيّر مع الفصول لتمنحكم في كل زيارة تجربة جديدة.<br><br>لحم مدخّن بعناية، مرافِقات سخية، ونكهات تتجدّد… في Chef&nbsp;Eyad، لا تأتي المائدة لتكمل الطبق فحسب، بل لتكمل التجربة.",
       "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus three house-made sauces that change with the seasons."
     }
   },
@@ -332,27 +332,27 @@
     },
     "included": {
       "fr": "Tous nos plats sont servis avec riz basmati et 5 salades, à volonté.",
-      "ar": "تُقدَّم جميع أطباقنا مع أرز بسمتي و5 سلطات، بلا حدود.",
+      "ar": "تُقدَّم جميع أطباقنا مع أرز بسمتي و5 سلطات، حسب الرغبة.",
       "en": "All our dishes come with basmati rice and 5 salads, as much as you like."
     },
     "lamb_shank": {
       "fr": "Souris d'agneau",
-      "ar": "موزة الضأن",
+      "ar": "موزة الخروف",
       "en": "Lamb shank"
     },
     "lamb_chops": {
       "fr": "Côtelettes d'agneau",
-      "ar": "ريش الضأن",
+      "ar": "ريش/ضلوع الخروف",
       "en": "Lamb chops"
     },
     "lamb_neck": {
       "fr": "Collier d'agneau",
-      "ar": "رقبة الضأن",
+      "ar": "رقبة الخروف",
       "en": "Lamb neck"
     },
     "lamb_shoulder": {
       "fr": "Demi-épaule d'agneau",
-      "ar": "نصف كتف الضأن",
+      "ar": "نصف كتف الخروف",
       "en": "Half lamb shoulder"
     },
     "for_two": {
@@ -362,7 +362,7 @@
     },
     "lamb_head": {
       "fr": "Demi-tête d'agneau",
-      "ar": "نصف رأس الضأن",
+      "ar": "نصف رأس الخروف",
       "en": "Half lamb's head"
     },
     "short_ribs": {
@@ -382,12 +382,12 @@
     },
     "chicken": {
       "fr": "Demi-poulet fermier",
-      "ar": "نصف دجاجة بلدي",
+      "ar": "نصف دجاجة",
       "en": "Half free-range chicken"
     },
     "weight_note": {
       "fr": "Veau et agneau, au même prix.",
-      "ar": "العجل والضأن بنفس السعر.",
+      "ar": "العجل والخروف بنفس السعر.",
       "en": "Veal and lamb, same price."
     },
     "veal": {
@@ -397,7 +397,7 @@
     },
     "lamb": {
       "fr": "Agneau",
-      "ar": "لحم الضأن",
+      "ar": "لحم الخروف",
       "en": "Lamb"
     },
     "per100": {
