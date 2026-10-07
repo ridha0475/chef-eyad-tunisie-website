@@ -40,6 +40,7 @@ Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles
 - **Aucun cookie, donc pas de bandeau** : pas de statistiques, pas de stockage navigateur ; polices hébergées dans `fonts/` (tirées de Google Fonts, sous-ensembles latin et arabe) ; plan Google Maps chargé seulement au clic.
 - Ne rien ajouter qui dépose un cookie ou appelle un tiers au chargement (statistiques, pixel Meta, widget, vidéo YouTube intégrée) sans revoir la page Confidentialité et prévoir un consentement.
 - Hébergement définitif : **VPS OVH**. La page l'annonce déjà ; GitHub Pages n'est qu'une préproduction.
+- **Veille juridique** (07/10/2026) : l'INPDP existe toujours (loi 2004-63 en vigueur), mais le mandat de son conseil a expiré en avril 2024 et son site inpdp.tn ne répond plus. La proposition de loi organique n° 095/2025 (déposée le 14/07/2025, en commission des droits et libertés) la remplacerait par une « هيئة حماية المعطيات الشخصية » (Autorité de protection des données personnelles). Si elle est adoptée, revoir la page Confidentialité (nom de l'autorité, loi citée, déclaration préalable).
 - Engagements pris dans la page, à respecter sur le serveur : journaux Nginx gardés **12 mois au plus** (logrotate), réponse aux demandes sous un mois.
 
 ## Fabriquer le site
