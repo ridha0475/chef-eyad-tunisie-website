@@ -904,9 +904,9 @@
   },
   "privacy": {
     "title": {
-      "fr": "Confidentialité et mentions légales",
-      "ar": "الخصوصية والإشعار القانوني",
-      "en": "Privacy and legal notice"
+      "fr": "Mentions légales et confidentialité",
+      "ar": "الإشعار القانوني والخصوصية",
+      "en": "Legal notice and privacy"
     },
     "kicker": {
       "fr": "Vos données",
@@ -914,14 +914,14 @@
       "en": "Your data"
     },
     "h1": {
-      "fr": "Confidentialité",
-      "ar": "الخصوصية",
-      "en": "Privacy"
+      "fr": "Mentions légales et confidentialité",
+      "ar": "الإشعار القانوني والخصوصية",
+      "en": "Legal notice and privacy"
     },
     "lead": {
-      "fr": "Ce que ce site sait de vous : presque rien. Voici le détail, et vos droits.",
-      "ar": "ما يعرفه هذا الموقع عنك: لا شيء تقريبًا. إليك التفاصيل وحقوقك.",
-      "en": "What this website knows about you: almost nothing. Here are the details, and your rights."
+      "fr": "Qui édite ce site, et ce qu'il sait de vous : presque rien.",
+      "ar": "من ينشر هذا الموقع، وما يعرفه عنك: لا شيء تقريبًا.",
+      "en": "Who publishes this website, and what it knows about you: almost nothing."
     },
     "updated": {
       "fr": "Dernière mise à jour : 7 octobre 2026",
@@ -1009,9 +1009,9 @@
       "en": "Cookies"
     },
     "cookies": {
-      "fr": "<p><strong>Ce site ne dépose aucun cookie</strong> et n'utilise aucun outil de mesure d'audience ni de publicité. Les polices de caractères sont servies par notre propre serveur.</p><p><strong>Plan Google Maps (page Contact) :</strong> il ne s'affiche que si vous cliquez sur « Afficher le plan ». Google peut alors déposer des cookies et recevoir votre adresse IP, selon <a href=\"https://policies.google.com/privacy?hl=fr\" rel=\"noopener\">sa politique de confidentialité</a>. Sans ce clic, aucune donnée n'est envoyée à Google.</p><p>Les liens vers WhatsApp et vers l'itinéraire Google Maps vous font quitter le site : les règles de ces services s'appliquent alors.</p>",
-      "ar": "<p><strong>لا يضع هذا الموقع أي ملف تعريف ارتباط</strong>، ولا يستعمل أي أداة لقياس الزيارات أو للإشهار. الخطوط تُحمَّل من خادمنا الخاص.</p><p><strong>خريطة Google Maps (صفحة اتصل بنا):</strong> لا تظهر إلا إذا نقرت على «اعرض الخريطة». عندها قد تضع Google ملفات تعريف ارتباط وتتلقّى عنوان IP الخاص بك، وفق <a href=\"https://policies.google.com/privacy?hl=ar\" rel=\"noopener\">سياسة الخصوصية الخاصة بها</a>. دون هذه النقرة، لا تُرسَل أي معطيات إلى Google.</p><p>الروابط نحو واتساب ونحو اتجاهات Google Maps تُخرجك من الموقع، فتنطبق عندها قواعد تلك الخدمات.</p>",
-      "en": "<p><strong>This website sets no cookies</strong> and uses no audience measurement or advertising tools. Fonts are served from our own server.</p><p><strong>Google Maps (Contact page):</strong> the map only appears if you click “Show the map”. Google may then set cookies and receive your IP address, under <a href=\"https://policies.google.com/privacy?hl=en\" rel=\"noopener\">its privacy policy</a>. Without that click, no data is sent to Google.</p><p>Links to WhatsApp and to Google Maps directions take you off this website: those services' own rules then apply.</p>"
+      "fr": "<p><strong>Ce site ne dépose aucun cookie</strong> et n'utilise aucun outil de mesure d'audience ni de publicité. Les polices de caractères sont servies par notre propre serveur.</p><p><strong>Plan Google Maps (page Contact) :</strong> il ne s'affiche que si vous cliquez sur « Afficher le plan ». Google peut alors déposer des cookies et recevoir votre adresse IP, selon <a href=\"https://policies.google.com/privacy?hl=fr\" rel=\"noopener\">sa politique de confidentialité</a>. Sans ce clic, aucune donnée n'est envoyée à Google.</p>",
+      "ar": "<p><strong>لا يضع هذا الموقع أي ملف تعريف ارتباط</strong>، ولا يستعمل أي أداة لقياس الزيارات أو للإشهار. الخطوط تُحمَّل من خادمنا الخاص.</p><p><strong>خريطة Google Maps (صفحة اتصل بنا):</strong> لا تظهر إلا إذا نقرت على «اعرض الخريطة». عندها قد تضع Google ملفات تعريف ارتباط وتتلقّى عنوان IP الخاص بك، وفق <a href=\"https://policies.google.com/privacy?hl=ar\" rel=\"noopener\">سياسة الخصوصية الخاصة بها</a>. دون هذه النقرة، لا تُرسَل أي معطيات إلى Google.</p>",
+      "en": "<p><strong>This website sets no cookies</strong> and uses no audience measurement or advertising tools. Fonts are served from our own server.</p><p><strong>Google Maps (Contact page):</strong> the map only appears if you click “Show the map”. Google may then set cookies and receive your IP address, under <a href=\"https://policies.google.com/privacy?hl=en\" rel=\"noopener\">its privacy policy</a>. Without that click, no data is sent to Google.</p>"
     },
     "rights_t": {
       "fr": "Vos droits",
@@ -1052,6 +1052,46 @@
       "fr": "Nassim Mami, gérant",
       "ar": "نسيم مامي، المسيّر",
       "en": "Nassim Mami, managing director"
+    },
+    "part_legal": {
+      "fr": "Mentions légales",
+      "ar": "الإشعار القانوني",
+      "en": "Legal notice"
+    },
+    "part_privacy": {
+      "fr": "Politique de confidentialité",
+      "ar": "سياسة الخصوصية",
+      "en": "Privacy policy"
+    },
+    "info_t": {
+      "fr": "Informations et prix",
+      "ar": "المعلومات والأسعار",
+      "en": "Information and prices"
+    },
+    "info": {
+      "fr": "<p>Nous veillons à ce que les informations du site (carte, prix, horaires) soient exactes et à jour. Elles sont toutefois données à titre indicatif et peuvent changer sans préavis : seuls la carte et les prix affichés au restaurant font foi.</p>",
+      "ar": "<p>نحرص على أن تكون معلومات الموقع (القائمة، الأسعار، ساعات العمل) دقيقة ومحيّنة. غير أنها تُقدَّم على سبيل الإعلام وقد تتغيّر دون إشعار مسبق: وحدها القائمة والأسعار المعروضة في المطعم هي المعتمدة.</p>",
+      "en": "<p>We take care to keep the information on this website (menu, prices, opening hours) accurate and up to date. It is, however, given for information only and may change without notice: only the menu and prices displayed at the restaurant are binding.</p>"
+    },
+    "links_t": {
+      "fr": "Liens vers d'autres sites",
+      "ar": "الروابط نحو مواقع أخرى",
+      "en": "Links to other websites"
+    },
+    "links": {
+      "fr": "<p>Le site renvoie vers des services extérieurs (WhatsApp, Google Maps). Nous n'avons aucun contrôle sur leur contenu ni sur leur fonctionnement et ne pouvons en être tenus responsables. Leurs propres conditions et règles de confidentialité s'appliquent.</p>",
+      "ar": "<p>يحيل الموقع إلى خدمات خارجية (واتساب، Google Maps). لا نتحكّم في محتواها ولا في طريقة عملها، ولا نتحمّل مسؤوليتها. تنطبق عليها شروطها وقواعد الخصوصية الخاصة بها.</p>",
+      "en": "<p>This website links to outside services (WhatsApp, Google Maps). We have no control over their content or how they work, and cannot be held responsible for them. Their own terms and privacy rules apply.</p>"
+    },
+    "law_t": {
+      "fr": "Droit applicable",
+      "ar": "القانون المنطبق",
+      "en": "Governing law"
+    },
+    "law": {
+      "fr": "<p>Le site et les présentes mentions sont soumis au droit tunisien. En cas de litige, et à défaut d'accord amiable, les tribunaux de Tunis sont compétents.</p>",
+      "ar": "<p>يخضع الموقع وهذا الإشعار للقانون التونسي. وفي صورة نزاع، وإن تعذّر الحلّ بالتراضي، تكون محاكم تونس هي المختصّة.</p>",
+      "en": "<p>This website and this notice are governed by Tunisian law. In the event of a dispute that cannot be settled amicably, the courts of Tunis have jurisdiction.</p>"
     }
   },
   "footer": {
@@ -1064,6 +1104,11 @@
       "fr": "Confidentialité",
       "ar": "الخصوصية",
       "en": "Privacy"
+    },
+    "legal": {
+      "fr": "Mentions légales",
+      "ar": "الإشعار القانوني",
+      "en": "Legal notice"
     }
   },
   "_data": {

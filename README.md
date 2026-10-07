@@ -31,7 +31,7 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 5. **Réservation** — formulaire en 3 étapes (convives, date et heure de 12:00 à 23:30, coordonnées), résumé en direct, envoi WhatsApp dans la langue de la page
 6. **Contact et accès** — adresse, téléphone, WhatsApp, horaires avec état ouvert/fermé, plan Google Maps (fiche « Chef Eyad Tunisia », Regency 3) chargé seulement au clic sur « Afficher le plan » ; FAQ courte *à confirmer, non publiée*
 
-7. **Confidentialité et mentions légales** (`privacy.html`, lien dans le pied de page, hors menu) — éditeur, hébergeur, données des formulaires, journaux du serveur, cookies, droits (loi organique n° 2004-63, INPDP) ; préparée le 07/10/2026, **à faire relire par un juriste**
+7. **Mentions légales et confidentialité** (`privacy.html`, deux liens dans le pied de page vers `#legal` et `#privacy`, hors menu) — structure inspirée des sites BIAT, Orange Tunisie, STB et Attijari bank. *Mentions légales* : éditeur, hébergeur, informations et prix (seuls ceux du restaurant font foi), liens externes, propriété intellectuelle, droit tunisien et tribunaux de Tunis. *Politique de confidentialité* : données des formulaires, journaux du serveur, cookies, droits (loi organique n° 2004-63, INPDP) ; préparée le 07/10/2026, **à faire relire par un juriste**
 
 Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles.
 
@@ -85,7 +85,7 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 - [x] Société : SARL « Panorient », matricule fiscal et siège (carte d'identification fiscale, 07/10/2026) → `documents-client/societe.md`, **non versionné**
 - [x] E-mail pour les demandes sur les données personnelles : hr@panorient.tn (07/10/2026)
 - [x] Responsable de la publication : Nassim Mami, gérant (07/10/2026)
-- [ ] Identifiant RNE à vérifier (en principe = matricule fiscal)
+- [ ] Extrait du RNE : identifiant unique (en principe = matricule fiscal) et capital social, à ajouter aux mentions légales comme Orange Tunisie et la STB
 - [ ] Déclaration à l'INPDP faite ou non (obligatoire avant de traiter des données personnelles), et son numéro — **à vérifier** (téléphone INPDP 71 799 853) ; ligne retirée de la page en attendant, clé `privacy.k_inpdp` gardée pour la remettre avec le numéro
 - [x] Durée de conservation des demandes WhatsApp : 12 mois au plus (validé le 07/10/2026)
 

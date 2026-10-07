@@ -338,7 +338,10 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var
 /* Page Confidentialité et mentions légales */
 .legal{padding:24px 0 96px}
 .legal .upd{color:var(--mute);font-size:.9rem;text-align:center}
-.legal h2{margin:48px 0 12px}
+.page-privacy .bhead h1{font-size:clamp(2.2rem,5.5vw,3.6rem);text-wrap:balance}
+.legal .part{font-size:clamp(1.9rem,3.5vw,2.6rem);color:var(--txt);margin:72px 0 0;padding-top:28px;border-top:1px solid var(--line);scroll-margin-top:90px}
+.legal .part:first-of-type{margin-top:40px}
+.legal h3{font-size:1.45rem;color:var(--gold);margin:40px 0 12px}
 .legal p,.legal li{color:var(--mute)}
 .legal p+p{margin-top:12px}
 .legal ul{padding-inline-start:20px;margin-top:12px}

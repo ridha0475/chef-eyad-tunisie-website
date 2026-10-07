@@ -7,7 +7,9 @@
 <article class="legal"><div class="w narrow">
   <p class="upd">{{privacy.updated}}</p>
 
-  <h2>{{privacy.editor_t}}</h2>
+  <h2 class="part" id="legal">{{privacy.part_legal}}</h2>
+
+  <h3>{{privacy.editor_t}}</h3>
   <ul class="kv">
     <li><b>{{privacy.k_name}}</b>{{site.name}}</li>
     <li><b>{{privacy.k_company}}</b>{{privacy.v_company}}</li>
@@ -19,21 +21,32 @@
     <li><b>{{privacy.k_director}}</b>{{privacy.v_director}}</li>
   </ul>
 
-  <h2>{{privacy.host_t}}</h2>
+  <h3>{{privacy.host_t}}</h3>
   {{privacy.host}}
 
-  <h2>{{privacy.data_t}}</h2>
+  <h3>{{privacy.info_t}}</h3>
+  {{privacy.info}}
+
+  <h3>{{privacy.links_t}}</h3>
+  {{privacy.links}}
+
+  <h3>{{privacy.ip_t}}</h3>
+  {{privacy.ip}}
+
+  <h3>{{privacy.law_t}}</h3>
+  {{privacy.law}}
+
+  <h2 class="part" id="privacy">{{privacy.part_privacy}}</h2>
+
+  <h3>{{privacy.data_t}}</h3>
   {{privacy.data}}
 
-  <h2>{{privacy.logs_t}}</h2>
+  <h3>{{privacy.logs_t}}</h3>
   {{privacy.logs}}
 
-  <h2>{{privacy.cookies_t}}</h2>
+  <h3>{{privacy.cookies_t}}</h3>
   {{privacy.cookies}}
 
-  <h2>{{privacy.rights_t}}</h2>
+  <h3>{{privacy.rights_t}}</h3>
   {{privacy.rights}}
-
-  <h2>{{privacy.ip_t}}</h2>
-  {{privacy.ip}}
 </div></article>
