@@ -26,7 +26,7 @@ h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
 .nav{position:sticky;top:0;z-index:20;background:#0e0a08ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background .3s,border-color .3s}
 .nav .w{display:flex;align-items:center;gap:22px;padding-block:12px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:700;font-size:1.25rem}
-.brand img{width:44px;height:44px;border-radius:50%}
+.brand img{width:64px;height:64px;border-radius:50%}
 .nav nav{display:flex;gap:20px;flex:1;flex-wrap:wrap}
 .nav nav a,.langs a{text-decoration:none;font-size:.88rem;color:var(--mute);transition:color .2s}
 .nav nav a:hover,.langs a:hover,.langs b{color:var(--txt)}
@@ -327,6 +327,7 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var
   .cont-in{grid-template-columns:1fr;gap:32px}
   .map,.map iframe{min-height:300px}
   .cl{order:-1}
+  .brand img{width:52px;height:52px}
   .route{flex-direction:column;align-items:center}
   .route small{position:static;display:block}
   .route li:not(:last-child)::after{display:block;width:2px;height:28px;margin:12px auto 0;background:linear-gradient(var(--line),var(--gold))}

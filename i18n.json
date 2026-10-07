@@ -239,14 +239,14 @@
       "en": "It all started with a journey: Chef Eyad's travels through the smokehouses of Texas. He came back with the patience of a wood fire and low-and-slow cooking, then gave it a Middle Eastern touch and a spice blend whose recipe he keeps to himself."
     },
     "brand_title": {
-      "fr": "De Kafr Qasim à Tunis",
-      "ar": "من كفر قاسم إلى تونس",
-      "en": "From Kafr Qasim to Tunis"
+      "fr": "Une recette, de nombreuses tables",
+      "ar": "وصفة واحدة، موائد عديدة",
+      "en": "One recipe, many tables"
     },
     "brand_text": {
-      "fr": "Tout est parti de Kafr Qasim, en Palestine, où le chef Eyad a ouvert son premier restaurant. La maison s'est depuis installée en Turquie, en Jordanie, en Irak et dans tout le Golfe. Depuis le 7 juin 2024, Chef Eyad Tunisie fait partie de ce réseau international, sous licence de la maison mère : même recette, même feu, aux Berges du Lac 2.",
-      "ar": "انطلقت الحكاية من كفر قاسم في فلسطين، حيث افتتح الشيف إياد مطعمه الأول. ومنذ ذلك الحين امتدّت الدار إلى تركيا والأردن والعراق ودول الخليج. ومنذ 7 جوان 2024، أصبح الشيف إياد تونس جزءًا من هذه الشبكة الدولية، بترخيص من الدار الأم: الوصفة نفسها، والنار نفسها، في ضفاف البحيرة 2.",
-      "en": "It all began in Kafr Qasim, Palestine, where Chef Eyad opened his first restaurant. The house has since spread to Turkey, Jordan, Iraq and across the Gulf. Since 7 June 2024, Chef Eyad Tunisia has been part of this international network, licensed by the parent company: same recipe, same fire, at Berges du Lac 2."
+      "fr": "La recette du chef Eyad a fait du chemin : on la retrouve aujourd'hui en Palestine, en Turquie, en Jordanie, en Irak et dans tout le Golfe. Depuis le 7 juin 2024, Chef Eyad Tunisie fait partie de ce réseau international, sous licence de la maison mère : même recette, même feu, aux Berges du Lac 2.",
+      "ar": "قطعت وصفة الشيف إياد طريقًا طويلًا: نجدها اليوم في فلسطين وتركيا والأردن والعراق ودول الخليج. ومنذ 7 جوان 2024، أصبح الشيف إياد تونس جزءًا من هذه الشبكة الدولية، بترخيص من الدار الأم: الوصفة نفسها، والنار نفسها، في ضفاف البحيرة 2.",
+      "en": "Chef Eyad's recipe has travelled far: today you'll find it in Palestine, Turkey, Jordan, Iraq and across the Gulf. Since 7 June 2024, Chef Eyad Tunisia has been part of this international network, licensed by the parent company: same recipe, same fire, at Berges du Lac 2."
     },
     "city_riyadh": {
       "fr": "Riyad",
@@ -313,11 +313,6 @@
       "ar": "كل قطعة لحم مدخّنة تستحق مرافِقات تليق بها. ولهذا نقدّم لكم أرز بسمتي معطّرًا وخمس سلطات متنوعة بالقدر المرغوب به، لتختاروا من النكهات ما يكمّل كل لقمة.<br><br>ولمزيد من التميّز، ترافق وجبتكم ثلاث صلصات منزلية الصنع، تتغيّر مع الفصول لتمنحكم في كل زيارة تجربة جديدة.<br><br>لحم مدخّن بعناية، مرافِقات سخية، ونكهات تتجدّد… في Chef&nbsp;Eyad، لا تأتي المائدة لتكمل الطبق فحسب، بل لتكمل التجربة.",
       "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus three house-made sauces that change with the seasons."
     },
-    "city_kafr": {
-      "fr": "Kafr Qasim",
-      "ar": "كفر قاسم",
-      "en": "Kafr Qasim"
-    },
     "city_istanbul": {
       "fr": "Istanbul",
       "ar": "إسطنبول",
@@ -332,11 +327,6 @@
       "fr": "Doha",
       "ar": "الدوحة",
       "en": "Doha"
-    },
-    "origin_label": {
-      "fr": "les origines",
-      "ar": "البداية",
-      "en": "where it began"
     }
   },
   "menu": {
@@ -549,6 +539,11 @@
       "fr": "Café",
       "ar": "قهوة",
       "en": "Coffee"
+    },
+    "coffee_turkish": {
+      "fr": "Café turc",
+      "ar": "قهوة تركية",
+      "en": "Turkish coffee"
     },
     "tea": {
       "fr": "Thé kufi",

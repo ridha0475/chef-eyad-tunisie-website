@@ -87,7 +87,7 @@ Règles :
 | Carte à prix | `.mc` + `.ml` | Section du menu : titre collant à gauche, liste nom · pointillés · prix (or). Description en dessous, en gris. |
 | Barre de catégories | `.mnav` | Collée sous l'en-tête, une seule ligne qui défile au doigt ; catégorie en cours en or plein (`aria-current`). Liens d'ancre, fonctionne sans JS. |
 | Ligne de fumage | `.tl` + `.st` | Page À propos : ligne verticale graduée 00:00 → 12:00, la braise la remplit au défilement et allume chaque étape (`.on`) aux 3/5 de l'écran. Sans JS ou en mouvement réduit : ligne pleine, étapes allumées. |
-| Villes de la marque | `.route` | Six villes du réseau (Kafr Qasim, l'origine → Tunis) en Cormorant reliées par un filet, sur une ligne ; Tunis en braise vive ; légende dorée (`small`) sous la première et la dernière. En colonne sur mobile. |
+| Villes de la marque | `.route` | Villes du réseau (Istanbul → Tunis) en Cormorant reliées par un filet, sur une ligne ; Tunis en braise vive avec sa légende dorée (`small`) dessous. Jamais Kafr Qasim. En colonne sur mobile. |
 | Formulaire de réservation | `.bform` + `.chip` + `.bside` | Étapes numérotées (`legend .n`), convives en pastilles rondes (braise quand choisi), « 8+ » ouvre un champ libre en CSS (`:has`). Résumé or en direct au-dessus du bouton. Infos collantes à côté, sous le formulaire sur mobile. |
 | Bandeau des occasions | `.occ` | Page Événementiel : occasions en grand qui défilent en boucle (40 s), une sur deux en or, séparées par ✦ braise. Liste doublée en `aria-hidden` ; en mouvement réduit, liste fixe sur plusieurs lignes. |
 | Chiffres du salon | `.vip-facts` | Page Événementiel : deux chiffres en grand Cormorant or (convives, prix) avec leur légende en gris dessous. |
