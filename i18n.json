@@ -1092,6 +1092,11 @@
       "fr": "<p>Le site et les présentes mentions sont soumis au droit tunisien. En cas de litige, et à défaut d'accord amiable, les tribunaux de Tunis sont compétents.</p>",
       "ar": "<p>يخضع الموقع وهذا الإشعار للقانون التونسي. وفي صورة نزاع، وإن تعذّر الحلّ بالتراضي، تكون محاكم تونس هي المختصّة.</p>",
       "en": "<p>This website and this notice are governed by Tunisian law. In the event of a dispute that cannot be settled amicably, the courts of Tunis have jurisdiction.</p>"
+    },
+    "k_rne": {
+      "fr": "Identifiant unique (RNE)",
+      "ar": "المعرّف الوحيد (السجل الوطني للمؤسسات)",
+      "en": "Company ID (RNE)"
     }
   },
   "footer": {
