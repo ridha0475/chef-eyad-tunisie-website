@@ -84,7 +84,8 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 - [ ] État du domaine `chefeyad.com.tn` (erreur 526 constatée le 28/07/2026) et nom de domaine à utiliser
 - [x] Société : SARL « Panorient », matricule fiscal et siège (carte d'identification fiscale, 07/10/2026) → `documents-client/societe.md`, **non versionné**
 - [x] E-mail pour les demandes sur les données personnelles : hr@panorient.tn (07/10/2026)
-- [ ] Mentions légales : responsable de la publication, identifiant RNE à vérifier
+- [x] Responsable de la publication : Nassim Mami, gérant (07/10/2026)
+- [ ] Identifiant RNE à vérifier (en principe = matricule fiscal)
 - [ ] Déclaration à l'INPDP faite ou non (obligatoire avant de traiter des données personnelles), et son numéro — **le client vérifie**
 - [ ] Durée de conservation des demandes WhatsApp (proposé : 12 mois au plus)
 

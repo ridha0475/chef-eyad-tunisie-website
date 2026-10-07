@@ -1047,6 +1047,11 @@
       "fr": "6e étage, immeuble « Étoile Nord », A6-33, Centre Urbain Nord, 1082 Tunis",
       "ar": "الطابق السادس، عمارة «Étoile Nord»، A6-33، المركز العمراني الشمالي، 1082 تونس",
       "en": "6th floor, Étoile Nord building, A6-33, Centre Urbain Nord, 1082 Tunis"
+    },
+    "v_director": {
+      "fr": "Nassim Mami, gérant",
+      "ar": "<span dir=\"ltr\">Nassim Mami</span>، المسيّر",
+      "en": "Nassim Mami, managing director"
     }
   },
   "footer": {
