@@ -271,7 +271,11 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var
 /* Contact : plan assombri, coordonnées en grand, état ouvert / fermé */
 .cont-in{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:stretch}
 .map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px #0009;min-height:420px;background:var(--card)}
-.map iframe{display:block;width:100%;height:100%;min-height:420px;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.5) sepia(.25)}
+.map{display:flex}
+.map-load{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;text-align:center;text-decoration:none;background:radial-gradient(ellipse at 50% 60%,#3a160866,#0000 70%)}
+.map-load small{color:var(--mute);font-size:.85rem;max-width:34ch}
+.map-load:hover .btn{border-color:var(--txt);background:#ffffff14}
+.map iframe{flex:1;display:block;width:100%;height:100%;min-height:420px;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.5) sepia(.25)}
 .cl{list-style:none;padding:0;display:grid;gap:0;align-content:start}
 .cl li{padding:22px 0;border-bottom:1px solid var(--line)}
 .cl li:first-child{padding-top:0}
@@ -330,3 +334,19 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var
   .occ ul{flex-wrap:wrap;justify-content:center;padding:0 20px}
   html,.mnav .w{scroll-behavior:auto}
 }
+
+/* Page Confidentialité et mentions légales */
+.legal{padding:24px 0 96px}
+.legal .upd{color:var(--mute);font-size:.9rem;text-align:center}
+.legal h2{margin:48px 0 12px}
+.legal p,.legal li{color:var(--mute)}
+.legal p+p{margin-top:12px}
+.legal ul{padding-inline-start:20px;margin-top:12px}
+.legal li+li{margin-top:6px}
+.legal strong{color:var(--txt);font-weight:600}
+.legal a{color:var(--gold)}
+.legal .kv{list-style:none;padding:0;border-top:1px solid var(--line)}
+.legal .kv li{display:grid;grid-template-columns:minmax(0,15rem) 1fr;gap:4px 20px;align-items:baseline;margin:0;padding:12px 0;border-bottom:1px solid var(--line)}
+.legal .kv b{color:var(--txt);font-weight:600;font-size:.9rem}
+.legal .kv .tag{justify-self:start}
+@media(max-width:760px){.legal .kv li{grid-template-columns:1fr}}

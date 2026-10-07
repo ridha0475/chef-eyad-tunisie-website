@@ -57,6 +57,8 @@ Règles :
 | Surtitre `.eyebrow` | 0,78rem, majuscules, espacement 0,22em, or |
 | Grand numéro `.num` | `clamp(5rem, 13vw, 10rem)`, contour or, fond transparent |
 
+Polices hébergées sur le site (`fonts/latin.css`, `fonts/ar.css`), jamais chargées depuis Google.
+
 Règles :
 - Jamais de texte courant sous 14 px.
 - **Arabe** : pas de majuscules ni d'espacement entre lettres (ça casse les liaisons) ; surtitres à 0,95rem ; interligne des grands titres 1,35.
@@ -91,6 +93,8 @@ Règles :
 | Pastilles de texte | `.chip.txt` | Variante des pastilles de convives pour des choix en mots (type d'événement). |
 | Coordonnées | `.cont-in` + `.cl` + `.now` | Page Contact : plan Google assombri par filtre CSS (ton charbon) à côté de la liste des coordonnées ; téléphone en grand Cormorant ; pastille « Ouvert en ce moment » calculée à l'heure de Tunis. Sur mobile, coordonnées avant le plan. |
 | Infos pratiques | `.visit` | Bandeau adresse / horaires / contact. |
+| Plan au clic | `.map-load` | Lien vers Google Maps qui, avec JS, remplace l'encart par le plan intégré ; bouton `.btn.o` et note sur les cookies. Sans JS, ouvre Google Maps. |
+| Texte légal | `.legal` + `.kv` | Page Confidentialité : colonne `.narrow`, titres or, tableau clé / valeur pour l'éditeur (une colonne sur mobile), étiquettes `.tag` pour ce qui reste à confirmer. |
 
 ## 6. Photos
 

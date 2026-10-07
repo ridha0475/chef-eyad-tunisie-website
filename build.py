@@ -11,16 +11,15 @@ I18N = json.loads((ROOT / "i18n.json").read_text())
 LANGS = list(I18N["_langs"])
 DEFAULT = next(l for l, m in I18N["_langs"].items() if m.get("default"))
 DATA = I18N["_data"]
-PAGES = ["index", "about", "menu", "events", "booking", "contact"]
+PAGES = ["index", "about", "menu", "events", "booking", "contact", "privacy"]
 NAV = {"index": "home", "about": "about", "menu": "menu", "events": "events", "booking": "booking", "contact": "contact"}
 SUB = [("smoked", "menu_smoked"), ("weight", "menu_weight"), ("pasta", "menu_pasta"),
        ("poutine", "menu_poutine"), ("smoky", "menu_smoky"), ("sauces", "menu_sauces")]
-FONTS = {
-    "latin": "https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap",
-    "ar": "https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap",
-}
+# Polices hébergées sur le site (fonts/, tirées de Google Fonts) : aucune requête vers Google
+FONTS = {"latin": "../fonts/latin.css", "ar": "../fonts/ar.css"}
 PAGE_TITLE = {"index": "site.tagline", "about": "about.title", "menu": "menu.title",
-              "events": "events.title", "booking": "booking.title", "contact": "contact.title"}
+              "events": "events.title", "booking": "booking.title", "contact": "contact.title",
+              "privacy": "privacy.title"}
 
 
 def t(key, lang):
@@ -57,6 +56,7 @@ def main():
     shutil.copy(ROOT / "logo.jpeg", OUT / "logo.jpeg")
     shutil.copy(ROOT / "style.css", OUT / "style.css")
     shutil.copytree(ROOT / "images", OUT / "images")
+    shutil.copytree(ROOT / "fonts", OUT / "fonts")
     (OUT / ".nojekyll").write_text("")
     layout = (ROOT / "templates/layout.html").read_text()
 
@@ -64,7 +64,9 @@ def main():
         (OUT / lang).mkdir()
         for page in PAGES:
             nav = ""
-            for p in PAGES[1:]:
+            for p in NAV:
+                if p == "index":
+                    continue
                 label = t(f"nav.{NAV[p]}", lang)
                 if p == "menu":
                     subs = "".join(f'<a href="menu.html#{a}">{t("nav." + k, lang)}</a>' for a, k in SUB)
@@ -77,7 +79,7 @@ def main():
             hreflang = "\n".join(f'<link rel="alternate" hreflang="{l}" href="../{l}/{page}.html">' for l in LANGS)
             extra = {
                 "lang": lang, "dir": meta["dir"], "page": page,
-                "fonts": FONTS["ar" if lang == "ar" else "latin"].replace("&", "&amp;"), "year": str(date.today().year),
+                "fonts": FONTS["ar" if lang == "ar" else "latin"], "year": str(date.today().year),
                 "phone": DATA["phone"], "phone_raw": DATA["phone"].replace(" ", ""), "wa": DATA["whatsapp"],
                 "hours": t("contact.hours", lang),
                 "nav": nav, "langswitch": langswitch, "hreflang": hreflang,

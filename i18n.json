@@ -890,6 +890,148 @@
       "fr": "Une table ou une fête ?",
       "ar": "طاولة أم مناسبة؟",
       "en": "A table or a party?"
+    },
+    "map_show": {
+      "fr": "Afficher le plan",
+      "ar": "اعرض الخريطة",
+      "en": "Show the map"
+    },
+    "map_note": {
+      "fr": "Le plan est fourni par Google, qui peut déposer des cookies une fois affiché.",
+      "ar": "الخريطة مقدَّمة من Google، التي قد تضع ملفات تعريف ارتباط بعد عرضها.",
+      "en": "The map is provided by Google, which may set cookies once it is shown."
+    }
+  },
+  "privacy": {
+    "title": {
+      "fr": "Confidentialité et mentions légales",
+      "ar": "الخصوصية والإشعار القانوني",
+      "en": "Privacy and legal notice"
+    },
+    "kicker": {
+      "fr": "Vos données",
+      "ar": "بياناتك",
+      "en": "Your data"
+    },
+    "h1": {
+      "fr": "Confidentialité",
+      "ar": "الخصوصية",
+      "en": "Privacy"
+    },
+    "lead": {
+      "fr": "Ce que ce site sait de vous : presque rien. Voici le détail, et vos droits.",
+      "ar": "ما يعرفه هذا الموقع عنك: لا شيء تقريبًا. إليك التفاصيل وحقوقك.",
+      "en": "What this website knows about you: almost nothing. Here are the details, and your rights."
+    },
+    "updated": {
+      "fr": "Dernière mise à jour : 7 octobre 2026",
+      "ar": "آخر تحديث: 7 أكتوبر 2026",
+      "en": "Last updated: 7 October 2026"
+    },
+    "editor_t": {
+      "fr": "Éditeur du site",
+      "ar": "ناشر الموقع",
+      "en": "Website publisher"
+    },
+    "k_name": {
+      "fr": "Nom commercial",
+      "ar": "الاسم التجاري",
+      "en": "Trading name"
+    },
+    "k_company": {
+      "fr": "Raison sociale et forme juridique",
+      "ar": "التسمية الاجتماعية والشكل القانوني",
+      "en": "Company name and legal form"
+    },
+    "k_id": {
+      "fr": "Identifiant unique (RNE) et siège social",
+      "ar": "المعرّف الوحيد (السجل الوطني للمؤسسات) والمقر الاجتماعي",
+      "en": "Company ID (RNE) and registered office"
+    },
+    "k_address": {
+      "fr": "Restaurant",
+      "ar": "المطعم",
+      "en": "Restaurant"
+    },
+    "k_phone": {
+      "fr": "Téléphone",
+      "ar": "الهاتف",
+      "en": "Phone"
+    },
+    "k_email": {
+      "fr": "E-mail",
+      "ar": "البريد الإلكتروني",
+      "en": "Email"
+    },
+    "k_director": {
+      "fr": "Responsable de la publication",
+      "ar": "المسؤول عن النشر",
+      "en": "Publication director"
+    },
+    "k_inpdp": {
+      "fr": "Déclaration à l'INPDP",
+      "ar": "التصريح لدى الهيئة الوطنية لحماية المعطيات الشخصية",
+      "en": "INPDP declaration"
+    },
+    "host_t": {
+      "fr": "Hébergement",
+      "ar": "الاستضافة",
+      "en": "Hosting"
+    },
+    "host": {
+      "fr": "<p>Le site est hébergé par <span dir=\"ltr\">OVH SAS, 2 rue Kellermann, 59100 Roubaix</span>, France (ovhcloud.com).</p>",
+      "ar": "<p>يستضيف الموقعَ <span dir=\"ltr\">OVH SAS, 2 rue Kellermann, 59100 Roubaix</span>، فرنسا (ovhcloud.com).</p>",
+      "en": "<p>The website is hosted by <span dir=\"ltr\">OVH SAS, 2 rue Kellermann, 59100 Roubaix</span>, France (ovhcloud.com).</p>"
+    },
+    "data_t": {
+      "fr": "Réservations et demandes de devis",
+      "ar": "الحجوزات وطلبات عروض الأسعار",
+      "en": "Bookings and quote requests"
+    },
+    "data": {
+      "fr": "<p>Le site ne propose ni compte client, ni lettre d'information, ni paiement en ligne.</p><p>Les formulaires de réservation et de devis n'enregistrent rien sur notre serveur. Ce que vous y saisissez (nom, téléphone, date, nombre de convives, message) sert uniquement à préparer un message WhatsApp, que vous relisez et envoyez vous-même. Nous recevons alors votre demande sur le WhatsApp du restaurant, comme si vous nous aviez écrit directement.</p><ul><li><strong>Pourquoi :</strong> répondre à votre demande, confirmer votre réservation ou vous envoyer un devis.</li><li><strong>Qui la voit :</strong> l'équipe du restaurant. Le message passe par WhatsApp (Meta), selon ses propres conditions.</li><li><strong>Combien de temps :</strong> le temps de traiter votre demande, puis 12 mois au plus. <span class=\"tag\">À confirmer</span></li><li>Vos données ne sont ni vendues, ni louées, ni utilisées pour de la publicité.</li></ul>",
+      "ar": "<p>لا يوفّر الموقع حسابات للعملاء ولا نشرة إخبارية ولا دفعًا عبر الإنترنت.</p><p>لا تُسجِّل استمارتا الحجز وطلب عرض السعر أي شيء على خادمنا. ما تُدخله فيهما (الاسم، الهاتف، التاريخ، عدد الضيوف، الرسالة) يُستعمل فقط لتحضير رسالة واتساب تراجعها وترسلها بنفسك. نتلقّى طلبك عندها على واتساب المطعم، كما لو راسلتنا مباشرة.</p><ul><li><strong>لماذا:</strong> للردّ على طلبك أو تأكيد حجزك أو إرسال عرض السعر.</li><li><strong>من يطّلع عليه:</strong> فريق المطعم. تمرّ الرسالة عبر واتساب (Meta) وفق شروطه الخاصة.</li><li><strong>إلى متى:</strong> طوال مدة معالجة طلبك، ثم 12 شهرًا على الأكثر. <span class=\"tag\">سيتم التأكيد لاحقًا</span></li><li>لا تُباع بياناتك ولا تُؤجَّر ولا تُستعمل لأغراض إشهارية.</li></ul>",
+      "en": "<p>The website has no customer accounts, no newsletter and no online payment.</p><p>The booking and quote forms store nothing on our server. What you type in them (name, phone, date, number of guests, message) is only used to prepare a WhatsApp message, which you review and send yourself. We then receive your request on the restaurant's WhatsApp, just as if you had written to us directly.</p><ul><li><strong>Why:</strong> to answer your request, confirm your booking or send you a quote.</li><li><strong>Who sees it:</strong> the restaurant team. The message goes through WhatsApp (Meta), under its own terms.</li><li><strong>How long:</strong> as long as it takes to handle your request, then 12 months at most. <span class=\"tag\">To be confirmed</span></li><li>Your data is never sold, rented or used for advertising.</li></ul>"
+    },
+    "logs_t": {
+      "fr": "Journaux du serveur",
+      "ar": "سجلّات الخادم",
+      "en": "Server logs"
+    },
+    "logs": {
+      "fr": "<p>Comme tout site web, notre serveur enregistre automatiquement, à chaque visite, l'adresse IP, la date et l'heure, la page demandée et le type de navigateur. Ces journaux servent uniquement à la sécurité et au bon fonctionnement du site. Ils sont conservés 12 mois au plus, puis supprimés.</p>",
+      "ar": "<p>كأي موقع إلكتروني، يسجّل خادمنا تلقائيًا عند كل زيارة عنوان IP والتاريخ والساعة والصفحة المطلوبة ونوع المتصفح. تُستعمل هذه السجلّات فقط لحماية الموقع وحسن سيره، وتُحفظ 12 شهرًا على الأكثر ثم تُحذف.</p>",
+      "en": "<p>Like any website, our server automatically records, for each visit, the IP address, date and time, the page requested and the browser type. These logs are used only for security and to keep the site running. They are kept for 12 months at most, then deleted.</p>"
+    },
+    "cookies_t": {
+      "fr": "Cookies",
+      "ar": "ملفات تعريف الارتباط (الكوكيز)",
+      "en": "Cookies"
+    },
+    "cookies": {
+      "fr": "<p><strong>Ce site ne dépose aucun cookie</strong> et n'utilise aucun outil de mesure d'audience ni de publicité. Les polices de caractères sont servies par notre propre serveur.</p><p><strong>Plan Google Maps (page Contact) :</strong> il ne s'affiche que si vous cliquez sur « Afficher le plan ». Google peut alors déposer des cookies et recevoir votre adresse IP, selon <a href=\"https://policies.google.com/privacy?hl=fr\" rel=\"noopener\">sa politique de confidentialité</a>. Sans ce clic, aucune donnée n'est envoyée à Google.</p><p>Les liens vers WhatsApp et vers l'itinéraire Google Maps vous font quitter le site : les règles de ces services s'appliquent alors.</p>",
+      "ar": "<p><strong>لا يضع هذا الموقع أي ملف تعريف ارتباط</strong>، ولا يستعمل أي أداة لقياس الزيارات أو للإشهار. الخطوط تُحمَّل من خادمنا الخاص.</p><p><strong>خريطة Google Maps (صفحة اتصل بنا):</strong> لا تظهر إلا إذا نقرت على «اعرض الخريطة». عندها قد تضع Google ملفات تعريف ارتباط وتتلقّى عنوان IP الخاص بك، وفق <a href=\"https://policies.google.com/privacy?hl=ar\" rel=\"noopener\">سياسة الخصوصية الخاصة بها</a>. دون هذه النقرة، لا تُرسَل أي معطيات إلى Google.</p><p>الروابط نحو واتساب ونحو اتجاهات Google Maps تُخرجك من الموقع، فتنطبق عندها قواعد تلك الخدمات.</p>",
+      "en": "<p><strong>This website sets no cookies</strong> and uses no audience measurement or advertising tools. Fonts are served from our own server.</p><p><strong>Google Maps (Contact page):</strong> the map only appears if you click “Show the map”. Google may then set cookies and receive your IP address, under <a href=\"https://policies.google.com/privacy?hl=en\" rel=\"noopener\">its privacy policy</a>. Without that click, no data is sent to Google.</p><p>Links to WhatsApp and to Google Maps directions take you off this website: those services' own rules then apply.</p>"
+    },
+    "rights_t": {
+      "fr": "Vos droits",
+      "ar": "حقوقك",
+      "en": "Your rights"
+    },
+    "rights": {
+      "fr": "<p>Conformément à la loi organique n° 2004-63 du 27 juillet 2004 portant sur la protection des données à caractère personnel, vous pouvez à tout moment demander l'accès à vos données, leur rectification ou leur suppression, et vous opposer à leur traitement.</p><p>Pour cela, écrivez-nous par e-mail <span class=\"tag\">À confirmer</span>, par WhatsApp ou par téléphone (coordonnées ci-dessus). Nous répondons dans un délai d'un mois au plus.</p><p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir l'Instance nationale de protection des données personnelles (INPDP, <a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). Si vous résidez dans l'Union européenne, vous disposez aussi des droits prévus par le RGPD.</p>",
+      "ar": "<p>طبقًا للقانون الأساسي عدد 63 لسنة 2004 المؤرخ في 27 جويلية 2004 المتعلق بحماية المعطيات الشخصية، يمكنك في أي وقت طلب الاطّلاع على معطياتك أو تصحيحها أو حذفها، والاعتراض على معالجتها.</p><p>لذلك راسلنا عبر البريد الإلكتروني <span class=\"tag\">سيتم التأكيد لاحقًا</span> أو واتساب أو الهاتف (البيانات أعلاه). نردّ في أجل أقصاه شهر.</p><p>إذا رأيت أن حقوقك لم تُحترم، يمكنك اللجوء إلى الهيئة الوطنية لحماية المعطيات الشخصية (<a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). وإذا كنت مقيمًا في الاتحاد الأوروبي، فلك أيضًا الحقوق التي يكفلها النظام الأوروبي العام لحماية البيانات (RGPD).</p>",
+      "en": "<p>Under Tunisian Organic Law No. 2004-63 of 27 July 2004 on the protection of personal data, you may at any time ask to access, correct or delete your data, and object to its processing.</p><p>To do so, write to us by email <span class=\"tag\">To be confirmed</span>, on WhatsApp or by phone (details above). We reply within one month at most.</p><p>If you believe your rights have not been respected, you can contact the Tunisian data protection authority (INPDP, <a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). If you live in the European Union, you also have the rights set out in the GDPR.</p>"
+    },
+    "ip_t": {
+      "fr": "Propriété intellectuelle",
+      "ar": "الملكية الفكرية",
+      "en": "Intellectual property"
+    },
+    "ip": {
+      "fr": "<p>Les textes, photos, vidéos et le logo de ce site sont protégés. Toute reproduction, même partielle, sans autorisation écrite est interdite.</p>",
+      "ar": "<p>نصوص هذا الموقع وصوره ومقاطع الفيديو والشعار محميّة. يُمنع أي نسخ، ولو جزئيًا، دون إذن كتابي.</p>",
+      "en": "<p>The texts, photos, videos and logo on this website are protected. Any reproduction, even partial, without written permission is prohibited.</p>"
     }
   },
   "footer": {
@@ -897,6 +1039,11 @@
       "fr": "Tous droits réservés.",
       "ar": "جميع الحقوق محفوظة.",
       "en": "All rights reserved."
+    },
+    "privacy": {
+      "fr": "Confidentialité",
+      "ar": "الخصوصية",
+      "en": "Privacy"
     }
   },
   "_data": {

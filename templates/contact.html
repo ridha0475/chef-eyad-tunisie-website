@@ -6,7 +6,10 @@
 
 <section class="book"><div class="w cont-in">
   <div class="map">
-    <iframe title="{{contact.map_title}}" src="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a class="map-load" href="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis">
+      <span class="btn o">{{contact.map_show}}</span>
+      <small>{{contact.map_note}}</small>
+    </a>
   </div>
   <ul class="cl">
     <li><h3>{{contact.address_label}}</h3><p>{{contact.address}}</p>
@@ -34,6 +37,14 @@
       now=document.querySelector('.now'), open=h>=12;
   now.textContent=open?{{contact.open_now|js}}:{{contact.closed_now|js}};
   now.classList.toggle('on',open); now.hidden=false;
+  // Plan Google chargé seulement au clic : pas de cookie Google sans action du visiteur
+  var ml=document.querySelector('.map-load');
+  ml.addEventListener('click',function(e){
+    e.preventDefault();
+    var f=document.createElement('iframe');
+    f.title={{contact.map_title|js}}; f.src=ml.href+'&output=embed'; f.referrerPolicy='no-referrer-when-downgrade';
+    ml.replaceWith(f);
+  });
   if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
   document.documentElement.classList.add('js-reveal');
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});

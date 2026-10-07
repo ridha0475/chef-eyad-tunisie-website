@@ -29,9 +29,18 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
    - *À confirmer avec le client :* boissons, desserts ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)
 4. **Événementiel et salon VIP** — Chef Eyad se déplace dans le Grand Tunis (mariages, fiançailles, anniversaires, fêtes de famille et d'entreprise) : viande livrée prête, découpe sur place devant les invités (client, 02/10/2026) ; salon VIP au restaurant ; demande de devis sur WhatsApp
 5. **Réservation** — formulaire en 3 étapes (convives, date et heure de 12:00 à 23:30, coordonnées), résumé en direct, envoi WhatsApp dans la langue de la page
-6. **Contact et accès** — adresse, téléphone, WhatsApp, horaires avec état ouvert/fermé, plan Google Maps intégré (fiche « Chef Eyad Tunisia », Regency 3) ; FAQ courte *à confirmer, non publiée*
+6. **Contact et accès** — adresse, téléphone, WhatsApp, horaires avec état ouvert/fermé, plan Google Maps (fiche « Chef Eyad Tunisia », Regency 3) chargé seulement au clic sur « Afficher le plan » ; FAQ courte *à confirmer, non publiée*
+
+7. **Confidentialité et mentions légales** (`privacy.html`, lien dans le pied de page, hors menu) — éditeur, hébergeur, données des formulaires, journaux du serveur, cookies, droits (loi organique n° 2004-63, INPDP) ; préparée le 07/10/2026, **à faire relire par un juriste**
 
 Navigation fixe : bouton **Réserver** et sélecteur de langue toujours visibles.
+
+## Confidentialité (décidé le 07/10/2026)
+
+- **Aucun cookie, donc pas de bandeau** : pas de statistiques, pas de stockage navigateur ; polices hébergées dans `fonts/` (tirées de Google Fonts, sous-ensembles latin et arabe) ; plan Google Maps chargé seulement au clic.
+- Ne rien ajouter qui dépose un cookie ou appelle un tiers au chargement (statistiques, pixel Meta, widget, vidéo YouTube intégrée) sans revoir la page Confidentialité et prévoir un consentement.
+- Hébergement définitif : **VPS OVH**. La page l'annonce déjà ; GitHub Pages n'est qu'une préproduction.
+- Engagements pris dans la page, à respecter sur le serveur : journaux Nginx gardés **12 mois au plus** (logrotate), réponse aux demandes sous un mois.
 
 ## Fabriquer le site
 
@@ -73,6 +82,9 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 - [ ] Boissons et desserts : absents de la carte imprimée, proposés ou non ?
 - [ ] Compte Instagram officiel (handle)
 - [ ] État du domaine `chefeyad.com.tn` (erreur 526 constatée le 28/07/2026) et nom de domaine à utiliser
+- [ ] Mentions légales : raison sociale et forme juridique, identifiant unique RNE et siège social, responsable de la publication, e-mail pour les demandes sur les données personnelles
+- [ ] Déclaration à l'INPDP faite ou non (obligatoire avant de traiter des données personnelles), et son numéro
+- [ ] Durée de conservation des demandes WhatsApp (proposé : 12 mois au plus)
 
 ## Photos
 

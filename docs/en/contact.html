@@ -6,9 +6,7 @@
 <title>Contact and directions — Chef Eyad Tunisia</title>
 <meta name="description" content="Slow-smoked meat, the Chef Eyad way">
 <link rel="icon" href="../logo.jpeg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&amp;family=Montserrat:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="../fonts/latin.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="alternate" hreflang="fr" href="../fr/contact.html">
 <link rel="alternate" hreflang="ar" href="../ar/contact.html">
@@ -30,7 +28,10 @@
 
 <section class="book"><div class="w cont-in">
   <div class="map">
-    <iframe title="Map to the Chef Eyad restaurant" src="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a class="map-load" href="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis">
+      <span class="btn o">Show the map</span>
+      <small>The map is provided by Google, which may set cookies once it is shown.</small>
+    </a>
   </div>
   <ul class="cl">
     <li><h3>Address</h3><p>Regency 3, Cité Les Pins, Les Berges du Lac 2, Tunis (behind the Novotel hotel, lake side)</p>
@@ -58,6 +59,14 @@
       now=document.querySelector('.now'), open=h>=12;
   now.textContent=open?"Open now":"Closed, reopens at noon";
   now.classList.toggle('on',open); now.hidden=false;
+  // Plan Google chargé seulement au clic : pas de cookie Google sans action du visiteur
+  var ml=document.querySelector('.map-load');
+  ml.addEventListener('click',function(e){
+    e.preventDefault();
+    var f=document.createElement('iframe');
+    f.title="Map to the Chef Eyad restaurant"; f.src=ml.href+'&output=embed'; f.referrerPolicy='no-referrer-when-downgrade';
+    ml.replaceWith(f);
+  });
   if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
   document.documentElement.classList.add('js-reveal');
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
@@ -66,6 +75,6 @@
 </script>
 
 </main>
-<footer><div class="w">© 2026 Chef Eyad Tunisia · All rights reserved.</div></footer>
+<footer><div class="w">© 2026 Chef Eyad Tunisia · All rights reserved. · <a href="privacy.html">Privacy</a></div></footer>
 </body>
 </html>

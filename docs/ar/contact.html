@@ -6,9 +6,7 @@
 <title>اتصل بنا وكيفية الوصول — الشيف إياد تونس</title>
 <meta name="description" content="لحم مدخّن ببطء على طريقة الشيف إياد">
 <link rel="icon" href="../logo.jpeg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&amp;family=Noto+Sans+Arabic:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="../fonts/ar.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="alternate" hreflang="fr" href="../fr/contact.html">
 <link rel="alternate" hreflang="ar" href="../ar/contact.html">
@@ -30,7 +28,10 @@
 
 <section class="book"><div class="w cont-in">
   <div class="map">
-    <iframe title="خريطة الوصول إلى مطعم الشيف إياد" src="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a class="map-load" href="https://www.google.com/maps?q=Chef+Eyad+Berges+du+Lac+2+Tunis">
+      <span class="btn o">اعرض الخريطة</span>
+      <small>الخريطة مقدَّمة من Google، التي قد تضع ملفات تعريف ارتباط بعد عرضها.</small>
+    </a>
   </div>
   <ul class="cl">
     <li><h3>العنوان</h3><p>ريجنسي 3، حي الصنوبر، ضفاف البحيرة 2، تونس (خلف نزل نوفوتيل، جهة البحيرة)</p>
@@ -58,6 +59,14 @@
       now=document.querySelector('.now'), open=h>=12;
   now.textContent=open?"مفتوح الآن":"مغلق، نفتح على الساعة 12";
   now.classList.toggle('on',open); now.hidden=false;
+  // Plan Google chargé seulement au clic : pas de cookie Google sans action du visiteur
+  var ml=document.querySelector('.map-load');
+  ml.addEventListener('click',function(e){
+    e.preventDefault();
+    var f=document.createElement('iframe');
+    f.title="خريطة الوصول إلى مطعم الشيف إياد"; f.src=ml.href+'&output=embed'; f.referrerPolicy='no-referrer-when-downgrade';
+    ml.replaceWith(f);
+  });
   if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
   document.documentElement.classList.add('js-reveal');
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
@@ -66,6 +75,6 @@
 </script>
 
 </main>
-<footer><div class="w">© 2026 الشيف إياد تونس · جميع الحقوق محفوظة.</div></footer>
+<footer><div class="w">© 2026 الشيف إياد تونس · جميع الحقوق محفوظة. · <a href="privacy.html">الخصوصية</a></div></footer>
 </body>
 </html>
