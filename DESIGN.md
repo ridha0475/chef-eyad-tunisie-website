@@ -90,6 +90,7 @@ Règles :
 | Villes de la marque | `.route` | Six villes du réseau (Kafr Qasim, l'origine → Tunis) en Cormorant reliées par un filet, sur une ligne ; Tunis en braise vive ; légende dorée (`small`) sous la première et la dernière. En colonne sur mobile. |
 | Formulaire de réservation | `.bform` + `.chip` + `.bside` | Étapes numérotées (`legend .n`), convives en pastilles rondes (braise quand choisi), « 8+ » ouvre un champ libre en CSS (`:has`). Résumé or en direct au-dessus du bouton. Infos collantes à côté, sous le formulaire sur mobile. |
 | Bandeau des occasions | `.occ` | Page Événementiel : occasions en grand qui défilent en boucle (40 s), une sur deux en or, séparées par ✦ braise. Liste doublée en `aria-hidden` ; en mouvement réduit, liste fixe sur plusieurs lignes. |
+| Chiffres du salon | `.vip-facts` | Page Événementiel : deux chiffres en grand Cormorant or (convives, prix) avec leur légende en gris dessous. |
 | Pastilles de texte | `.chip.txt` | Variante des pastilles de convives pour des choix en mots (type d'événement). |
 | Coordonnées | `.cont-in` + `.cl` + `.now` | Page Contact : plan Google assombri par filtre CSS (ton charbon) à côté de la liste des coordonnées ; téléphone en grand Cormorant ; pastille « Ouvert en ce moment » calculée à l'heure de Tunis. Sur mobile, coordonnées avant le plan. |
 | Infos pratiques | `.visit` | Bandeau adresse / horaires / contact. |

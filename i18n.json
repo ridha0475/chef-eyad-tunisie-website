@@ -776,6 +776,16 @@
       "fr": "Fête d'entreprise",
       "ar": "حفل شركة",
       "en": "Company party"
+    },
+    "vip_guests": {
+      "fr": "personnes",
+      "ar": "شخصًا",
+      "en": "guests"
+    },
+    "vip_price_label": {
+      "fr": "privatisation du salon",
+      "ar": "لحجز الصالون حصريًا",
+      "en": "to book the lounge privately"
     }
   },
   "booking": {

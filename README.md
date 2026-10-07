@@ -28,7 +28,7 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
    - Sauces : **3 sauces maison, qui changent selon les saisons** (client, 02/10/2026) — ne plus écrire « 15 sauces »
    - Boissons (client, 07/10/2026) : boisson gazeuse, eau minérale 1 L / 1,5 L / 2 L, citronnade, citronnade menthe, café, thé kufi (orthographe et nom arabe à confirmer)
    - *À confirmer avec le client :* desserts ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)
-4. **Événementiel et salon VIP** — Chef Eyad se déplace dans le Grand Tunis (mariages, fiançailles, anniversaires, fêtes de famille et d'entreprise) : viande livrée prête, découpe sur place devant les invités (client, 02/10/2026) ; salon VIP au restaurant ; demande de devis sur WhatsApp
+4. **Événementiel et salon VIP** — Chef Eyad se déplace dans le Grand Tunis (mariages, fiançailles, anniversaires, fêtes de famille et d'entreprise) : viande livrée prête, découpe sur place devant les invités (client, 02/10/2026) ; salon VIP au restaurant (groupes de 25 à 40 personnes, privatisation 399 DT, client 07/10/2026) ; demande de devis sur WhatsApp
 5. **Réservation** — formulaire en 3 étapes (convives, date et heure de 12:00 à 23:30, coordonnées), résumé en direct, envoi WhatsApp dans la langue de la page
 6. **Contact et accès** — adresse, téléphone, WhatsApp, horaires avec état ouvert/fermé, plan Google Maps (fiche « Chef Eyad Tunisia », Regency 3) chargé seulement au clic sur « Afficher le plan » ; FAQ courte *à confirmer, non publiée*
 
