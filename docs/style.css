@@ -182,11 +182,12 @@ h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
 .tl-js .st:not(.on) time{color:var(--mute)}
 .cities{text-align:center;padding:96px 0;border-top:1px solid var(--line)}
 .cities .mute{max-width:560px;margin:16px auto 0;font-size:1.1rem}
-.route{list-style:none;padding:0;margin-top:44px;display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:12px 28px;font-family:var(--f-display);font-size:clamp(2.2rem,6vw,4.4rem);font-weight:700;line-height:1.1;color:var(--mute)}
-.route li:not(:last-child)::after{content:"";display:inline-block;width:48px;height:2px;margin-inline-start:28px;vertical-align:middle;background:linear-gradient(90deg,var(--line),var(--gold))}
+.route{list-style:none;padding:0;margin-top:44px;display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:12px 16px;font-family:var(--f-display);font-size:clamp(2rem,3.2vw,2.6rem);font-weight:700;line-height:1.1;color:var(--mute)}
+.route li{position:relative}
+.route li:not(:last-child)::after{content:"";display:inline-block;width:28px;height:2px;margin-inline-start:16px;vertical-align:middle;background:linear-gradient(90deg,var(--line),var(--gold))}
 [dir=rtl] .route li:not(:last-child)::after{background:linear-gradient(-90deg,var(--line),var(--gold))}
 .route .here{color:var(--fire2);text-shadow:0 0 40px #e8561c99}
-.route small{display:block;font-family:var(--f-body);font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);text-shadow:none}
+.route small{position:absolute;inset-inline-start:0;top:100%;white-space:nowrap;font-family:var(--f-body);font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);text-shadow:none}
 [lang=ar] .route small{letter-spacing:0;font-size:.95rem}
 
 /* Autres pages */
@@ -324,6 +325,7 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var
   .map,.map iframe{min-height:300px}
   .cl{order:-1}
   .route{flex-direction:column;align-items:center}
+  .route small{position:static;display:block}
   .route li:not(:last-child)::after{display:block;width:2px;height:28px;margin:12px auto 0;background:linear-gradient(var(--line),var(--gold))}
 }
 @media(prefers-reduced-motion:reduce){

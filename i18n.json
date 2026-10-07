@@ -234,24 +234,19 @@
       "en": "It all started with a journey: Chef Eyad's travels through the smokehouses of Texas. He came back with the patience of a wood fire and low-and-slow cooking, then gave it a Middle Eastern touch and a spice blend whose recipe he keeps to himself."
     },
     "brand_title": {
-      "fr": "Une marque, plusieurs tables",
-      "ar": "علامة واحدة، موائد عديدة",
-      "en": "One brand, many tables"
+      "fr": "De Kafr Qasim à Tunis",
+      "ar": "من كفر قاسم إلى تونس",
+      "en": "From Kafr Qasim to Tunis"
     },
     "brand_text": {
-      "fr": "Chef Eyad accueille ses clients à Riyad et à Al Khobar, en Arabie saoudite. Depuis le 7 juin 2024, la même recette a sa table à Tunis, aux Berges du Lac 2.",
-      "ar": "يستقبل الشيف إياد ضيوفه في الرياض والخبر بالمملكة العربية السعودية. ومنذ 7 جوان 2024، صارت للوصفة نفسها مائدة في تونس، بضفاف البحيرة 2.",
-      "en": "Chef Eyad welcomes guests in Riyadh and Al Khobar, Saudi Arabia. Since 7 June 2024, the same recipe has had its table in Tunis, at Berges du Lac 2."
+      "fr": "Tout est parti de Kafr Qasim, en Palestine, où le chef Eyad a ouvert son premier restaurant. La maison s'est depuis installée en Turquie, en Jordanie, en Irak et dans tout le Golfe. Depuis le 7 juin 2024, Chef Eyad Tunisie fait partie de ce réseau international, sous licence de la maison mère : même recette, même feu, aux Berges du Lac 2.",
+      "ar": "انطلقت الحكاية من كفر قاسم في فلسطين، حيث افتتح الشيف إياد مطعمه الأول. ومنذ ذلك الحين امتدّت الدار إلى تركيا والأردن والعراق ودول الخليج. ومنذ 7 جوان 2024، أصبح الشيف إياد تونس جزءًا من هذه الشبكة الدولية، بترخيص من الدار الأم: الوصفة نفسها، والنار نفسها، في ضفاف البحيرة 2.",
+      "en": "It all began in Kafr Qasim, Palestine, where Chef Eyad opened his first restaurant. The house has since spread to Turkey, Jordan, Iraq and across the Gulf. Since 7 June 2024, Chef Eyad Tunisia has been part of this international network, licensed by the parent company: same recipe, same fire, at Berges du Lac 2."
     },
     "city_riyadh": {
       "fr": "Riyad",
       "ar": "الرياض",
       "en": "Riyadh"
-    },
-    "city_khobar": {
-      "fr": "Al Khobar",
-      "ar": "الخبر",
-      "en": "Al Khobar"
     },
     "city_tunis": {
       "fr": "Tunis",
@@ -312,6 +307,31 @@
       "fr": "Riz basmati et cinq salades à volonté accompagnent chaque viande fumée, avec trois sauces maison qui changent au fil des saisons.",
       "ar": "كل قطعة لحم مدخّنة تستحق مرافِقات تليق بها. ولهذا نقدّم لكم أرز بسمتي معطّرًا وخمس سلطات متنوعة بالقدر المرغوب به، لتختاروا من النكهات ما يكمّل كل لقمة.<br><br>ولمزيد من التميّز، ترافق وجبتكم ثلاث صلصات منزلية الصنع، تتغيّر مع الفصول لتمنحكم في كل زيارة تجربة جديدة.<br><br>لحم مدخّن بعناية، مرافِقات سخية، ونكهات تتجدّد… في Chef&nbsp;Eyad، لا تأتي المائدة لتكمل الطبق فحسب، بل لتكمل التجربة.",
       "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus three house-made sauces that change with the seasons."
+    },
+    "city_kafr": {
+      "fr": "Kafr Qasim",
+      "ar": "كفر قاسم",
+      "en": "Kafr Qasim"
+    },
+    "city_istanbul": {
+      "fr": "Istanbul",
+      "ar": "إسطنبول",
+      "en": "Istanbul"
+    },
+    "city_dubai": {
+      "fr": "Dubaï",
+      "ar": "دبي",
+      "en": "Dubai"
+    },
+    "city_doha": {
+      "fr": "Doha",
+      "ar": "الدوحة",
+      "en": "Doha"
+    },
+    "origin_label": {
+      "fr": "les origines",
+      "ar": "البداية",
+      "en": "where it began"
     }
   },
   "menu": {
