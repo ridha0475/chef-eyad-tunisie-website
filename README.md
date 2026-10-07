@@ -87,7 +87,7 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 - [x] Responsable de la publication : Nassim Mami, gérant (07/10/2026)
 - [ ] Identifiant RNE à vérifier (en principe = matricule fiscal)
 - [ ] Déclaration à l'INPDP faite ou non (obligatoire avant de traiter des données personnelles), et son numéro — **le client vérifie**
-- [ ] Durée de conservation des demandes WhatsApp (proposé : 12 mois au plus)
+- [x] Durée de conservation des demandes WhatsApp : 12 mois au plus (validé le 07/10/2026)
 
 ## Photos
 
