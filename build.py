@@ -14,7 +14,8 @@ DATA = I18N["_data"]
 PAGES = ["index", "about", "menu", "events", "booking", "contact", "privacy"]
 NAV = {"index": "home", "about": "about", "menu": "menu", "events": "events", "booking": "booking", "contact": "contact"}
 SUB = [("smoked", "menu_smoked"), ("weight", "menu_weight"), ("pasta", "menu_pasta"),
-       ("poutine", "menu_poutine"), ("smoky", "menu_smoky"), ("sauces", "menu_sauces")]
+       ("poutine", "menu_poutine"), ("smoky", "menu_smoky"), ("sauces", "menu_sauces"),
+       ("drinks", "menu_drinks")]
 # Polices hébergées sur le site (fonts/, tirées de Google Fonts) : aucune requête vers Google
 FONTS = {"latin": "../fonts/latin.css", "ar": "../fonts/ar.css"}
 PAGE_TITLE = {"index": "site.tagline", "about": "about.title", "menu": "menu.title",

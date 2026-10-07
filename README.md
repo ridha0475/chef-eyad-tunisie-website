@@ -26,7 +26,8 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 3. **Menu** — source : carte imprimée du restaurant (`photos-source/menu-p1-viandes.jpeg`, `menu-p2-plats.jpeg`) et prix au poids donné par le client le 02/10/2026
    - Viandes fumées (8 plats, riz basmati et 5 salades à volonté) · Au poids (veau et agneau, 27,900 DT / 100 g) · Pâtes Chef Eyad · Poutines & frites · Tasty Smoky · Sauces
    - Sauces : **3 sauces maison, qui changent selon les saisons** (client, 02/10/2026) — ne plus écrire « 15 sauces »
-   - *À confirmer avec le client :* boissons, desserts ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)
+   - Boissons (client, 07/10/2026) : boisson gazeuse, eau minérale 1 L / 1,5 L / 2 L, citronnade, citronnade menthe, café, thé kufi (orthographe et nom arabe à confirmer)
+   - *À confirmer avec le client :* desserts ; mention « bacon » (préciser bœuf ou dinde, restaurant halal)
 4. **Événementiel et salon VIP** — Chef Eyad se déplace dans le Grand Tunis (mariages, fiançailles, anniversaires, fêtes de famille et d'entreprise) : viande livrée prête, découpe sur place devant les invités (client, 02/10/2026) ; salon VIP au restaurant ; demande de devis sur WhatsApp
 5. **Réservation** — formulaire en 3 étapes (convives, date et heure de 12:00 à 23:30, coordonnées), résumé en direct, envoi WhatsApp dans la langue de la page
 6. **Contact et accès** — adresse, téléphone, WhatsApp, horaires avec état ouvert/fermé, plan Google Maps (fiche « Chef Eyad Tunisia », Regency 3) chargé seulement au clic sur « Afficher le plan » ; FAQ courte *à confirmer, non publiée*
@@ -80,7 +81,8 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 - [x] Horaires d'ouverture : tous les jours, 12 h – minuit (client, 02/10/2026) ; pas de taille maximale de groupe
 - [x] Carte avec prix en TND (carte imprimée, 02/10/2026)
 - [x] Photos des plats et du restaurant (photothèque Drive, 02/10/2026)
-- [ ] Boissons et desserts : absents de la carte imprimée, proposés ou non ?
+- [x] Boissons : liste et prix donnés par le client (07/10/2026), section 07 de la carte
+- [ ] Desserts : proposés ou non ?
 - [ ] Compte Instagram officiel (handle)
 - [ ] État du domaine `chefeyad.com.tn` (erreur 526 constatée le 28/07/2026) et nom de domaine à utiliser
 - [x] Société : SARL « Panorient », matricule fiscal et siège (carte d'identification fiscale, 07/10/2026) → `documents-client/societe.md`, **non versionné**

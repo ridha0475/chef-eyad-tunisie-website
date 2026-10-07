@@ -86,6 +86,11 @@
       "fr": "Sauces",
       "ar": "الصلصات",
       "en": "Sauces"
+    },
+    "menu_drinks": {
+      "fr": "Boissons",
+      "ar": "المشروبات",
+      "en": "Drinks"
     }
   },
   "common": {
@@ -504,6 +509,51 @@
       "fr": "Trois sauces maison, qui changent au fil des saisons.",
       "ar": "ثلاث صلصات من صنع البيت، تتغيّر مع الفصول.",
       "en": "Three house-made sauces, changing with the seasons."
+    },
+    "soda": {
+      "fr": "Boisson gazeuse",
+      "ar": "مشروب غازي",
+      "en": "Soft drink"
+    },
+    "water": {
+      "fr": "Eau minérale",
+      "ar": "مياه معدنية",
+      "en": "Mineral water"
+    },
+    "l1": {
+      "fr": "1 L",
+      "ar": "1 لتر",
+      "en": "1 L"
+    },
+    "l15": {
+      "fr": "1,5 L",
+      "ar": "1,5 لتر",
+      "en": "1.5 L"
+    },
+    "l2": {
+      "fr": "2 L",
+      "ar": "2 لتر",
+      "en": "2 L"
+    },
+    "lemonade": {
+      "fr": "Citronnade",
+      "ar": "عصير ليمون",
+      "en": "Lemonade"
+    },
+    "lemonade_mint": {
+      "fr": "Citronnade à la menthe",
+      "ar": "عصير ليمون بالنعناع",
+      "en": "Mint lemonade"
+    },
+    "coffee": {
+      "fr": "Café",
+      "ar": "قهوة",
+      "en": "Coffee"
+    },
+    "tea": {
+      "fr": "Thé kufi",
+      "ar": "شاي كوفي",
+      "en": "Kufi tea"
     }
   },
   "events": {
