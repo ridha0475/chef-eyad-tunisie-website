@@ -944,9 +944,9 @@
       "en": "Company name and legal form"
     },
     "k_id": {
-      "fr": "Identifiant unique (RNE) et siège social",
-      "ar": "المعرّف الوحيد (السجل الوطني للمؤسسات) والمقر الاجتماعي",
-      "en": "Company ID (RNE) and registered office"
+      "fr": "Matricule fiscal",
+      "ar": "المعرّف الجبائي",
+      "en": "Tax ID"
     },
     "k_address": {
       "fr": "Restaurant",
@@ -1019,9 +1019,9 @@
       "en": "Your rights"
     },
     "rights": {
-      "fr": "<p>Conformément à la loi organique n° 2004-63 du 27 juillet 2004 portant sur la protection des données à caractère personnel, vous pouvez à tout moment demander l'accès à vos données, leur rectification ou leur suppression, et vous opposer à leur traitement.</p><p>Pour cela, écrivez-nous par e-mail <span class=\"tag\">À confirmer</span>, par WhatsApp ou par téléphone (coordonnées ci-dessus). Nous répondons dans un délai d'un mois au plus.</p><p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir l'Instance nationale de protection des données personnelles (INPDP, <a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). Si vous résidez dans l'Union européenne, vous disposez aussi des droits prévus par le RGPD.</p>",
-      "ar": "<p>طبقًا للقانون الأساسي عدد 63 لسنة 2004 المؤرخ في 27 جويلية 2004 المتعلق بحماية المعطيات الشخصية، يمكنك في أي وقت طلب الاطّلاع على معطياتك أو تصحيحها أو حذفها، والاعتراض على معالجتها.</p><p>لذلك راسلنا عبر البريد الإلكتروني <span class=\"tag\">سيتم التأكيد لاحقًا</span> أو واتساب أو الهاتف (البيانات أعلاه). نردّ في أجل أقصاه شهر.</p><p>إذا رأيت أن حقوقك لم تُحترم، يمكنك اللجوء إلى الهيئة الوطنية لحماية المعطيات الشخصية (<a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). وإذا كنت مقيمًا في الاتحاد الأوروبي، فلك أيضًا الحقوق التي يكفلها النظام الأوروبي العام لحماية البيانات (RGPD).</p>",
-      "en": "<p>Under Tunisian Organic Law No. 2004-63 of 27 July 2004 on the protection of personal data, you may at any time ask to access, correct or delete your data, and object to its processing.</p><p>To do so, write to us by email <span class=\"tag\">To be confirmed</span>, on WhatsApp or by phone (details above). We reply within one month at most.</p><p>If you believe your rights have not been respected, you can contact the Tunisian data protection authority (INPDP, <a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). If you live in the European Union, you also have the rights set out in the GDPR.</p>"
+      "fr": "<p>Conformément à la loi organique n° 2004-63 du 27 juillet 2004 portant sur la protection des données à caractère personnel, vous pouvez à tout moment demander l'accès à vos données, leur rectification ou leur suppression, et vous opposer à leur traitement.</p><p>Pour cela, écrivez-nous par e-mail <a href=\"mailto:hr@panorient.tn\" dir=\"ltr\">hr@panorient.tn</a>, par WhatsApp ou par téléphone (coordonnées ci-dessus). Nous répondons dans un délai d'un mois au plus.</p><p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir l'Instance nationale de protection des données personnelles (INPDP, <a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). Si vous résidez dans l'Union européenne, vous disposez aussi des droits prévus par le RGPD.</p>",
+      "ar": "<p>طبقًا للقانون الأساسي عدد 63 لسنة 2004 المؤرخ في 27 جويلية 2004 المتعلق بحماية المعطيات الشخصية، يمكنك في أي وقت طلب الاطّلاع على معطياتك أو تصحيحها أو حذفها، والاعتراض على معالجتها.</p><p>لذلك راسلنا عبر البريد الإلكتروني <a href=\"mailto:hr@panorient.tn\" dir=\"ltr\">hr@panorient.tn</a> أو واتساب أو الهاتف (البيانات أعلاه). نردّ في أجل أقصاه شهر.</p><p>إذا رأيت أن حقوقك لم تُحترم، يمكنك اللجوء إلى الهيئة الوطنية لحماية المعطيات الشخصية (<a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). وإذا كنت مقيمًا في الاتحاد الأوروبي، فلك أيضًا الحقوق التي يكفلها النظام الأوروبي العام لحماية البيانات (RGPD).</p>",
+      "en": "<p>Under Tunisian Organic Law No. 2004-63 of 27 July 2004 on the protection of personal data, you may at any time ask to access, correct or delete your data, and object to its processing.</p><p>To do so, write to us by email <a href=\"mailto:hr@panorient.tn\" dir=\"ltr\">hr@panorient.tn</a>, on WhatsApp or by phone (details above). We reply within one month at most.</p><p>If you believe your rights have not been respected, you can contact the Tunisian data protection authority (INPDP, <a href=\"https://www.inpdp.tn\" rel=\"noopener\">inpdp.tn</a>). If you live in the European Union, you also have the rights set out in the GDPR.</p>"
     },
     "ip_t": {
       "fr": "Propriété intellectuelle",
@@ -1032,6 +1032,21 @@
       "fr": "<p>Les textes, photos, vidéos et le logo de ce site sont protégés. Toute reproduction, même partielle, sans autorisation écrite est interdite.</p>",
       "ar": "<p>نصوص هذا الموقع وصوره ومقاطع الفيديو والشعار محميّة. يُمنع أي نسخ، ولو جزئيًا، دون إذن كتابي.</p>",
       "en": "<p>The texts, photos, videos and logo on this website are protected. Any reproduction, even partial, without written permission is prohibited.</p>"
+    },
+    "k_seat": {
+      "fr": "Siège social",
+      "ar": "المقر الاجتماعي",
+      "en": "Registered office"
+    },
+    "v_company": {
+      "fr": "Société « Panorient », SARL",
+      "ar": "شركة «Panorient»، شركة ذات مسؤولية محدودة",
+      "en": "Panorient SARL (limited liability company)"
+    },
+    "v_seat": {
+      "fr": "6e étage, immeuble « Étoile Nord », A6-33, Centre Urbain Nord, 1082 Tunis",
+      "ar": "الطابق السادس، عمارة «Étoile Nord»، A6-33، المركز العمراني الشمالي، 1082 تونس",
+      "en": "6th floor, Étoile Nord building, A6-33, Centre Urbain Nord, 1082 Tunis"
     }
   },
   "footer": {
