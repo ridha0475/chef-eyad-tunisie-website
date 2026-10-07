@@ -132,7 +132,7 @@ h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
 .js-reveal .reveal.in .ml li{opacity:1;transform:none}
 .ml li:nth-child(2){transition-delay:60ms}.ml li:nth-child(3){transition-delay:120ms}.ml li:nth-child(4){transition-delay:180ms}
 .ml li:nth-child(5){transition-delay:240ms}.ml li:nth-child(6){transition-delay:300ms}.ml li:nth-child(7){transition-delay:360ms}.ml li:nth-child(8){transition-delay:420ms}
-.emblem{width:120px;height:120px;border-radius:50%;margin:0 auto 22px;box-shadow:0 0 0 3px var(--gold),0 0 60px #e8561c55}
+.emblem{width:170px;height:170px;border-radius:50%;margin:0 auto 22px;box-shadow:0 0 0 3px var(--gold),0 0 60px #e8561c55}
 .mnav{position:sticky;top:var(--navh,69px);z-index:15;background:#0e0a08ee;backdrop-filter:blur(10px);border-block:1px solid var(--line)}
 .mnav .w{display:flex;gap:10px;padding-block:10px;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth}
 .mnav .w::-webkit-scrollbar{display:none}
