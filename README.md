@@ -82,7 +82,8 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 - [ ] Boissons et desserts : absents de la carte imprimée, proposés ou non ?
 - [ ] Compte Instagram officiel (handle)
 - [ ] État du domaine `chefeyad.com.tn` (erreur 526 constatée le 28/07/2026) et nom de domaine à utiliser
-- [ ] Mentions légales : raison sociale et forme juridique, identifiant unique RNE et siège social, responsable de la publication, e-mail pour les demandes sur les données personnelles
+- [x] Société : SARL « Panorient », matricule fiscal et siège (carte d'identification fiscale, 07/10/2026) → `documents-client/societe.md`, **non versionné**
+- [ ] Mentions légales : responsable de la publication, e-mail pour les demandes sur les données personnelles, identifiant RNE à vérifier
 - [ ] Déclaration à l'INPDP faite ou non (obligatoire avant de traiter des données personnelles), et son numéro
 - [ ] Durée de conservation des demandes WhatsApp (proposé : 12 mois au plus)
 

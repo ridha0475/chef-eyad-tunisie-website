@@ -1,3 +1,6 @@
 photos-client/*
 !photos-client/INDEX.csv
 !photos-client/INDEX-VIDEOS.csv
+
+# Documents officiels du client (cachets, signatures) : jamais dans le dépôt public
+documents-client/
