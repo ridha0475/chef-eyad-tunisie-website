@@ -303,50 +303,55 @@
       "ar": "كل قطعة لحم مدخّنة تستحق مرافِقات تليق بها. ولهذا نقدّم لكم أرز بسمتي معطّرًا وخمس سلطات متنوعة بالقدر المرغوب به، لتختاروا من النكهات ما يكمّل كل لقمة.<br><br>ولمزيد من التميّز، ترافق وجبتكم ثلاث صلصات منزلية الصنع، تتغيّر مع الفصول لتمنحكم في كل زيارة تجربة جديدة.<br><br>لحم مدخّن بعناية، مرافِقات سخية، ونكهات تتجدّد… في Chef&nbsp;Eyad، لا تأتي المائدة لتكمل الطبق فحسب، بل لتكمل التجربة.",
       "en": "Basmati rice and five salads, as much as you like, come with every smoked meat, plus three house-made sauces that change with the seasons."
     },
-    "c_palestine": {
-      "fr": "Palestine",
-      "ar": "فلسطين",
-      "en": "Palestine"
+    "c_ramallah": {
+      "fr": "Ramallah",
+      "ar": "رام الله",
+      "en": "Ramallah"
     },
-    "c_turkey": {
-      "fr": "Turquie",
-      "ar": "تركيا",
-      "en": "Turkey"
+    "c_istanbul": {
+      "fr": "Istanbul",
+      "ar": "إسطنبول",
+      "en": "Istanbul"
     },
-    "c_jordan": {
-      "fr": "Jordanie",
-      "ar": "الأردن",
-      "en": "Jordan"
+    "c_amman": {
+      "fr": "Amman",
+      "ar": "عمّان",
+      "en": "Amman"
     },
-    "c_iraq": {
-      "fr": "Irak",
-      "ar": "العراق",
-      "en": "Iraq"
+    "c_baghdad": {
+      "fr": "Bagdad",
+      "ar": "بغداد",
+      "en": "Baghdad"
     },
-    "c_uae": {
-      "fr": "Émirats",
-      "ar": "الإمارات",
-      "en": "UAE"
+    "c_dubai": {
+      "fr": "Dubaï",
+      "ar": "دبي",
+      "en": "Dubai"
     },
-    "c_qatar": {
-      "fr": "Qatar",
-      "ar": "قطر",
-      "en": "Qatar"
+    "c_abudhabi": {
+      "fr": "Abou Dabi",
+      "ar": "أبوظبي",
+      "en": "Abu Dhabi"
     },
-    "c_bahrain": {
-      "fr": "Bahreïn",
-      "ar": "البحرين",
-      "en": "Bahrain"
+    "c_doha": {
+      "fr": "Doha",
+      "ar": "الدوحة",
+      "en": "Doha"
     },
-    "c_saudi": {
-      "fr": "Arabie saoudite",
-      "ar": "السعودية",
-      "en": "Saudi Arabia"
+    "c_manama": {
+      "fr": "Manama",
+      "ar": "المنامة",
+      "en": "Manama"
     },
-    "c_tunisia": {
-      "fr": "Tunisie",
+    "c_riyadh": {
+      "fr": "Riyad",
+      "ar": "الرياض",
+      "en": "Riyadh"
+    },
+    "c_tunis": {
+      "fr": "Tunis",
       "ar": "تونس",
-      "en": "Tunisia"
+      "en": "Tunis"
     }
   },
   "menu": {
@@ -569,6 +574,26 @@
       "fr": "Thé kufi",
       "ar": "شاي كوفي",
       "en": "Kufi tea"
+    },
+    "hours_note": {
+      "fr": "Carte servie du lundi au vendredi, de 12 h à 16 h. Le soir et le week-end : vente au poids uniquement. Boissons toute la journée.",
+      "ar": "تُقدَّم القائمة من الاثنين إلى الجمعة، من الساعة 12 إلى الساعة 16. في المساء وفي نهاية الأسبوع: البيع بالوزن فقط. المشروبات متوفّرة طوال اليوم.",
+      "en": "Menu served Monday to Friday, from noon to 4 pm. Evenings and weekends: by-the-weight only. Drinks all day."
+    },
+    "when_lunch": {
+      "fr": "Lun – ven · 12 h – 16 h",
+      "ar": "الاثنين – الجمعة · 12 – 16",
+      "en": "Mon – Fri · 12 – 4 pm"
+    },
+    "when_all": {
+      "fr": "Tous les jours · 12 h – minuit",
+      "ar": "كل يوم · 12 – منتصف الليل",
+      "en": "Every day · noon – midnight"
+    },
+    "when_drinks": {
+      "fr": "Toute la journée",
+      "ar": "طوال اليوم",
+      "en": "All day"
     }
   },
   "events": {

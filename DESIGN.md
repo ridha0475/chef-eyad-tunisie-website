@@ -85,9 +85,10 @@ Règles :
 | Carte | `.c` | Pour les autres pages ; à remplacer progressivement par des mises en page moins « grille de cartes ». |
 | Étiquette | `.tag` | Contour or, ex. « à confirmer ». |
 | Carte à prix | `.mc` + `.ml` | Section du menu : titre collant à gauche, liste nom · pointillés · prix (or). Description en dessous, en gris. |
+| Horaires de la carte | `.hours-note` + `.tag` | Encadré sous le titre de la page Menu (fond charbon translucide, filet or) ; étiquette `.tag` d'horaire sous le titre de chaque catégorie. |
 | Barre de catégories | `.mnav` | Collée sous l'en-tête, une seule ligne qui défile au doigt ; catégorie en cours en or plein (`aria-current`). Liens d'ancre, fonctionne sans JS. |
 | Ligne de fumage | `.tl` + `.st` | Page À propos : ligne verticale graduée 00:00 → 12:00, la braise la remplit au défilement et allume chaque étape (`.on`) aux 3/5 de l'écran. Sans JS ou en mouvement réduit : ligne pleine, étapes allumées. |
-| Villes de la marque | `.route` | Pays du réseau (Palestine → Tunisie) en Cormorant reliés par un filet, sur deux lignes ; Tunis en braise vive avec sa légende dorée (`small`) dessous. Jamais Kafr Qasim. En colonne sur mobile. |
+| Villes de la marque | `.route` | Villes du réseau (Ramallah → Tunis) en Cormorant reliées par un filet, sur deux lignes ; Tunis en braise vive avec sa légende dorée (`small`) dessous. Jamais Kafr Qasim. En colonne sur mobile. |
 | Formulaire de réservation | `.bform` + `.chip` + `.bside` | Étapes numérotées (`legend .n`), convives en pastilles rondes (braise quand choisi), « 8+ » ouvre un champ libre en CSS (`:has`). Résumé or en direct au-dessus du bouton. Infos collantes à côté, sous le formulaire sur mobile. |
 | Bandeau des occasions | `.occ` | Page Événementiel : occasions en grand qui défilent en boucle (40 s), une sur deux en or, séparées par ✦ braise. Liste doublée en `aria-hidden` ; en mouvement réduit, liste fixe sur plusieurs lignes. |
 | Chiffres du salon | `.vip-facts` | Page Événementiel : deux chiffres en grand Cormorant or (convives, prix) avec leur légende en gris dessous. |
