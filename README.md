@@ -120,14 +120,14 @@ Les 4 étapes de départ (contenu, traductions, script de génération, GitHub P
 - [ ] Desserts : proposés ou non ?
 - [ ] Compte Instagram officiel
 - [ ] Nom de domaine (`chefeyad.com.tn` en erreur 526 : qui y a accès ?)
-- [ ] Accès au VPS OVH
+- [x] Accès au VPS OVH (fait, confirmé le 10/10/2026)
 - [ ] Déclaration INPDP faite ou non, et son numéro
 - [ ] Salon VIP : les 399 DT comprennent-ils les repas ?
-- [ ] Validation des textes de la page À propos et de la photo `salle` (est-ce bien le salon VIP ?)
+- [x] Textes et photos validés par le client (confirmé le 10/10/2026)
 - [ ] Mention « bacon » : bœuf ou dinde ?
 
 **À faire de notre côté :**
 
-1. **Déploiement sur le VPS** : préparation et sécurisation du serveur (mises à jour, pare-feu, accès), domaine, HTTPS Let's Encrypt et redirections, Nginx (journaux gardés 12 mois au plus), sauvegardes automatiques avec un test de restauration, fiche technique remise au client. Dépend de l'accès au VPS et du domaine.
+1. **Déploiement sur le VPS** : préparation et sécurisation du serveur (mises à jour, pare-feu, accès), domaine, HTTPS Let's Encrypt et redirections, Nginx (journaux gardés 12 mois au plus), sauvegardes automatiques avec un test de restauration, fiche technique remise au client. L'accès au VPS est obtenu ; reste le domaine.
 2. Relecture des mentions légales et de la politique de confidentialité par un juriste.
 3. Back-end des réservations (voir « Backend »), une fois la collaboration validée par le client.

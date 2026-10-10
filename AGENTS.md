@@ -48,3 +48,4 @@ Ce fichier s'adresse à toute IA ou à toute personne qui reprend le projet (Cla
 | 02/10/2026 | Les 6 pages sont designées et GitHub Pages est activé. Photothèque du client rapatriée ; les images IA et la photo internet sont archivées | bc1d69c |
 | 07/10/2026 | Textes arabes du client, page Confidentialité et mentions légales (Panorient, sans cookie), boissons, salon VIP, réseau international dans À propos, horaires de la carte | e09e15b → 76c5119 |
 | 10/10/2026 | README mis à jour (statut, hébergement VPS OVH, prochaines étapes) et création de ce fichier de suivi | voir `git log` |
+| 10/10/2026 | Le client a validé les textes et les photos, et l'accès au VPS est obtenu (README mis à jour) | voir `git log` |
