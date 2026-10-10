@@ -3,7 +3,9 @@
 Site vitrine du restaurant Chef Eyad Tunisia (Berges du Lac 2, Tunis).
 Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 
-> Statut : **phase de cadrage**. Aucun code définitif avant validation des bases ci-dessous.
+> Statut (10/10/2026) : **vitrine terminée** (6 pages + page légale, 3 langues), en préproduction sur GitHub Pages. Reste la mise en ligne définitive sur le VPS et quelques réponses du client : voir « Prochaines étapes ».
+>
+> IA et nouveaux arrivants : lire d'abord [`AGENTS.md`](AGENTS.md) (règles, méthode de travail, journal).
 
 ## Décisions
 
@@ -15,7 +17,7 @@ Référence de structure : https://chefeyad.com.sa/ (inspiration, pas copie).
 | Traductions | Rédigées à partir du français, **relues et validées par le client** avant publication |
 | Contenu | Un seul fichier `i18n.json` : chaque texte porte ses 3 langues côte à côte (relecture client facilitée), séparé de la mise en page |
 | Technique | Site statique, sans framework ; un petit script génère les 3 versions depuis un modèle |
-| Hébergement | GitHub Pages, actif depuis le 02/10/2026 : https://ridha0475.github.io/chef-eyad-tunisie-website/ |
+| Hébergement | Définitif : **VPS OVH** (à déployer). Préproduction : GitHub Pages, actif depuis le 02/10/2026, https://ridha0475.github.io/chef-eyad-tunisie-website/ |
 
 ## Plan des pages
 
@@ -109,9 +111,23 @@ Architecture proposée : **Django** (admin intégré = tableau de bord + éditio
 Aucune information (prix, horaires, chiffres) n'est publiée sans source ou validation du client.
 Ce qui manque s'affiche « à venir » ou « à confirmer ».
 
-## Prochaines étapes
+## Prochaines étapes (mises à jour le 10/10/2026)
 
-1. Rédiger le contenu français de chaque page
-2. Traduire en arabe et en anglais, validation client
-3. Coder le modèle et le script de génération
-4. Publier sur GitHub Pages
+Les 4 étapes de départ (contenu, traductions, script de génération, GitHub Pages) sont faites.
+
+**À obtenir du client** (détail dans « Données manquantes ») :
+
+- [ ] Desserts : proposés ou non ?
+- [ ] Compte Instagram officiel
+- [ ] Nom de domaine (`chefeyad.com.tn` en erreur 526 : qui y a accès ?)
+- [ ] Accès au VPS OVH
+- [ ] Déclaration INPDP faite ou non, et son numéro
+- [ ] Salon VIP : les 399 DT comprennent-ils les repas ?
+- [ ] Validation des textes de la page À propos et de la photo `salle` (est-ce bien le salon VIP ?)
+- [ ] Mention « bacon » : bœuf ou dinde ?
+
+**À faire de notre côté :**
+
+1. **Déploiement sur le VPS** : préparation et sécurisation du serveur (mises à jour, pare-feu, accès), domaine, HTTPS Let's Encrypt et redirections, Nginx (journaux gardés 12 mois au plus), sauvegardes automatiques avec un test de restauration, fiche technique remise au client. Dépend de l'accès au VPS et du domaine.
+2. Relecture des mentions légales et de la politique de confidentialité par un juriste.
+3. Back-end des réservations (voir « Backend »), une fois la collaboration validée par le client.
